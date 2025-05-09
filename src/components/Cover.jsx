@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { FadeInWhenVisible, RiseUpWhenVisible } from "./Anims";
+import { FadeInWhenVisible, RiseUpWhenVisible } from "./anims";
 
 const Cover = () => {
 	return (
