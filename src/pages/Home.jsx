@@ -1,4 +1,4 @@
-import { RiseUpWhenVisible } from "../components/Anims";
+import { RiseUpWhenVisible } from "../components/anims";
 import { AboutMeContent } from "../components/content";
 import Cover from "../components/Cover";
 
