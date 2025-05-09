@@ -1,0 +1,37 @@
+@import url("https://fonts.googleapis.com/css2?family=Iceberg&family=Khand:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap");
+
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+* {
+	scrollbar-width: thin;
+	@apply tracking-wide;
+}
+
+:root {
+	font-family: "Roboto Condensed", system-ui, Avenir, Helvetica, Arial, sans-serif;
+	@apply bg-neutral-200 dark:bg-neutral-900 text-black dark:text-white transition-colors duration-300 ease-in-out;
+}
+
+a {
+	color: inherit;
+	text-decoration: none;
+}
+a:hover {
+	color: inherit;
+}
+
+@layer utilities {
+	/* Custom Fonts Start */
+	.font-iceberg {
+		font-family: "Iceberg", sans-serif;
+		font-style: normal;
+	}
+	.font-khand {
+		font-family: "Khand", sans-serif;
+		font-style: normal;
+	}
+	/* Custom Fonts End */
+}
