@@ -13,7 +13,7 @@ const WorkXPTimeline = ({ content = [] }) => {
 
 	return (
 		<Timeline position={isMobile ? "right" : "alternate-reverse"} className="my-4 !p-0">
-			{content.map((item) => (
+			{content.map((item, index) => (
 				<TimelineItem
 					key={item.id}
 					className="*:content-none"
@@ -27,7 +27,17 @@ const WorkXPTimeline = ({ content = [] }) => {
 				>
 					<TimelineSeparator>
 						<TimelineConnector />
-						<TimelineDot color="inherit" className="bg-white w-15 md:w-20 h-15 md:h-20 overflow-hidden !p-0 !my-4">
+						<TimelineDot
+							// color={index % 3 === 0 ? "warning" : `${index % 3 === 1 ? "primary" : "success"}`}
+							className={`w-5 h-5 overflow-hidden !p-0 !my-4 ${
+								index % 3 === 0
+									? "!bg-purple-600 dark:!bg-purple-400"
+									: index % 3 === 1
+									? "!bg-emerald-600 dark:!bg-emerald-400"
+									: "!bg-red-600 dark:!bg-red-400"
+							}`}
+							// className="w-5 h-5 overflow-hidden !p-0 !my-4"
+						>
 							<RiseUpWhenVisible>
 								<img src={item.logo} alt="profile" className="w-full h-full object-cover p-2" />
 							</RiseUpWhenVisible>

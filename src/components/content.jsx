@@ -69,10 +69,20 @@ export const AboutMeContent = [
 ];
 
 export const EducationContent = [
+	// {
+	// 	id: "mca",
+	// 	name: "MCA",
+	// 	logo: "/home/education/*.avif",
+	// 	start: "2025",
+	// 	end: "2027",
+	// 	school: "College",
+	// 	location: "New Delhi",
+	// 	board: "University",
+	// },
 	{
 		id: "bca",
 		name: "BCA",
-		logo: "https://cdn.jsdelivr.net/gh/GameZonedYT/Logos@main/PortfolioAdi/Education/jims.png",
+		logo: "/home/education/jims.avif",
 		// start: "Dec 2021",
 		// end: "June 2024",
 		start: "2021",
@@ -83,9 +93,8 @@ export const EducationContent = [
 	},
 	{
 		id: "xii",
-		name: "XII (PCM + CS)",
-		// logo: "https://hrssss.co.in/images/hansraj-logo.png",
-		logo: "https://images.uniapply.com/uploads/college/image/logo/2178/Hans_Raj_Smarak_Senior_Secondary_School_1779_Logo_1.jpg",
+		name: "XII (PCM+CS)",
+		logo: "/home/education/hrssss.avif",
 		start: "2020",
 		end: "2021",
 		school: "Hansraj Smarak Sr. Sec. School",
@@ -95,7 +104,7 @@ export const EducationContent = [
 	{
 		id: "x",
 		name: "X",
-		logo: "https://cdn.jsdelivr.net/gh/GameZonedYT/Logos@main/PortfolioAdi/Education/eps.png",
+		logo: "/home/education/eps.avif",
 		start: "2018",
 		end: "2019",
 		school: "Everest Public School",
