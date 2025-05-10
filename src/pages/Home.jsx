@@ -17,7 +17,7 @@ const Home = () => {
 					<div className="flex justify-center">
 						<hr className="w-full border rounded-full text-neutral-500/50 dark:text-neutral-300/50" />
 					</div>
-					<ul className="flex flex-col my-4 mx-4 gap-3">
+					<ul className="flex flex-col my-4 mx-4 gap-6 sm:gap-4">
 						{AboutMeContent.map((item, index) => (
 							<li key={index} className="font-roboto text-justify">
 								<RiseUpWhenVisible>{">  " + item}</RiseUpWhenVisible>

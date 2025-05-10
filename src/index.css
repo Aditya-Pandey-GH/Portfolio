@@ -6,13 +6,13 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 * {
-	scrollbar-width: thin;
+	/* scrollbar-width: thin; */
 	@apply tracking-wide;
 }
 
 :root {
 	font-family: "Roboto Condensed", system-ui, Avenir, Helvetica, Arial, sans-serif;
-	@apply bg-neutral-200 dark:bg-neutral-900 text-black dark:text-white transition-colors duration-300 ease-in-out;
+	@apply bg-neutral-200 dark:bg-neutral-900 text-black dark:text-white transition-colors duration-300 ease-in-out overflow-y-scroll;
 }
 
 a {
@@ -22,6 +22,28 @@ a {
 a:hover {
 	color: inherit;
 }
+
+/* Sidebar Scrollbar Start */
+::-webkit-scrollbar {
+	/* width: 10px; */
+	@apply w-1;
+}
+::-webkit-scrollbar-track {
+	/* background: #f1f1f1; */
+	@apply bg-transparent;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+	/* background: #888; */
+	@apply bg-neutral-400 dark:bg-neutral-600;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+	background: #555;
+}
+/* Sidebar Scrollbar End */
 
 @layer utilities {
 	/* Custom Fonts Start */

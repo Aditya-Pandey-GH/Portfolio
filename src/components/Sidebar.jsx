@@ -52,6 +52,7 @@ const Sidebar = () => {
 						localStorage.setItem("isSidebarOpen", !isSidebarOpen);
 						setIsSidebarOpen(!isSidebarOpen);
 					}}
+					aria-label="Hamburger"
 				>
 					<div className="z-10">
 						<span
@@ -96,16 +97,16 @@ const Sidebar = () => {
 							<ul className="w-full flex flex-col">
 								{sidebarItems.map((item) => (
 									<li key={item.id} className="hover:bg-neutral-200 dark:hover:bg-neutral-700 transition-all">
-										<Link
-											to={item.path}
+										<button
+											// to={item.path}
 											className={`w-full flex items-center gap-2 p-4 cursor-pointer ${
 												item.path == location.pathname ? "bg-neutral-200 dark:bg-neutral-700" : ""
 											}`}
-											// onClick={() => {
-											// 	navigate(item.path);
-											// 	// navigate(item.path, { replace: true });
-											// 	setIsSidebarOpen(false);
-											// }}
+											onClick={() => {
+												navigate(item.path);
+												// navigate(item.path, { replace: true });
+												setIsSidebarOpen(false);
+											}}
 										>
 											<span className="w-8 h-8 mx-3 flex items-center text-2xl text-black dark:text-white">
 												{item.path == location.pathname ? item.selectedLogo : item.logo}
@@ -117,7 +118,7 @@ const Sidebar = () => {
 											>
 												{item.name}
 											</span>
-										</Link>
+										</button>
 									</li>
 								))}
 							</ul>

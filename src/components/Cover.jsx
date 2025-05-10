@@ -9,7 +9,7 @@ const Cover = () => {
 				<section className="relative w-full flex bg-linear-to-r from-[#1571E9] to-[#EC25DF] rounded-none sm:rounded-lg">
 					<div className="w-full m-2 md:m-4 p-4 md:px-12 lg:px-20 rounded-md bg-white/50 flex justify-between items-center">
 						<div>
-							<img src="/cover_art/prog1.png" alt="Programmer" className="w-20 sm:w-40" loading="lazy" />
+							<img src="/cover_art/prog1.webp" alt="Programmer" className="w-20 sm:w-40" loading="lazy" />
 						</div>
 						<div className="w-full flex flex-col justify-center items-center">
 							<span className="font-khand font-semibold text-[min(2.25rem,7dvw)] text-white text-shadow-black text-shadow-sm !tracking-normal">
@@ -18,7 +18,7 @@ const Cover = () => {
 							<span className="font-iceberg font-semibold text-[min(1.15rem,3.5dvw)] text-black">Designer & Web Developer;</span>
 						</div>
 						<div>
-							<img src="/cover_art/prog2.png" alt="Programmer" className="w-20 sm:w-40" loading="lazy" />
+							<img src="/cover_art/prog2.webp" alt="Programmer" className="w-20 sm:w-40" loading="lazy" />
 						</div>
 					</div>
 					<Link
@@ -28,7 +28,7 @@ const Cover = () => {
 						title="Click to view the image in full size"
 					>
 						<img
-							src="/intro/pfp.jpg"
+							src="/intro/pfp.webp"
 							alt="Aditya Pandey"
 							// width={1000}
 							// height={1000}

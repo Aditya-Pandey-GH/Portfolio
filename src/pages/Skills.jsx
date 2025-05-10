@@ -107,7 +107,7 @@ const Skills = () => {
 							</RiseUpWhenVisible>
 						))}
 					</div> */}
-					<div className="flex flex-col md:grid-cols-2 justify-start m-4">
+					<div className="flex flex-col md:grid-cols-2 justify-start m-0 sm:m-4">
 						{ToolsContent.map((tools) => (
 							<RiseUpWhenVisible key={tools.id}>
 								<div className="w-full text-cyan-600 dark:text-yellow-400 not-dark:font-semibold p-4 rounded-lg">
@@ -116,7 +116,7 @@ const Skills = () => {
 										<span className="font-iceberg text-center text-[clamp(1rem,1dvw,2rem)]">{tools.title}</span>
 										<hr className="w-full border border-cyan-600 dark:border-yellow-400" />
 									</div>
-									<div className="flex flex-row flex-wrap gap-5 sm:gap-10 mt-5">
+									<div className="flex flex-row flex-wrap gap-5 sm:gap-10 mt-4">
 										{tools.tools.map((tool) => {
 											return (
 												<RiseUpWhenVisible key={tool.id}>
