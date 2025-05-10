@@ -16,8 +16,8 @@ const Skills = () => {
 						<hr className="w-full border rounded-full text-neutral-500/50 dark:text-neutral-300/50" />
 					</div>
 					<div className="flex flex-row flex-wrap justify-start my-4 mx-4 gap-5 sm:gap-10">
-						{LangsContent.map((item, index) => (
-							<div key={index} className="flex flex-col justify-center items-center text-center">
+						{LangsContent.map((item) => (
+							<div key={item.id} className="flex flex-col justify-center items-center text-center">
 								<RiseUpWhenVisible>
 									<img src={item.icon} alt={item.id} className="w-[clamp(2rem,8dvw,4rem)]" />
 								</RiseUpWhenVisible>
@@ -38,8 +38,8 @@ const Skills = () => {
 						<hr className="w-full border rounded-full text-neutral-500/50 dark:text-neutral-300/50" />
 					</div>
 					<div className="flex flex-row flex-wrap justify-start my-4 mx-4 gap-5 sm:gap-10">
-						{DBsContent.map((item, index) => (
-							<div key={index} className="flex flex-col justify-center items-center text-center">
+						{DBsContent.map((item) => (
+							<div key={item.id} className="flex flex-col justify-center items-center text-center">
 								<RiseUpWhenVisible>
 									<img src={item.icon} alt={item.id} className="w-[clamp(2rem,8dvw,4rem)]" />
 								</RiseUpWhenVisible>
@@ -62,8 +62,8 @@ const Skills = () => {
 						<hr className="w-full border rounded-full text-neutral-500/50 dark:text-neutral-300/50" />
 					</div>
 					<div className="flex flex-row flex-wrap justify-start my-4 mx-4 gap-5 sm:gap-10">
-						{TechsContent.map((item, index) => (
-							<div key={index} className="flex flex-col justify-center items-center text-center">
+						{TechsContent.map((item) => (
+							<div key={item.id} className="flex flex-col justify-center items-center text-center">
 								<RiseUpWhenVisible>
 									<img src={item.icon} alt={item.id} className="w-[clamp(2rem,8dvw,4rem)]" />
 								</RiseUpWhenVisible>
@@ -83,16 +83,53 @@ const Skills = () => {
 					<div className="flex justify-center">
 						<hr className="w-full border rounded-full text-neutral-500/50 dark:text-neutral-300/50" />
 					</div>
-					<div className="flex flex-row flex-wrap justify-start my-4 mx-4 gap-5 sm:gap-10">
-						{ToolsContent.map((item, index) => (
-							<div key={index} className="flex flex-col justify-center items-center text-center">
-								<RiseUpWhenVisible>
-									<img src={item.icon} alt={item.id} className="w-[clamp(2rem,8dvw,4rem)]" />
-								</RiseUpWhenVisible>
-								<RiseUpWhenVisible>
-									<span className="text-center">{item.name}</span>
-								</RiseUpWhenVisible>
-							</div>
+					{/* <div className="grid grid-cols-1 md:grid-cols-2 justify-start my-4 mx-4 gap-5 sm:gap-10">
+						{ToolsContent.map((tools) => (
+							<RiseUpWhenVisible key={tools.id}>
+								<div className="w-full flex flex-col justify-center items-center text-cyan-600 dark:text-yellow-400 not-dark:font-semibold bg-white dark:bg-neutral-700 p-4 rounded-lg">
+									<div className="w-fit">
+										<span className="font-iceberg text-center text-[clamp(1rem,1dvw,2rem)]">{tools.title}</span>
+										<hr className="w-full border border-cyan-600 dark:border-yellow-400" />
+									</div>
+									<div className="grid grid-cols-2 gap-5 sm:gap-10 mt-6">
+										{tools.tools.map((tool) => {
+											return (
+												<RiseUpWhenVisible key={tool.id}>
+													<div className="flex flex-col justify-center items-center">
+														<img src={tool.icon} alt={tool.id} className="w-[clamp(2rem,8dvw,4rem)]" />
+														<span className="text-black dark:text-white text-center">{tool.name}</span>
+													</div>
+												</RiseUpWhenVisible>
+											);
+										})}
+									</div>
+								</div>
+							</RiseUpWhenVisible>
+						))}
+					</div> */}
+					<div className="flex flex-col md:grid-cols-2 justify-start m-4">
+						{ToolsContent.map((tools) => (
+							<RiseUpWhenVisible key={tools.id}>
+								<div className="w-full text-cyan-600 dark:text-yellow-400 not-dark:font-semibold p-4 rounded-lg">
+									{/* Title of the Tools */}
+									<div className="w-fit">
+										<span className="font-iceberg text-center text-[clamp(1rem,1dvw,2rem)]">{tools.title}</span>
+										<hr className="w-full border border-cyan-600 dark:border-yellow-400" />
+									</div>
+									<div className="flex flex-row flex-wrap gap-5 sm:gap-10 mt-5">
+										{tools.tools.map((tool) => {
+											return (
+												<RiseUpWhenVisible key={tool.id}>
+													<div className="flex flex-col justify-center items-center">
+														<img src={tool.icon} alt={tool.id} className="w-[clamp(2rem,8dvw,4rem)]" />
+														<span className="text-center text-black dark:text-white">{tool.name}</span>
+													</div>
+												</RiseUpWhenVisible>
+											);
+										})}
+									</div>
+								</div>
+							</RiseUpWhenVisible>
 						))}
 					</div>
 				</section>

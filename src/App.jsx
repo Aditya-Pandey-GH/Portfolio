@@ -16,11 +16,11 @@ const App = () => {
 				<div className="w-full max-w-6xl h-fit flex flex-col flex-1">
 					<Routes>
 						<Route path="/" element={<Home />} />
-						<Route path="/Skills" element={<Skills />} />
-						<Route path="/Projects" element={<Projects />} />
-						<Route path="/Designs" element={<Designs />} />
-						<Route path="/Achievements" element={<Achievements />} />
-						<Route path="/Connect" element={<Connect />} />
+						<Route path="/skills" element={<Skills />} />
+						<Route path="/projects" element={<Projects />} />
+						<Route path="/designs" element={<Designs />} />
+						<Route path="/achievements" element={<Achievements />} />
+						<Route path="/connect" element={<Connect />} />
 
 						{/* If none of the above routes matches, Not Found page should open up */}
 						<Route path="*" element={<NotFound />} />

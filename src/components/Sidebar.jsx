@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { Link, replace, useLocation, useNavigate } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 
 import { SidebarContent } from "./content";
 
@@ -11,7 +11,7 @@ const Sidebar = () => {
 	const location = useLocation();
 	const navigate = useNavigate();
 
-	const [theme, setTheme] = useState(localStorage.getItem("theme") || "light");
+	const [theme, setTheme] = useState(localStorage.getItem("theme") || "dark");
 	const [isSidebarOpen, setIsSidebarOpen] = useState(false);
 
 	const [sidebarItems, setSidebarItems] = useState(SidebarContent);
@@ -96,16 +96,16 @@ const Sidebar = () => {
 							<ul className="w-full flex flex-col">
 								{sidebarItems.map((item) => (
 									<li key={item.id} className="hover:bg-neutral-200 dark:hover:bg-neutral-700 transition-all">
-										<button
-											// to={item.path}
+										<Link
+											to={item.path}
 											className={`w-full flex items-center gap-2 p-4 cursor-pointer ${
 												item.path == location.pathname ? "bg-neutral-200 dark:bg-neutral-700" : ""
 											}`}
-											onClick={() => {
-												navigate(item.path);
-												// navigate(item.path, { replace: true });
-												setIsSidebarOpen(false);
-											}}
+											// onClick={() => {
+											// 	navigate(item.path);
+											// 	// navigate(item.path, { replace: true });
+											// 	setIsSidebarOpen(false);
+											// }}
 										>
 											<span className="w-8 h-8 mx-3 flex items-center text-2xl text-black dark:text-white">
 												{item.path == location.pathname ? item.selectedLogo : item.logo}
@@ -117,7 +117,7 @@ const Sidebar = () => {
 											>
 												{item.name}
 											</span>
-										</button>
+										</Link>
 									</li>
 								))}
 							</ul>

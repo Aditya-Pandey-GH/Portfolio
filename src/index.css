@@ -33,5 +33,9 @@ a:hover {
 		font-family: "Khand", sans-serif;
 		font-style: normal;
 	}
+	.font-roboto {
+		font-family: "Roboto Condensed", sans-serif;
+		font-style: normal;
+	}
 	/* Custom Fonts End */
 }
