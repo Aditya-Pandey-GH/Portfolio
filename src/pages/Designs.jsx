@@ -1,3 +1,4 @@
+import { RiseUpWhenVisible } from "../components/anims";
 import Cover from "../components/Cover";
 
 const Designs = () => {
@@ -5,7 +6,11 @@ const Designs = () => {
 		<>
 			{/* Cover Art and Intro */}
 			<Cover />
-			<div>Designs</div>
+
+			{/* Designs */}
+			<RiseUpWhenVisible>
+				<div>Designs</div>
+			</RiseUpWhenVisible>
 		</>
 	);
 };

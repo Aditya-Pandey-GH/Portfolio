@@ -1,3 +1,4 @@
+import { RiseUpWhenVisible } from "../components/anims";
 import Cover from "../components/Cover";
 
 const Achievements = () => {
@@ -5,7 +6,11 @@ const Achievements = () => {
 		<>
 			{/* Cover Art and Intro */}
 			<Cover />
-			<div>Achievements</div>
+
+			{/* Achievements */}
+			<RiseUpWhenVisible>
+				<div>Achievements</div>
+			</RiseUpWhenVisible>
 		</>
 	);
 };

@@ -181,7 +181,12 @@ const Sidebar = () => {
 
 								{/* Download Resume */}
 								<li className="hover:bg-neutral-200 dark:hover:bg-neutral-700 transition-all" onClick={() => setIsSidebarOpen(false)}>
-									<Link to="/" target="_blank" className="flex items-center gap-2 p-4 cursor-pointer group">
+									<Link
+										to="/pdfs/aditya_pandey_resume.pdf"
+										target="_blank"
+										className="flex items-center gap-2 p-4 cursor-pointer group"
+										title="Download My Resume"
+									>
 										<span className="w-8 h-8 mx-3 flex items-center text-2xl text-black dark:text-white">
 											<FaFileDownload className="group-hover:text-light group-hover:dark:text-dark transition-colors ease-in-out duration-300" />
 										</span>

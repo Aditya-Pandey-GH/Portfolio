@@ -1,3 +1,4 @@
+import { RiseUpWhenVisible } from "../components/anims";
 import Cover from "../components/Cover";
 
 const Connect = () => {
@@ -5,7 +6,11 @@ const Connect = () => {
 		<>
 			{/* Cover Art and Intro */}
 			<Cover />
-			<div>Connect</div>
+
+			{/* Connect */}
+			<RiseUpWhenVisible>
+				<div>Connect</div>
+			</RiseUpWhenVisible>
 		</>
 	);
 };
