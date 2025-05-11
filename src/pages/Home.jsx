@@ -13,7 +13,7 @@ const Home = () => {
 			{/* About Me */}
 			<RiseUpWhenVisible>
 				<section className="flex flex-col mt-8 sm:mt-12 mx-4 sm:mx-8 leading-5 sm:leading-7">
-					<h2 className="font-khand font-bold text-cyan-600 dark:text-yellow-400 text-[clamp(1.25rem,4.5dvw,2rem)]">ABOUT ME</h2>
+					<h2 className="font-khand font-bold text-light dark:text-dark text-[clamp(1.25rem,4.5dvw,2rem)]">ABOUT ME</h2>
 					<div className="flex justify-center">
 						<hr className="w-full border rounded-full text-neutral-500/50 dark:text-neutral-300/50" />
 					</div>
@@ -30,7 +30,7 @@ const Home = () => {
 			{/* Education */}
 			<RiseUpWhenVisible>
 				<section className="flex flex-col mt-4 sm:mt-8 mx-4 sm:mx-8 leading-5 sm:leading-7">
-					<h2 className="font-khand font-bold text-cyan-600 dark:text-yellow-400 text-[clamp(1.25rem,4.5dvw,2rem)]">EDUCATION</h2>
+					<h2 className="font-khand font-bold text-light dark:text-dark text-[clamp(1.25rem,4.5dvw,2rem)]">EDUCATION</h2>
 					<div className="flex justify-center">
 						<hr className="w-full border rounded-full text-neutral-500/50 dark:text-neutral-300/50" />
 					</div>
@@ -41,7 +41,7 @@ const Home = () => {
 			{/* Jobs */}
 			{/* <RiseUpWhenVisible>
 				<section className="flex flex-col mt-4 sm:mt-8 mx-4 sm:mx-8 leading-5 sm:leading-7">
-					<h2 className="font-khand font-bold text-cyan-600 dark:text-yellow-400 text-[clamp(1.25rem,4.5dvw,2rem)]">JOB EXPERIENCE</h2>
+					<h2 className="font-khand font-bold text-light dark:text-dark text-[clamp(1.25rem,4.5dvw,2rem)]">JOB EXPERIENCE</h2>
 					<div className="flex justify-center">
 						<hr className="w-full border rounded-full text-neutral-500/50 dark:text-neutral-300/50" />
 					</div>

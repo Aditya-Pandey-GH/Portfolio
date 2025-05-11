@@ -1,57 +1,51 @@
-import { HiOutlineHome } from "react-icons/hi";
-import { HiHome } from "react-icons/hi";
-import { AiOutlineBulb } from "react-icons/ai";
-import { AiFillBulb } from "react-icons/ai";
-import { IoGameControllerOutline } from "react-icons/io5";
-import { IoGameController } from "react-icons/io5";
-import { HiOutlinePhoto } from "react-icons/hi2";
-import { HiMiniPhoto } from "react-icons/hi2";
-import { PiMedalLight } from "react-icons/pi";
-import { PiMedalFill } from "react-icons/pi";
-import { BsTelephone } from "react-icons/bs";
-import { BsFillTelephoneFill } from "react-icons/bs";
+import { HiOutlineHome, HiHome } from "react-icons/hi"; // Home
+import { AiOutlineBulb, AiFillBulb } from "react-icons/ai"; // Skills
+import { IoGameControllerOutline, IoGameController } from "react-icons/io5"; // Projects
+import { HiOutlinePhoto, HiMiniPhoto } from "react-icons/hi2"; // Designs
+import { PiMedalLight, PiMedalFill } from "react-icons/pi"; // Achievements
+import { BsTelephone, BsFillTelephoneFill } from "react-icons/bs"; // Connect
 
 export const SidebarContent = [
 	{
 		id: "homePage",
 		name: "Home",
 		logo: <HiOutlineHome />,
-		selectedLogo: <HiHome className="text-cyan-600 dark:text-yellow-400" />,
+		selectedLogo: <HiHome className="text-light dark:text-dark" />,
 		path: "/",
 	},
 	{
 		id: "skillsPage",
 		name: "Skills",
 		logo: <AiOutlineBulb />,
-		selectedLogo: <AiFillBulb className="text-cyan-600 dark:text-yellow-400" />,
+		selectedLogo: <AiFillBulb className="text-light dark:text-dark" />,
 		path: "/skills",
 	},
 	{
 		id: "projectsPage",
 		name: "Projects",
 		logo: <IoGameControllerOutline />,
-		selectedLogo: <IoGameController className="text-cyan-600 dark:text-yellow-400" />,
+		selectedLogo: <IoGameController className="text-light dark:text-dark" />,
 		path: "/projects",
 	},
 	{
 		id: "designsPage",
 		name: "Designs",
 		logo: <HiOutlinePhoto />,
-		selectedLogo: <HiMiniPhoto className="text-cyan-600 dark:text-yellow-400" />,
+		selectedLogo: <HiMiniPhoto className="text-light dark:text-dark" />,
 		path: "/designs",
 	},
 	{
 		id: "achievementsPage",
 		name: "Achievements",
 		logo: <PiMedalLight />,
-		selectedLogo: <PiMedalFill className="text-cyan-600 dark:text-yellow-400" />,
+		selectedLogo: <PiMedalFill className="text-light dark:text-dark" />,
 		path: "/achievements",
 	},
 	{
 		id: "connectPage",
 		name: "Connect",
 		logo: <BsTelephone />,
-		selectedLogo: <BsFillTelephoneFill className="text-cyan-600 dark:text-yellow-400" />,
+		selectedLogo: <BsFillTelephoneFill className="text-light dark:text-dark" />,
 		path: "/connect",
 	},
 ];
@@ -90,16 +84,22 @@ export const EducationContent = [
 		school: "JIMS, Sector-5, Rohini",
 		location: "New Delhi",
 		board: "GGSIPU",
+		settings: {
+			bg: "#034da2",
+		},
 	},
 	{
 		id: "xii",
-		name: "XII (PCM+CS)",
+		name: "XII (PCM / CS)",
 		logo: "/home/education/hrssss.avif",
 		start: "2020",
 		end: "2021",
 		school: "Hansraj Smarak Sr. Sec. School",
 		location: "New Delhi",
 		board: "CBSE",
+		settings: {
+			bg: "#c70000",
+		},
 	},
 	{
 		id: "x",
@@ -110,6 +110,9 @@ export const EducationContent = [
 		school: "Everest Public School",
 		location: "Ghaziabad",
 		board: "CBSE",
+		settings: {
+			bg: "#52a3c5",
+		},
 	},
 ];
 

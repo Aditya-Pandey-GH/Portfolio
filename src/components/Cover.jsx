@@ -41,8 +41,8 @@ const Cover = () => {
 				{/* Name & DOB */}
 				<section className="pt-16 xs:pt-20 md:pt-26 lg:pt-32 mx-4 sm:mx-8">
 					<div className="flex flex-col leading-5 sm:leading-7">
-						<h1 className="font-khand font-bold text-cyan-600 dark:text-yellow-400 text-[clamp(1.5rem,5dvw,2.25rem)]">ADITYA PANDEY</h1>
-						<span className="font-roboto text-black dark:text-white text-[clamp(0.85rem,2.5dvw,1.25rem)] !tracking-normal font-bold !italic -mt-1">
+						<h1 className="font-khand font-bold text-light dark:text-dark text-[clamp(1.5rem,5dvw,2.25rem)]">ADITYA PANDEY</h1>
+						<span className="font-roboto text-black dark:text-white text-[clamp(0.85rem,2.5dvw,1.25rem)] !tracking-normal font-bold !italic -mt-1 xs:mt-0 sm:-mt-1">
 							[ September 16, 2003 ]
 						</span>
 					</div>

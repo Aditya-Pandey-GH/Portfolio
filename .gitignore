@@ -24,4 +24,4 @@ dist-ssr
 *.sw?
 
 # Custom
-*/*.jpg
+public/unused/*.*

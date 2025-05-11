@@ -7,7 +7,7 @@
 
 * {
 	/* scrollbar-width: thin; */
-	@apply tracking-wide;
+	@apply tracking-wide outline-none;
 }
 
 :root {
@@ -16,6 +16,9 @@
 }
 
 @theme {
+	/* --color-light: #034da2; */
+	--color-light: #034da2;
+	--color-dark: #ffc700;
 	--breakpoint-xs: 425px;
 }
 
@@ -29,17 +32,14 @@ a:hover {
 
 /* Sidebar Scrollbar Start */
 ::-webkit-scrollbar {
-	/* width: 10px; */
 	@apply w-1;
 }
 ::-webkit-scrollbar-track {
-	/* background: #f1f1f1; */
 	@apply bg-transparent;
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-	/* background: #888; */
 	@apply bg-neutral-400 dark:bg-neutral-600;
 }
 

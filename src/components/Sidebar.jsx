@@ -3,8 +3,8 @@ import { Link, useLocation, useNavigate } from "react-router-dom";
 
 import { SidebarContent } from "./content";
 
-import { BiMoon } from "react-icons/bi";
-import { BiSun } from "react-icons/bi";
+import { FaMoon } from "react-icons/fa";
+import { FaSun } from "react-icons/fa";
 import { FaFileDownload } from "react-icons/fa";
 
 const Sidebar = () => {
@@ -37,9 +37,12 @@ const Sidebar = () => {
 			{/* BG Overlay to bring the Sidebar to main focus */}
 			<section
 				id="overlay"
-				className={`w-dvw h-dvh fixed top-0 left-0 bg-black transition-opacity duration-300 ${
+				className={`w-dvw h-dvh fixed top-0 left-0 bg-black transition-all duration-300 ${
 					isSidebarOpen ? "opacity-75 z-10" : "opacity-0 z-0"
 				}`}
+				onClick={() => {
+					setIsSidebarOpen(false);
+				}}
 			/>
 
 			{/* Hamburger Button to Toggle Navbar */}
@@ -99,22 +102,29 @@ const Sidebar = () => {
 									<li key={item.id} className="hover:bg-neutral-200 dark:hover:bg-neutral-700 transition-all">
 										<button
 											// to={item.path}
-											className={`w-full flex items-center gap-2 p-4 cursor-pointer ${
-												item.path == location.pathname ? "bg-neutral-200 dark:bg-neutral-700" : ""
+											className={`w-full flex items-center gap-2 p-4 relative cursor-pointer group ${
+												item.path == location.pathname && "bg-neutral-200 dark:bg-neutral-700"
 											}`}
 											onClick={() => {
-												navigate(item.path);
-												// navigate(item.path, { replace: true });
+												if (item.path !== location.pathname) {
+													navigate(item.path);
+													// navigate(item.path, { replace: true });
+												}
 												setIsSidebarOpen(false);
 											}}
 										>
-											<span className="w-8 h-8 mx-3 flex items-center text-2xl text-black dark:text-white">
+											<div
+												className={`absolute top-0 left-0 w-1 h-full ${
+													item.path === location.pathname && "bg-light dark:bg-dark"
+												}`}
+											></div>
+											<span className="w-8 h-8 mx-3 flex items-center text-2xl text-black dark:text-white group-hover:text-light group-hover:dark:text-dark transition-colors ease-in-out duration-300">
 												{item.path == location.pathname ? item.selectedLogo : item.logo}
 											</span>
 											<span
-												className={`font-iceberg transition-opacity ease-in-out duration-300 ${
+												className={`font-iceberg group-hover:text-light group-hover:dark:text-dark transition-colors ease-in-out duration-300 ${
 													isSidebarOpen ? "opacity-100" : "opacity-0"
-												} ${item.path == location.pathname && "text-cyan-600 dark:text-yellow-400"}`}
+												} ${item.path == location.pathname && "!text-light dark:!text-dark"}`}
 											>
 												{item.name}
 											</span>
@@ -136,7 +146,10 @@ const Sidebar = () => {
 								<li className="hover:bg-neutral-200 dark:hover:bg-neutral-700 transition-all">
 									<button
 										className="w-full flex items-center gap-2 p-4 cursor-pointer group"
-										onClick={() => setTheme(theme === "light" ? "dark" : "light")}
+										onClick={() => {
+											setTheme(theme === "light" ? "dark" : "light");
+											setIsSidebarOpen(false);
+										}}
 									>
 										<div className="w-8 h-8 mx-3 flex items-center text-2xl text-black dark:text-white">
 											<div
@@ -144,14 +157,20 @@ const Sidebar = () => {
 												title={theme === "light" ? "Switch to Dark Mode" : "Switch to Light Mode"}
 											>
 												{theme === "light" ? (
-													<BiMoon className="group-hover:text-cyan-600 group-hover:dark:text-yellow-400 transition-colors duration-300" />
+													<>
+														{/* <BiMoon className="group-hover:text-light group-hover:dark:text-dark transition-colors duration-300" /> */}
+														<FaMoon className="group-hover:text-light group-hover:dark:text-dark transition-colors duration-300" />
+													</>
 												) : (
-													<BiSun className="group-hover:text-cyan-600 group-hover:dark:text-yellow-400 transition-colors duration-300" />
+													<>
+														{/* <BiSun className="group-hover:text-light group-hover:dark:text-dark transition-colors duration-300" /> */}
+														<FaSun className="group-hover:text-light group-hover:dark:text-dark transition-colors duration-300" />
+													</>
 												)}
 											</div>
 										</div>
 										<span
-											className={`font-iceberg transition-opacity ease-in-out duration-300 ${
+											className={`font-iceberg group-hover:text-light group-hover:dark:text-dark transition-colors ease-in-out duration-300 ${
 												isSidebarOpen ? "opacity-100" : "opacity-0"
 											}`}
 										>
@@ -161,13 +180,13 @@ const Sidebar = () => {
 								</li>
 
 								{/* Download Resume */}
-								<li className="hover:bg-neutral-200 dark:hover:bg-neutral-700 transition-all">
+								<li className="hover:bg-neutral-200 dark:hover:bg-neutral-700 transition-all" onClick={() => setIsSidebarOpen(false)}>
 									<Link to="/" target="_blank" className="flex items-center gap-2 p-4 cursor-pointer group">
 										<span className="w-8 h-8 mx-3 flex items-center text-2xl text-black dark:text-white">
-											<FaFileDownload className="group-hover:text-cyan-600 group-hover:dark:text-yellow-400 transition-colors duration-300" />
+											<FaFileDownload className="group-hover:text-light group-hover:dark:text-dark transition-colors ease-in-out duration-300" />
 										</span>
 										<span
-											className={`font-iceberg transition-opacity ease-in-out duration-300 ${
+											className={`font-iceberg group-hover:text-light group-hover:dark:text-dark transition-colors ease-in-out duration-300 ${
 												isSidebarOpen ? "opacity-100" : "opacity-0"
 											}`}
 										>

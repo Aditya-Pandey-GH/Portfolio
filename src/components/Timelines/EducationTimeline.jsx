@@ -27,9 +27,17 @@ const EducationTimeline = ({ content = [] }) => {
 				>
 					<TimelineSeparator>
 						<TimelineConnector />
+						{/* <TimelineDot color="inherit" className="bg-white w-15 md:w-20 h-15 md:h-20 overflow-hidden !p-0 !my-4">
+							<RiseUpWhenVisible>
+								<img src={item.logo} alt="profile" className="w-full h-full object-cover p-2" />
+							</RiseUpWhenVisible>
+						</TimelineDot> */}
 						<TimelineDot
+							color="inherit"
 							// color={index % 3 === 0 ? "warning" : `${index % 3 === 1 ? "primary" : "success"}`}
-							className="w-5 h-5 overflow-hidden !p-0 !my-4 !bg-cyan-600 dark:!bg-yellow-400"
+							className="w-5 h-5 overflow-hidden !p-0 !my-4"
+							style={{ backgroundColor: item.settings.bg }}
+							// className="w-5 h-5 overflow-hidden !p-0 !my-4 !bg-light dark:!bg-dark"
 							// className={`w-5 h-5 overflow-hidden !p-0 !my-4 ${
 							// 	index % 3 === 0
 							// 		? "!bg-purple-600 dark:!bg-purple-400"
@@ -38,25 +46,18 @@ const EducationTimeline = ({ content = [] }) => {
 							// 		: "!bg-red-600 dark:!bg-red-400"
 							// }`}
 							// className="w-5 h-5 overflow-hidden !p-0 !my-4"
-						>
-							{/* <TimelineDot color="inherit" className="bg-white w-15 md:w-20 h-15 md:h-20 overflow-hidden !p-0 !my-4"> */}
-							<RiseUpWhenVisible>
-								{/* <img src={item.logo} alt="profile" className="w-full h-full object-cover p-2" /> */}
-							</RiseUpWhenVisible>
-						</TimelineDot>
+						/>
 						<TimelineConnector />
 					</TimelineSeparator>
 					<TimelineContent>
 						<RiseUpWhenVisible>
-							<div className="w-full flex flex-col bg-white dark:bg-neutral-700 p-4 rounded-2xl *:text-justify">
+							<div className="w-full flex flex-col bg-neutral-100 dark:bg-neutral-700 p-4 rounded-2xl *:text-justify">
 								<div className="flex flex-row items-center mb-3 sm:mb-4 gap-2 xs:gap-4">
-									<div className="bg-white rounded-full p-2">
+									<div className="bg-white rounded-full p-2 not-dark:shadow-black/25 not-dark:shadow-[2px_5px_5px]">
 										<img src={item.logo} alt="profile" className="w-12 h-12 object-cover rounded-md" />
 									</div>
 									<div className="flex flex-col">
-										<span className="font-roboto text-lg sm:text-xl font-bold text-cyan-600 dark:text-yellow-400">
-											{item.name}
-										</span>
+										<span className="font-roboto text-lg sm:text-xl font-bold text-light dark:text-dark">{item.name}</span>
 										<span className="font-roboto text-xs font-bold -mt-1">
 											{item.start} – {item.end}
 										</span>

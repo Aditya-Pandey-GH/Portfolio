@@ -47,7 +47,7 @@ const WorkXPTimeline = ({ content = [] }) => {
 					<TimelineContent className="w-full">
 						<RiseUpWhenVisible>
 							<div className="w-full flex flex-col bg-white dark:bg-neutral-700 p-4 rounded-2xl *:text-justify">
-								<span className="font-roboto text-xl sm:text-2xl font-bold !tracking-normal text-cyan-600 dark:text-yellow-400">
+								<span className="font-roboto text-xl sm:text-2xl font-bold !tracking-normal text-light dark:text-yellow-400">
 									{item.role}
 								</span>
 								<span className="font-roboto text-sm sm:text-base font-bold italic">{`${item.company}, ${item.branch}`}</span>
