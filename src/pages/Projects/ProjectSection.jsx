@@ -24,10 +24,10 @@ const ProjectSection = ({ heading, route, content }) => {
 				<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 my-8 mx-4 gap-x-4 gap-y-8">
 					{content.length > 3 && route
 						? content.slice(0, 3).map((item) => {
-								return <DisplayContent key={item.id} item={item} route={route} />;
+								return <DisplayContent key={item.id} item={item} />;
 						  })
 						: content.map((item) => {
-								return <DisplayContent key={item.id} item={item} route={route} />;
+								return <DisplayContent key={item.id} item={item} />;
 						  })}
 				</div>
 			</section>
@@ -35,8 +35,7 @@ const ProjectSection = ({ heading, route, content }) => {
 	);
 };
 
-const DisplayContent = ({ item, route }) => {
-	route = route.slice(0, 1).toUpperCase() + route.slice(1, route.length - 1);
+const DisplayContent = ({ item }) => {
 	return (
 		<RiseUpWhenVisible key={item.id}>
 			<div className="h-full flex flex-col rounded-lg overflow-hidden border-2 not-dark:shadow-2xl">
@@ -63,7 +62,7 @@ const DisplayContent = ({ item, route }) => {
 								to={item.links.live}
 								target="_blank"
 								className="bg-white rounded border border-black drop-shadow-black drop-shadow-lg"
-								title={`Live Preview of the ${route}`}
+								title="Live preview"
 							>
 								<FaLink className="text-3xl text-green-700 p-1" />
 							</Link>
@@ -77,11 +76,11 @@ const DisplayContent = ({ item, route }) => {
 					</div>
 					<span className="font-roboto text-justify">{item.desc}</span>
 					<div className="my-2">
-						<h3 className="font-bold">Tech Stack:</h3>
+						<h3 className="font-roboto font-bold">Tech Stack:</h3>
 						<div className="flex flex-row flex-wrap gap-2">
 							{item.techs.map((item, index) => {
 								return (
-									<span key={index} className="px-2 py-1 bg-neutral-400 dark:bg-neutral-500 rounded-lg">
+									<span key={index} className="font-roboto px-2 py-1 bg-neutral-400 dark:bg-neutral-500 rounded-lg">
 										{item}
 									</span>
 								);
