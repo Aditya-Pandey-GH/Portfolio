@@ -397,6 +397,18 @@ export const WebsitesContent = [
 			live: "https://aditya-pandey.vercel.app/",
 		},
 	},
+	{
+		id: "azfFoods",
+		name: "AZF Foods",
+		desc: "At AZF foods, We're inspired by a true love for cooking and a dedication to delivering the finest, most authentic spices. The aim is to provide high-quality, sustainably sourced spices that bring every dish to life.",
+		techs: ["Node.js", "Express.js", "MongoDB", "React.js", "Vite.js", "CSS", "Tailwind"],
+		icon: "/projects/websites/azfFoods/Icon.avif",
+		thumb: "/projects/websites/azfFoods/Thumb.avif",
+		links: {
+			github: "https://github.com/Aditya-Pandey-GH/Portfolio",
+			live: "https://aditya-pandey.vercel.app/",
+		},
+	},
 ];
 
 export const AppsContent = [
