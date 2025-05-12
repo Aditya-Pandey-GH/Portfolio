@@ -5,6 +5,7 @@ import { HiOutlinePhoto, HiMiniPhoto } from "react-icons/hi2"; // Designs
 import { PiMedalLight, PiMedalFill } from "react-icons/pi"; // Achievements
 import { BsTelephone, BsFillTelephoneFill } from "react-icons/bs"; // Connect
 
+// Sidebar
 export const SidebarContent = [
 	{
 		id: "homePage",
@@ -50,6 +51,7 @@ export const SidebarContent = [
 	},
 ];
 
+// Home Page
 export const AboutMeContent = [
 	// "Hi, I am Aditya Pandey.",
 	"I am a Web Developer. I have a good command over tech stacks like MERN Stack and I am currently exploring Vite JS.",
@@ -153,6 +155,7 @@ export const WorkXPContent = [
 	},
 ];
 
+// Skills Page
 export const LangsContent = [
 	{
 		id: "html",
@@ -309,6 +312,7 @@ export const ToolsContent = [
 			},
 			{
 				id: "adobe-ps",
+				// name: "Adobe Photoshop",
 				name: "Photoshop",
 				icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/photoshop/photoshop-original.svg",
 			},
@@ -325,5 +329,99 @@ export const ToolsContent = [
 				icon: "https://cdn.jsdelivr.net/gh/GameZonedYT/Logos@main/Logos/filmora.svg",
 			},
 		],
+	},
+];
+
+// Projects Page
+export const GamesContent = [
+	{
+		id: "flappy",
+		name: "Flappy Bird (Clone)",
+		desc: "Flappy Bird is a very popular game launched in 2013. This project is a clone of the original Flappy Bird game.",
+		techs: ["Unity", "C#"],
+		icon: "/projects/games/flappy/Icon.avif",
+		thumb: "/projects/games/flappy/Thumb.avif",
+		links: {
+			github: "https://github.com/Aditya-Pandey-GH/Flappy-Bird-Clone",
+			live: "https://github.com/Aditya-Pandey-GH/Flappy-Bird-Clone/releases/latest",
+		},
+	},
+];
+
+export const WebsitesContent = [
+	// {
+	// 	id: "jimsPrePlace",
+	// 	name: "JIMS Pre-Placement Portal {In Progress}",
+	// 	desc: "JIMS Pre-Placement Portal is a web for all the pre-placement related content for JIMS, making it easy for the students to access it later. Also, with a simple admin portal, the admin can easily add or delete or modify multiple things in the website.",
+	// 	techs: ["Node.js", "Express.js", "MongoDB", "React", "Cascading Style Sheets (CSS)"],
+	// 	icon: "",
+	// 	thumb: "",
+	// 	links: {
+	// 		github: "",
+	// 		live: "",
+	// 	},
+	// },
+	// {
+	// 	id: "healthElev",
+	// 	name: "Health Elevator",
+	// 	desc: "Health Elevator is a website that helps the users to search for the nearby medical stores, and set the reminders for medicines. All the reminders will be sent to your WhatsApp number that you want to recieve your reminders on, since most of the people are active on WhatsApp.",
+	// 	techs: ["Node.js", "Express.js", "MongoDB", "React", "Casacading Style Sheets (CSS)"],
+	// 	icon: "",
+	// 	thumb: "",
+	// 	links: {
+	// 		github: "",
+	// 		live: "",
+	// 	},
+	// },
+	{
+		id: "evilSimon",
+		name: "Evil Simon",
+		desc: "Evil Simon is the hard mode of Simon Says game. The concept of this game is same as the original Simon Says game, but the Evil Simon has a bit of difficulty to offer, and you have to overcome that difficulty, by making and breaking high scores.",
+		techs: ["React.js", "Vite.js", "CSS"],
+		icon: "/projects/websites/evilSimon/Icon.avif",
+		thumb: "/projects/websites/evilSimon/Thumb.avif",
+		links: {
+			github: "https://github.com/Aditya-Pandey-GH/Evil-Simon",
+			live: "https://evil-simon.vercel.app",
+		},
+	},
+	{
+		id: "portfolio",
+		name: "Aditya Pandey's Portfolio Website",
+		desc: "This is my portfolio website. My skills, achievements, work and professional work are all mentioned on this website.",
+		techs: ["Node.js", "Express.js", "MongoDB", "React.js", "Vite.js", "CSS", "Tailwind"],
+		icon: "/projects/websites/portfolio/Icon.avif",
+		thumb: "/projects/websites/portfolio/Thumb.avif",
+		links: {
+			github: "https://github.com/Aditya-Pandey-GH/Portfolio",
+			live: "https://aditya-pandey.vercel.app/",
+		},
+	},
+];
+
+export const AppsContent = [
+	{
+		id: "miniGames",
+		name: "Mini Games",
+		desc: "Mini Games is a command line based Python project. This project contains a set games for different purposes, such as fun games and mind games.",
+		techs: ["Python", "MySQL"],
+		icon: "/projects/apps/miniGames/Icon.avif",
+		thumb: "/projects/apps/miniGames/Thumb.avif",
+		links: {
+			github: "https://github.com/Aditya-Pandey-GH/G-12",
+			live: "",
+		},
+	},
+	{
+		id: "miniGamesPlus",
+		name: "Mini Games Plus",
+		desc: "Mini Games is a Graphical User Interface based Python project. Using libraries like tkinter and customtkinter, this project aims to improve the original G-12 project, by adding an interactable GUI.",
+		techs: ["Python", "SQLite"],
+		icon: "/projects/apps/miniGamesPlus/Icon.avif",
+		thumb: "/projects/apps/miniGamesPlus/Thumb.avif",
+		links: {
+			github: "https://github.com/Aditya-Pandey-GH/G-12-Plus",
+			live: "",
+		},
 	},
 ];

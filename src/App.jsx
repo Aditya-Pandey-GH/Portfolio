@@ -1,12 +1,13 @@
 import { Routes, Route } from "react-router-dom";
-import Home from "./pages/Home";
-import Skills from "./pages/Skills";
-import Projects from "./pages/Projects";
+import Home from "./pages/Home/Home";
+import Skills from "./pages/Skills/Skills";
+import Projects from "./pages/Projects/Projects";
 import Designs from "./pages/Designs";
 import Achievements from "./pages/Achievements";
 import Connect from "./pages/Connect";
 import Sidebar from "./components/Sidebar";
 import NotFound from "./components/NotFound";
+import ProjectCategory from "./pages/Projects/ProjectCategory";
 
 const App = () => {
 	return (
@@ -18,6 +19,10 @@ const App = () => {
 						<Route path="/" element={<Home />} />
 						<Route path="/skills" element={<Skills />} />
 						<Route path="/projects" element={<Projects />} />
+						<Route path="/projects/:projectCategory" element={<ProjectCategory />} />
+						{/* <Route path="/projects/games" element={<Projects />} />
+						<Route path="/projects/websites" element={<Projects />} />
+						<Route path="/projects/apps" element={<Projects />} /> */}
 						<Route path="/designs" element={<Designs />} />
 						<Route path="/achievements" element={<Achievements />} />
 						<Route path="/connect" element={<Connect />} />

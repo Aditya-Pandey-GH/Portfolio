@@ -1,8 +1,8 @@
-import { RiseUpWhenVisible } from "../components/anims";
-import { AboutMeContent, EducationContent, WorkXPContent } from "../components/content";
-import Cover from "../components/Cover";
-import EducationTimeline from "../components/Timelines/EducationTimeline";
-// import WorkXPTimeline from "../components/Timelines/WorkXPTimeline";
+import { RiseUpWhenVisible } from "../../components/anims";
+import { AboutMeContent, EducationContent, WorkXPContent } from "../../components/content";
+import Cover from "../../components/Cover";
+import EducationTimeline from "./EducationTimeline";
+// import WorkXPTimeline from "./WorkXPTimeline";
 
 const Home = () => {
 	return (

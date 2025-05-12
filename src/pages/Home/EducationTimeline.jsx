@@ -5,7 +5,7 @@ import TimelineConnector from "@mui/lab/TimelineConnector";
 import TimelineContent from "@mui/lab/TimelineContent";
 import TimelineDot from "@mui/lab/TimelineDot";
 import { useMediaQuery, useTheme } from "@mui/material";
-import { RiseUpWhenVisible } from "../anims";
+import { RiseUpWhenVisible } from "../../components/anims";
 
 const EducationTimeline = ({ content = [] }) => {
 	const theme = useTheme();
@@ -14,6 +14,7 @@ const EducationTimeline = ({ content = [] }) => {
 	return (
 		<Timeline position={isMobile ? "right" : "alternate"} className="my-4 !p-0">
 			{content.map((item, index) => (
+				// {content.map((item, index) => (
 				<TimelineItem
 					key={item.id}
 					className="*:content-none"

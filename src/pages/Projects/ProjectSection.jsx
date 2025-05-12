@@ -1,0 +1,97 @@
+import { Link } from "react-router-dom";
+import { RiseUpWhenVisible } from "../../components/anims";
+
+import { FaGithub, FaLink } from "react-icons/fa";
+// import { useEffect, useState } from "react";
+
+const ProjectSection = ({ heading, route, content }) => {
+	// const [projects, setProjects] = useState(content);
+
+	return (
+		<RiseUpWhenVisible>
+			<section className="flex flex-col mt-8 sm:mt-12 mx-4 sm:mx-8 leading-5 sm:leading-7">
+				<div className="flex flex-row justify-between">
+					<h2 className="font-khand font-bold text-light dark:text-dark text-[clamp(1.25rem,4.5dvw,2rem)]">{heading}</h2>
+					{content.length > 3 && route && (
+						<Link to={`/projects/${route}`} className="hover:opacity-50 transition-opacity duration-300 ease-in-out">
+							<span className="font-roboto !tracking-widest text-black dark:text-white text-[clamp(0.75rem,3dvw,1rem)]">View All</span>
+						</Link>
+					)}
+				</div>
+				<div className="flex justify-center">
+					<hr className="w-full border rounded-full text-neutral-500/50 dark:text-neutral-300/50" />
+				</div>
+				<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 my-8 mx-4 gap-x-4 gap-y-8">
+					{content.length > 3 && route
+						? content.slice(0, 3).map((item) => {
+								return <DisplayContent key={item.id} item={item} route={route} />;
+						  })
+						: content.map((item) => {
+								return <DisplayContent key={item.id} item={item} route={route} />;
+						  })}
+				</div>
+			</section>
+		</RiseUpWhenVisible>
+	);
+};
+
+const DisplayContent = ({ item, route }) => {
+	route = route.slice(0, 1).toUpperCase() + route.slice(1, route.length - 1);
+	return (
+		<RiseUpWhenVisible key={item.id}>
+			<div className="h-full flex flex-col rounded-lg overflow-hidden border-2 not-dark:shadow-2xl">
+				<article className="relative">
+					<img src={item.thumb} alt={item.id} className="" />
+					<img
+						src={item.icon}
+						alt={item.id}
+						className="w-20 xs:w-28 rounded-full absolute -bottom-10 xs:-bottom-14 left-2 md:left-4 border-2 border-black"
+					/>
+					<div className="absolute -bottom-12 right-2 flex flex-row gap-2">
+						{item.links.github && (
+							<Link
+								to={item.links.github}
+								target="_blank"
+								className="bg-white rounded border border-black drop-shadow-black drop-shadow-lg"
+								title="Source Code on GitHub"
+							>
+								<FaGithub className="text-3xl text-black p-1" />
+							</Link>
+						)}
+						{item.links.live && (
+							<Link
+								to={item.links.live}
+								target="_blank"
+								className="bg-white rounded border border-black drop-shadow-black drop-shadow-lg"
+								title={`Live Preview of the ${route}`}
+							>
+								<FaLink className="text-3xl text-green-700 p-1" />
+							</Link>
+						)}
+					</div>
+				</article>
+				<div className="flex flex-col p-4 mt-8 xs:mt-12">
+					<div className="w-fit mb-4">
+						<span className="text-light dark:text-dark font-roboto font-bold mb-2">{item.name}</span>
+						<hr className="w-full text-light dark:text-dark -mt-1" />
+					</div>
+					<span className="font-roboto text-justify">{item.desc}</span>
+					<div className="my-2">
+						<h3 className="font-bold">Tech Stack:</h3>
+						<div className="flex flex-row flex-wrap gap-2">
+							{item.techs.map((item, index) => {
+								return (
+									<span key={index} className="px-2 py-1 bg-neutral-400 dark:bg-neutral-500 rounded-lg">
+										{item}
+									</span>
+								);
+							})}
+						</div>
+					</div>
+				</div>
+			</div>
+		</RiseUpWhenVisible>
+	);
+};
+
+export default ProjectSection;

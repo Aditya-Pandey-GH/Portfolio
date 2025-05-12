@@ -103,10 +103,10 @@ const Sidebar = () => {
 										<button
 											// to={item.path}
 											className={`w-full flex items-center gap-2 p-4 relative cursor-pointer group ${
-												item.path == location.pathname && "bg-neutral-200 dark:bg-neutral-700"
+												item.path === "/" + location.pathname.split("/")[1] && "bg-neutral-200 dark:bg-neutral-700"
 											}`}
 											onClick={() => {
-												if (item.path !== location.pathname) {
+												if (item.path !== "/" + location.pathname.split("/")[1]) {
 													navigate(item.path);
 													// navigate(item.path, { replace: true });
 												}
@@ -115,16 +115,16 @@ const Sidebar = () => {
 										>
 											<div
 												className={`absolute top-0 left-0 w-1 h-full ${
-													item.path === location.pathname && "bg-light dark:bg-dark"
+													item.path === "/" + location.pathname.split("/")[1] && "bg-light dark:bg-dark"
 												}`}
 											></div>
 											<span className="w-8 h-8 mx-3 flex items-center text-2xl text-black dark:text-white group-hover:text-light group-hover:dark:text-dark transition-colors ease-in-out duration-300">
-												{item.path == location.pathname ? item.selectedLogo : item.logo}
+												{item.path == "/" + location.pathname.split("/")[1] ? item.selectedLogo : item.logo}
 											</span>
 											<span
 												className={`font-iceberg group-hover:text-light group-hover:dark:text-dark transition-colors ease-in-out duration-300 ${
 													isSidebarOpen ? "opacity-100" : "opacity-0"
-												} ${item.path == location.pathname && "!text-light dark:!text-dark"}`}
+												} ${item.path == "/" + location.pathname.split("/")[1] && "!text-light dark:!text-dark"}`}
 											>
 												{item.name}
 											</span>
