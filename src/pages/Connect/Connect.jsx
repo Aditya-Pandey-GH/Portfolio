@@ -1,5 +1,6 @@
-import { RiseUpWhenVisible } from "../../components/anims";
+import ConnectSubSet from "./ConnectSubSet";
 import Cover from "../../components/Cover";
+import { SocialContent } from "../../components/content";
 
 const Connect = () => {
 	return (
@@ -8,9 +9,7 @@ const Connect = () => {
 			<Cover />
 
 			{/* Connect */}
-			<RiseUpWhenVisible>
-				<div>Connect</div>
-			</RiseUpWhenVisible>
+			<ConnectSubSet heading={"SOCIAL MEDIA"} content={SocialContent} />
 		</>
 	);
 };

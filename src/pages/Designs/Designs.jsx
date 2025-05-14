@@ -5,12 +5,13 @@ import Cover from "../../components/Cover";
 import { useState } from "react";
 import YouTubeLoader from "./YouTubeLoader";
 import { FaCircleChevronDown } from "react-icons/fa6";
+import { FaAngleDoubleDown, FaAngleDoubleUp } from "react-icons/fa";
 
 const Designs = () => {
 	const [viewPosters, setViewPosters] = useState(false);
 	const [viewThumbs, setViewThumbs] = useState(false);
-	const [viewOthers, setViewOthers] = useState(false);
 	const [viewNewsletters, setViewNewsletters] = useState(false);
+	const [viewOthers, setViewOthers] = useState(false);
 
 	return (
 		<>
@@ -18,7 +19,7 @@ const Designs = () => {
 			<Cover />
 
 			{/* Posters */}
-			<RiseUpWhenVisible>
+			<RiseUpWhenVisible className="flex flex-col justify-center items-center">
 				<section className="flex flex-col mt-8 sm:mt-12 mx-4 sm:mx-8">
 					<div className="flex flex-row justify-between">
 						<h2 className="font-khand font-bold text-light dark:text-dark text-[clamp(1.25rem,4.5dvw,2rem)]">POSTERS</h2>
@@ -46,10 +47,34 @@ const Designs = () => {
 						))}
 					</div>
 				</section>
+
+				{/* See More/Less */}
+				<button
+					className="font-roboto !tracking-widest cursor-pointer text-[clamp(0.75rem,3dvw,1rem)] px-4"
+					onClick={() => setViewPosters(!viewPosters)}
+				>
+					<div className="flex flex-row justify-center items-center gap-4 w-full h-full px-6 py-3 rounded-2xl border border-light dark:border-dark hover:bg-light dark:hover:bg-dark group transition-color duration-300 ease-in-out">
+						{!viewPosters ? (
+							<>
+								<span className="font-bold text-[clamp(1rem,2dvw,1.25rem)] text-black dark:text-white group-hover:text-white group-hover:dark:text-black transition-color duration-300 ease-in-out">
+									See More
+								</span>
+								<FaAngleDoubleDown className="text-[clamp(1rem,2dvw,1.25rem)] text-black dark:text-white group-hover:text-white group-hover:dark:text-black transition-color duration-300 ease-in-out" />
+							</>
+						) : (
+							<>
+								<span className="font-bold text-[clamp(1rem,2dvw,1.25rem)] text-black dark:text-white group-hover:text-white group-hover:dark:text-black transition-color duration-300 ease-in-out">
+									See Less
+								</span>
+								<FaAngleDoubleUp className="text-[clamp(1rem,2dvw,1.25rem)] text-black dark:text-white group-hover:text-white group-hover:dark:text-black transition-color duration-300 ease-in-out" />
+							</>
+						)}
+					</div>
+				</button>
 			</RiseUpWhenVisible>
 
 			{/* Thumbnails */}
-			<RiseUpWhenVisible>
+			<RiseUpWhenVisible className="flex flex-col justify-center items-center">
 				<section className="flex flex-col mt-8 sm:mt-12 mx-4 sm:mx-8">
 					<div className="flex flex-row justify-between">
 						<h2 className="font-khand font-bold text-light dark:text-dark text-[clamp(1.25rem,4.5dvw,2rem)]">THUMBNAILS</h2>
@@ -75,10 +100,34 @@ const Designs = () => {
 						))}
 					</div>
 				</section>
+
+				{/* See More/Less */}
+				<button
+					className="font-roboto !tracking-widest cursor-pointer text-[clamp(0.75rem,3dvw,1rem)] px-4"
+					onClick={() => setViewThumbs(!viewThumbs)}
+				>
+					<div className="flex flex-row justify-center items-center gap-4 w-full h-full px-6 py-3 rounded-2xl border border-light dark:border-dark hover:bg-light dark:hover:bg-dark group transition-color duration-300 ease-in-out">
+						{!viewThumbs ? (
+							<>
+								<span className="font-bold text-[clamp(1rem,2dvw,1.25rem)] text-black dark:text-white group-hover:text-white group-hover:dark:text-black transition-color duration-300 ease-in-out">
+									See More
+								</span>
+								<FaAngleDoubleDown className="text-[clamp(1rem,2dvw,1.25rem)] text-black dark:text-white group-hover:text-white group-hover:dark:text-black transition-color duration-300 ease-in-out" />
+							</>
+						) : (
+							<>
+								<span className="font-bold text-[clamp(1rem,2dvw,1.25rem)] text-black dark:text-white group-hover:text-white group-hover:dark:text-black transition-color duration-300 ease-in-out">
+									See Less
+								</span>
+								<FaAngleDoubleUp className="text-[clamp(1rem,2dvw,1.25rem)] text-black dark:text-white group-hover:text-white group-hover:dark:text-black transition-color duration-300 ease-in-out" />
+							</>
+						)}
+					</div>
+				</button>
 			</RiseUpWhenVisible>
 
 			{/* Newsletters */}
-			<RiseUpWhenVisible>
+			<RiseUpWhenVisible className="flex flex-col justify-center items-center">
 				<section className="flex flex-col mt-8 sm:mt-12 mx-4 sm:mx-8">
 					<div className="flex flex-row justify-between">
 						<h2 className="font-khand font-bold text-light dark:text-dark text-[clamp(1.25rem,4.5dvw,2rem)]">NEWSLETTERS</h2>
@@ -109,10 +158,34 @@ const Designs = () => {
 						))}
 					</div>
 				</section>
+
+				{/* See More/Less */}
+				<button
+					className="font-roboto !tracking-widest cursor-pointer text-[clamp(0.75rem,3dvw,1rem)] px-4"
+					onClick={() => setViewNewsletters(!viewNewsletters)}
+				>
+					<div className="flex flex-row justify-center items-center gap-4 w-full h-full px-6 py-3 rounded-2xl border border-light dark:border-dark hover:bg-light dark:hover:bg-dark group transition-color duration-300 ease-in-out">
+						{!viewNewsletters ? (
+							<>
+								<span className="font-bold text-[clamp(1rem,2dvw,1.25rem)] text-black dark:text-white group-hover:text-white group-hover:dark:text-black transition-color duration-300 ease-in-out">
+									See More
+								</span>
+								<FaAngleDoubleDown className="text-[clamp(1rem,2dvw,1.25rem)] text-black dark:text-white group-hover:text-white group-hover:dark:text-black transition-color duration-300 ease-in-out" />
+							</>
+						) : (
+							<>
+								<span className="font-bold text-[clamp(1rem,2dvw,1.25rem)] text-black dark:text-white group-hover:text-white group-hover:dark:text-black transition-color duration-300 ease-in-out">
+									See Less
+								</span>
+								<FaAngleDoubleUp className="text-[clamp(1rem,2dvw,1.25rem)] text-black dark:text-white group-hover:text-white group-hover:dark:text-black transition-color duration-300 ease-in-out" />
+							</>
+						)}
+					</div>
+				</button>
 			</RiseUpWhenVisible>
 
 			{/* Other Designs */}
-			<RiseUpWhenVisible>
+			<RiseUpWhenVisible className="flex flex-col justify-center items-center mb-8">
 				<section className="flex flex-col mt-8 sm:mt-12 mx-4 sm:mx-8">
 					<div className="flex flex-row justify-between">
 						<h2 className="font-khand font-bold text-light dark:text-dark text-[clamp(1.25rem,4.5dvw,2rem)]">OTHER DESIGNS</h2>
@@ -141,6 +214,30 @@ const Designs = () => {
 						))}
 					</div>
 				</section>
+
+				{/* See More/Less */}
+				<button
+					className="font-roboto !tracking-widest cursor-pointer text-[clamp(0.75rem,3dvw,1rem)] px-4"
+					onClick={() => setViewOthers(!viewOthers)}
+				>
+					<div className="flex flex-row justify-center items-center gap-4 w-full h-full px-6 py-3 rounded-2xl border border-light dark:border-dark hover:bg-light dark:hover:bg-dark group transition-color duration-300 ease-in-out">
+						{!viewOthers ? (
+							<>
+								<span className="font-bold text-[clamp(1rem,2dvw,1.25rem)] text-black dark:text-white group-hover:text-white group-hover:dark:text-black transition-color duration-300 ease-in-out">
+									See More
+								</span>
+								<FaAngleDoubleDown className="text-[clamp(1rem,2dvw,1.25rem)] text-black dark:text-white group-hover:text-white group-hover:dark:text-black transition-color duration-300 ease-in-out" />
+							</>
+						) : (
+							<>
+								<span className="font-bold text-[clamp(1rem,2dvw,1.25rem)] text-black dark:text-white group-hover:text-white group-hover:dark:text-black transition-color duration-300 ease-in-out">
+									See Less
+								</span>
+								<FaAngleDoubleUp className="text-[clamp(1rem,2dvw,1.25rem)] text-black dark:text-white group-hover:text-white group-hover:dark:text-black transition-color duration-300 ease-in-out" />
+							</>
+						)}
+					</div>
+				</button>
 			</RiseUpWhenVisible>
 		</>
 	);

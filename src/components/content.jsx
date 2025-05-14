@@ -5,6 +5,8 @@ import { HiOutlinePhoto, HiMiniPhoto } from "react-icons/hi2"; // Designs
 import { PiMedalLight, PiMedalFill } from "react-icons/pi"; // Achievements
 import { BsTelephone, BsFillTelephoneFill } from "react-icons/bs"; // Connect
 
+import { GitHub, Instagram, LeetCode, LinkedIn, YouTube } from "../pages/Connect/SocialMediaLogo";
+
 // Sidebar
 export const SidebarContent = [
 	{
@@ -715,7 +717,7 @@ export const XPContent = [
 	},
 ];
 
-export const AchievementsContent = [
+export const BigEventsContent = [
 	{
 		id: "codeIt",
 		name: "Code It",
@@ -767,3 +769,47 @@ export const AchievementsContent = [
 ];
 
 // Connect Page
+export const SocialContent = [
+	{
+		id: "professional",
+		title: "Professional Accounts",
+		tools: [
+			{
+				id: "github",
+				name: "GitHub",
+				username: "Aditya-Pandey-GH",
+				icon: <GitHub />,
+			},
+			{
+				id: "linkedin",
+				name: "LinkedIn",
+				username: "aditya-pandey-in",
+				icon: <LinkedIn />,
+			},
+			{
+				id: "leetcode",
+				name: "LeetCode",
+				username: "Aditya-Pandey-LC",
+				icon: <LeetCode />,
+			},
+		],
+	},
+	{
+		id: "personal",
+		title: "Personal Accounts",
+		tools: [
+			{
+				id: "youtube",
+				name: "YouTube",
+				username: "GameZonedYT",
+				icon: <YouTube />,
+			},
+			{
+				id: "instagram",
+				name: "Instagram",
+				username: "adipandey.in",
+				icon: <Instagram />,
+			},
+		],
+	},
+];
