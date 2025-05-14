@@ -13,7 +13,7 @@ const EducationTimeline = ({ content = [] }) => {
 
 	return (
 		<Timeline position={isMobile ? "right" : "alternate"} className="my-4 !p-0">
-			{content.map((item, index) => (
+			{content.map((item) => (
 				// {content.map((item, index) => (
 				<TimelineItem
 					key={item.id}

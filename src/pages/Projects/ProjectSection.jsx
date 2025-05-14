@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import { RiseUpWhenVisible } from "../../components/anims";
 
 import { FaGithub, FaLink } from "react-icons/fa";
+import { FaCircleChevronDown } from "react-icons/fa6";
 // import { useEffect, useState } from "react";
 
 const ProjectSection = ({ heading, route, content }) => {
@@ -9,12 +10,23 @@ const ProjectSection = ({ heading, route, content }) => {
 
 	return (
 		<RiseUpWhenVisible>
-			<section className="flex flex-col mt-8 sm:mt-12 mx-4 sm:mx-8 leading-5 sm:leading-7">
-				<div className="flex flex-row justify-between">
-					<h2 className="font-khand font-bold text-light dark:text-dark text-[clamp(1.25rem,4.5dvw,2rem)]">{heading}</h2>
+			<section className="flex flex-col mt-8 sm:mt-12 mx-4 sm:mx-8">
+				<div className="flex flex-row justify-between items-center">
+					{!route && (
+						<Link
+							to={`/projects`}
+							className="hover:opacity-50 transition-opacity duration-300 ease-in-out px-4"
+							title="Go Back to Projects Page"
+						>
+							<FaCircleChevronDown className="text-light dark:text-dark text-[clamp(1.5rem,4.5dvw,2rem)] rotate-90 transition-all duration-300 ease-in-out" />
+							{/* <span className="font-roboto !tracking-widest text-black dark:text-white text-[clamp(0.75rem,3dvw,1rem)]">View All</span> */}
+						</Link>
+					)}
+					<h2 className="flex-1 font-khand font-bold text-light dark:text-dark text-[clamp(1.25rem,4.5dvw,2rem)]">{heading}</h2>
 					{content.length > 3 && route && (
-						<Link to={`/projects/${route}`} className="hover:opacity-50 transition-opacity duration-300 ease-in-out">
-							<span className="font-roboto !tracking-widest text-black dark:text-white text-[clamp(0.75rem,3dvw,1rem)]">View All</span>
+						<Link to={`/projects/${route}`} className="hover:opacity-50 transition-opacity duration-300 ease-in-out px-4">
+							<FaCircleChevronDown className="text-light dark:text-dark text-[clamp(1.5rem,4.5dvw,2rem)] -rotate-90 transition-all duration-300 ease-in-out" />
+							{/* <span className="font-roboto !tracking-widest text-black dark:text-white text-[clamp(0.75rem,3dvw,1rem)]">View All</span> */}
 						</Link>
 					)}
 				</div>

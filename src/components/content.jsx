@@ -438,3 +438,332 @@ export const AppsContent = [
 		},
 	},
 ];
+
+// Designs Page
+export const PostersContent = [
+	{
+		// id: "ecoFriendlyDiwaliPosterMakingCompetitionOct2022",
+		title: "Eco-Friendly Diwali",
+		poster: "/designs/posters/diwaliPoster.avif",
+		// desc: "This poster was made for a poster-making competition. The theme for that event was Eco-Friendly Diwali. It was conducted on October 28, 2022 by the Eco Club of Jagan Institute of Management Studies, Sector-5, Rohini.",
+	},
+	{
+		// id: "bcaOrientationSessionDec2022",
+		title: "BCA Orientation (2022-25)",
+		poster: "/designs/posters/orientation.avif",
+		// desc: "This poster was made for the orientation session that was to be held for the students enrolled in BCA program of batch 2022-25 at Jagan Institute of Management Studies, Sector-5, Rohini. It was organized on December 1, 2022.",
+	},
+	{
+		// id: "airNoisePollutionNukkadNatakDec2022",
+		title: "Air or Noise Pollution",
+		poster: "/designs/posters/pollution.avif",
+		// desc: "This poster was made for a Nukkad Natak event which was to be organized to spread awareness about Air and Noise Pollution. It was conducted on December 13, 2022 by the Eco Club of Jagan Institute of Management Studies, Sector-5, Rohini.",
+	},
+	{
+		// id: "sankalpAuditionsDec2022",
+		title: "Sankalp Auditions (2022-25)",
+		poster: "/designs/posters/sankalp.avif",
+		// desc: "This poster was made for Sankalp, the theatre society of  Jagan Institute of Management Studies, Sector-5, Rohini, to cast students from 2022-25 batch into the society. It was scheduled for December 28, 2022.",
+	},
+	{
+		// id: "codeItTekQbeJun2023",
+		title: "Code-It",
+		poster: "/designs/posters/codeIt.avif",
+		// desc: 'This poster was made for a coding-based event named "Code-It". It was conducted on June 14, 2023 by the IT Club (TekQbe) at Jagan Institute of Management Studies, Sector-5, Rohini.',
+	},
+	{
+		// id: "farewellPartyAug2023",
+		title: "Farewell Party (2020-23)",
+		poster: "/designs/posters/farewell.avif",
+		// desc: "This poster was made for the Farewell Party of the students of MCA, BBA, BCA and BA Eco Hons.. It was conducted on August 12, 2023 by the Cultural Club at Jagan Institute of Management Studies, Sector-5, Rohini.",
+	},
+	{
+		// id: "codeHuntTekQbeEvent2023",
+		title: "Code Hunt",
+		poster: "/designs/posters/codeHunt.avif",
+		// desc: "This poster was made for a 3 round coding-based event named Code Hunt. It was conducted in 2023, by the IT Club (TekQbe) of Jagan Institute of Management Studies, Sector-5, Rohini.",
+	},
+	{
+		// id: "saiTiffinSep2024",
+		title: "Sai Tiffin Service",
+		poster: "/designs/posters/saiTiffin.avif",
+		// desc: "This poster was made to promote a local tiffin service, called SAI Tiffin Service. This tiffin service was started in September 2024, and aimed at providing the tiffin service to the people of Shalimar Garden, at a lower price than market price.",
+	},
+];
+
+export const ThumbsContent = [
+	"3oR5ldApMpI",
+	"Pb_Hk2AlZVU",
+	"sgpzSnycztg",
+	"JUWIQRL62V0",
+	"_BxOQkpalmQ",
+	"2Y0jFLYFcMY",
+	"n26HVo_bazU",
+	"VUyd6ieASus",
+	"R9yA6mmFGkI",
+	"irowRLpyCWU",
+	"maFhCbyzG5c",
+	"TnBjIPoa4R0",
+	"hVHoZ2JJUUA",
+	"QTA6ti6IzN0",
+].reverse();
+
+export const NewslettersContent = [
+	{
+		id: "oct22",
+		title: "How 5G will transform India?",
+		link: "/designs/newsletters/2022-10.pdf",
+		logo: "/designs/newsletters/2022-10.avif",
+	},
+	{
+		id: "mar23",
+		title: "The Era of AI Chatbots",
+		link: "/designs/newsletters/2023-03.pdf",
+		logo: "/designs/newsletters/2023-03.avif",
+	},
+	{
+		id: "may23",
+		title: "ChatGPT: Revolutionizing Conversational AI",
+		link: "/designs/newsletters/2023-05.pdf",
+		logo: "/designs/newsletters/2023-05.avif",
+	},
+	{
+		id: "oct23",
+		title: "Data, Data Everywhere (Part 1)",
+		link: "/designs/newsletters/2023-10.pdf",
+		logo: "/designs/newsletters/2023-10.avif",
+	},
+	{
+		id: "nov23",
+		title: "Data, Data Everywhere (Part 2)",
+		link: "/designs/newsletters/2023-11.pdf",
+		logo: "/designs/newsletters/2023-11.avif",
+	},
+];
+
+export const OtherDesignsContent = [
+	{
+		type: "Certificate",
+		// desc: "This certificate was made for an inter-college Tech Fest named Tech Jitters 2.0, which was supposed to be organized on May 1, 2024, by TekQbe, the IT Club of Jagan Institute of Management Studies, Sector-5, Rohini, but was later postponed.",
+		logo: "/designs/others/tj2Cert.avif",
+	},
+	{
+		type: "Certificate",
+		// desc: "This certificate was made for an event named Eco Art, which was done to support One For All initiative. This event started with a stage play to spread awareness about recycling of plastic waste like milk packets, followed with a art competition where students had to make either drawings or hand paintings.",
+		logo: "/designs/others/ecoArtCert.avif",
+	},
+	{
+		type: "Certificate",
+		// desc: "This certificate was made for the events that were organized by TekQbe in 2023, the IT club of Jagan Institute of Management Studies, Sector-5, Rohini. These were later updated, when the college received NAAC A++ ranking.",
+		logo: "/designs/others/tekqbeCert.avif",
+	},
+	{
+		type: "Certificate",
+		// desc: "This certificate was made for an initiative named One For All. This initiative involved collection of milk packets without clipping off the small cut-out from it, which is otherwise not easy to be recycled.",
+		logo: "/designs/others/OFACert.avif",
+	},
+	{
+		type: "Backdrop",
+		// desc: "This design was made as a backdrop for the farewell party of the MCA, BBA, BCA, and BA Eco Hons. graduates, who were paasing their respective courses in 2023, from Jagan Institute of Management Studies, Sector-5, Rohini. The event was organized by the Cultural Club of Jagan Institute of Management Studies, Sector-5, Rohini.",
+		logo: "/designs/others/farewellBG.avif",
+	},
+	{
+		type: "UI/UX Component",
+		// desc: "This design was made for a national-level hackathon named Code Kshetra, held in Februrary 2024 on 5 and 6, organized by Geek Room in association with Jagan Institute of Management Studies, Sector-5, Rohini. This design names one of the theme of the hackathon.",
+		logo: "/designs/others/ckDesign.avif",
+	},
+	{
+		type: "Memento",
+		// desc: "This design was made for the mementos, which were given to the Guest speaker, and were to be given to the student coordinators of an event named Tech Jitters, held on July 18, 2022 and organized by TekQbe, the IT club of Jagan Institute of Management Studies, Sector-5, Rohini.",
+		logo: "/designs/others/tjTrophy.avif",
+	},
+	{
+		type: "Trophy",
+		// desc: "This design was made as a header for the trophies which were given to students who took part in the Presentation Competition event, organized by the Eco Club of Jagan Institute of Management Studies, Sector-5, Rohini.",
+		logo: "/designs/others/ecoTrophy.avif",
+	},
+];
+
+// Achievements Page
+
+export const SocialWelfareContent = [
+	{
+		desc: "Performed a themed act on Republic Day to raise public awareness about the challenges faced by the elderly and the growing need for compassion toward residents of old-age homes.",
+		year: "Jan 2017",
+	},
+	{
+		desc: "Participated in a street play highlighting the dangers of air and water pollution, aiming to educate the public on their harmful effects on the environment and health.",
+		year: "Apr 2018",
+	},
+	{
+		desc: "Delivered a street performance focused on the issue of water and land pollution, emphasizing its environmental consequences and encouraging responsible waste disposal.",
+		year: "May 2019",
+	},
+	{
+		desc: "Led a plastic recycling awareness campaign through an engaging act, inspiring fellow students to actively collect and recycle plastic waste under our initiative, 'One for All'.",
+		year: "May 2022",
+	},
+	{
+		desc: "Conducted a street play dedicated to raising awareness about air pollution and its significant adverse effects on the environment and human well-being.",
+		year: "Dec 2022",
+	},
+];
+
+export const CertsContent = [
+	{
+		id: "mernTraining",
+		title: "MERN Stack Training",
+		desc: "This was awarded for the completion of Summer training of MERN stack, at Jagan Institute of Management Studies, Sector-5 (Rohini).",
+		cert: "/achievements/certs/mernStack.avif",
+		by: "Tech Explica",
+		on: "September 2023",
+	},
+	{
+		id: "ofa-bajajCert",
+		title: "Plastic Recycling",
+		desc: "This was awarded for launching a small-scale initiative (One For All), which consisted of the collection of plastic milk packets, and then sending them to plastic recyclers.",
+		cert: "/achievements/certs/oneForAll.avif",
+		by: "Bajaj & Others",
+		on: "July 2022",
+	},
+	{
+		id: "networkBulls",
+		title: "Network Bull (Cisco)",
+		desc: "This was awarded for participating in a one-day industrial visit on network implementation and cyber security.",
+		cert: "/achievements/certs/cyberSec.avif",
+		by: "Network Bull",
+		on: "May 2022",
+	},
+	{
+		id: "ipr-event",
+		title: "NIPAM",
+		desc: "This was awarded for participating in the IP Awareness Training Program under National Intellectual Property Awareness Mission, called Scope for All.",
+		cert: "/achievements/certs/scopeForAll.avif",
+		by: "NIPAM",
+		on: "February 2022",
+	},
+];
+
+export const XPContent = [
+	{
+		id: "tekqbe",
+		company: "TekQbe",
+		logo: "/achievements/xp/tekqbe.avif",
+		start: "Feb 2022",
+		end: "Jun 2024",
+		location: "Rohini, Delhi",
+		roles: [
+			{
+				role: "Club Coordinator",
+				desc: "Served as the Student Coordinator of TekQbe, the official IT club of JIMS, from Feb 2022 to Jun 2024. Led the planning and execution of various technical events and fests, while collaborating with faculty and fellow team-mates. Developed strong skills in leadership, teamwork, event coordination, and club operations.",
+			},
+			{
+				role: "Graphic Designer",
+				desc: "Worked as the Graphic Designer for TekQbe, where I created a wide range of visual assets including event posters, cover art, mementos, and certificates. Contributed to the club's branding and promotion efforts by producing consistent, high-quality graphics tailored for both print and digital platforms.",
+			},
+		],
+	},
+	{
+		id: "kaliedoscope",
+		company: "Kaleidoscope",
+		logo: "/achievements/xp/jims.avif",
+		location: "Rohini, Delhi",
+		start: "Dec 2021",
+		end: "Jun 2024",
+		roles: [
+			{
+				role: "Graphic Designer",
+				desc: "Contributed as a Graphic Designer for IT Kaleidoscope, the official IT newsletter of JIMS. Designed visually appealing layouts, cover pages, and supporting graphics to enhance the overall aesthetic and readability of each edition. Ensured consistency in design while aligning with the newsletter's theme and institutional branding.",
+			},
+			{
+				role: "Content Writer",
+				desc: "Worked as a Content Writer for IT Kaleidoscope, crafting articles, features, and write-ups on various technology-related topics. Focused on delivering clear, engaging, and informative content tailored to the newsletter's academic and tech-savvy audience. Played an active role in maintaining content quality and relevance.",
+			},
+		],
+	},
+	{
+		id: "geekRoom",
+		company: "Geek Room",
+		logo: "/achievements/xp/geekRoom.avif",
+		location: "Rohini, Delhi",
+		start: "Dec 2021",
+		end: "Jun 2024",
+		roles: [
+			{
+				role: "Event Coordinator",
+				desc: "Served as the Core Event Coordinator for Code Kshetra, a national-level hackathon organized in collaboration with Geek Room. Oversaw end-to-end event planning, logistics, and team coordination to ensure smooth execution. Applied strong organizational and leadership skills while working closely with teams, mentors, and participants across the country.",
+			},
+			{
+				role: "Graphic Designer",
+				desc: "Worked as the Lead Graphic Designer for Code Kshetra, a national-level hackathon organized with Geek Room. Created impactful visual assets for both digital and print media, including event posters, banners, and social media creatives. Also designed trophies and mementoes, contributing to the overall branding and recognition of the event. Played a key role in shaping the event's visual identity and participant experience.",
+			},
+		],
+	},
+	{
+		id: "technowhiz",
+		company: "Technowhiz",
+		logo: "/achievements/xp/technowhiz.avif",
+		location: "Rohini, Delhi",
+		start: "Dec 2021",
+		end: "Jun 2024",
+		roles: [
+			{
+				role: "Core Event Coordinator",
+				desc: "Held the position of Core Event Coordinator for Technowhiz, the Annual Infotech Symposium of JIMS. Led the coordination and execution of various symposium activities, including technical competitions, workshops, and guest sessions. Demonstrated strong skills in team management, event planning, and visual design—ensuring seamless organization and a memorable experience for all participants.",
+			},
+		],
+	},
+];
+
+export const AchievementsContent = [
+	{
+		id: "codeIt",
+		name: "Code It",
+		year: "February 2022",
+		location: "JIMS, Delhi",
+		desc: "Achieved 3rd place in the Code-It coding competition, competing against senior students from the 2nd and 3rd years as well as the MCA program.",
+		logo: "/achievements/achievements/codeIt.avif",
+	},
+	{
+		id: "ecoArt",
+		name: "Eco Art",
+		year: "May 2023",
+		location: "JIMS, Delhi",
+		desc: "Organized a large-scale event at JIMS, Sector-5, Rohini to promote awareness about plastic and milk packet recycling. Participants created posters and hand paintings highlighting environmental sustainability, and I also performed an awareness act with fellow organizers.",
+		logo: "/achievements/achievements/ofa.avif",
+	},
+	{
+		id: "techJitters",
+		name: "Tech Jitters",
+		year: "July 2022",
+		location: "JIMS, Delhi",
+		desc: "Worked as a coordinator for Tech Jitters, an inter-college technical fest hosted by TekQbe, the IT Club of JIMS, managing event logistics and participant coordination.",
+		logo: "/achievements/achievements/techJitters.avif",
+	},
+	{
+		id: "sih22",
+		name: "Smart India Hackathon 2022",
+		year: "August 2022",
+		location: "BIT Mesra, Jharkhand",
+		desc: "Secured 4th place in Smart India Hackathon 2022. Gained valuable experience in a competitive hackathon environment and deepened my understanding of real-world coding challenges.",
+		logo: "/achievements/achievements/sih.avif",
+	},
+	{
+		id: "JIH23",
+		name: "JIMS Internal Hackathon 2023",
+		year: "September 2023",
+		location: "JIMS, Delhi",
+		desc: "Won 1st place in JIMS Internal Hackathon 2023, which served as the qualifying round for Smart India Hackathon 2023, showcasing innovative problem-solving and teamwork.",
+		logo: "/achievements/achievements/sih.avif",
+	},
+	{
+		id: "codekshetra",
+		name: "Code Kshetra",
+		year: "February 2024",
+		location: "JIMS, Delhi",
+		desc: "Served as an organizer for Code Kshetra, a national-level hackathon conducted in collaboration with the Geek Room society and supported by sponsors including Coding Ninjas, Devfolio, Polygon, and Rise In.",
+		logo: "/achievements/achievements/codeKshetra.avif",
+	},
+];
+
+// Connect Page

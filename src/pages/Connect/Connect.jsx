@@ -1,5 +1,5 @@
-import { RiseUpWhenVisible } from "../components/anims";
-import Cover from "../components/Cover";
+import { RiseUpWhenVisible } from "../../components/anims";
+import Cover from "../../components/Cover";
 
 const Connect = () => {
 	return (

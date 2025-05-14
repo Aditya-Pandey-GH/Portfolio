@@ -3,7 +3,7 @@ import { RiseUpWhenVisible } from "../../components/anims";
 const SkillSet = ({ heading, content }) => {
 	return (
 		<RiseUpWhenVisible>
-			<section className="flex flex-col mt-8 sm:mt-12 mx-4 sm:mx-8 leading-5 sm:leading-7">
+			<section className="flex flex-col mt-8 sm:mt-12 mx-4 sm:mx-8">
 				<h2 className="font-khand font-bold text-light dark:text-dark text-[clamp(1.25rem,4.5dvw,2rem)]">{heading}</h2>
 				<div className="flex justify-center">
 					<hr className="w-full border rounded-full text-neutral-500/50 dark:text-neutral-300/50" />
