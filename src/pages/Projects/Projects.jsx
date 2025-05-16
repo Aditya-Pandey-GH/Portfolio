@@ -1,6 +1,6 @@
-import { AppsContent, GamesContent, WebsitesContent } from "../../components/content";
 import Cover from "../../components/Cover";
 import ProjectSection from "./ProjectSection";
+import { AppsContent, GamesContent, WebsitesContent } from "../../components/content";
 
 const Projects = () => {
 	return (

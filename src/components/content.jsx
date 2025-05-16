@@ -777,19 +777,19 @@ export const SocialContent = [
 			{
 				id: "github",
 				name: "GitHub",
-				username: "Aditya-Pandey-GH",
+				account: "https://www.github.com/Aditya-Pandey-GH",
 				icon: <GitHub />,
 			},
 			{
 				id: "linkedin",
 				name: "LinkedIn",
-				username: "aditya-pandey-in",
+				account: "https://www.linkedin.com/in/aditya-pandey-in",
 				icon: <LinkedIn />,
 			},
 			{
 				id: "leetcode",
 				name: "LeetCode",
-				username: "Aditya-Pandey-LC",
+				account: "https://www.leetcode.com/u/Aditya-Pandey-LC",
 				icon: <LeetCode />,
 			},
 		],
@@ -801,13 +801,13 @@ export const SocialContent = [
 			{
 				id: "youtube",
 				name: "YouTube",
-				username: "GameZonedYT",
+				account: "https://www.youtube.com/@GameZonedYT",
 				icon: <YouTube />,
 			},
 			{
 				id: "instagram",
 				name: "Instagram",
-				username: "adipandey.in",
+				account: "https://www.instagram.com/adipandey.in",
 				icon: <Instagram />,
 			},
 		],

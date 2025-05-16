@@ -1,6 +1,13 @@
 export const LeetCode = () => {
 	return (
-		<svg width="128" height="128" viewBox="0 0 128 128" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-20 h-20">
+		<svg
+			width="128"
+			height="128"
+			viewBox="0 0 128 128"
+			fill="none"
+			xmlns="http://www.w3.org/2000/svg"
+			className="w-[clamp(2rem,8dvw,4rem)] h-[clamp(2rem,8dvw,4rem)]"
+		>
 			<path
 				d="M87.6475 95.7883C90.5231 92.917 95.1779 92.9245 98.0443 95.8051C100.911 98.6857 100.903 103.349 98.0276 106.22L85.2585 118.97C73.478 130.734 54.2679 130.904 42.2887 119.367C42.2194 119.3 36.8854 114.07 19.2888 96.8153C7.58218 85.3367 6.41592 66.9693 17.4321 55.1742L37.9718 33.1815C48.9052 21.4739 69.0593 20.1943 81.5602 30.3037L100.215 45.3905C103.374 47.9454 103.868 52.5821 101.317 55.7468C98.7667 58.9115 94.1381 59.4058 90.9789 56.8509L72.3242 41.7642C65.7865 36.4772 54.3503 37.2033 48.709 43.244L28.1691 65.237C22.8061 70.9791 23.3935 80.2295 29.5739 86.2896C42.4954 98.9601 52.4539 108.725 52.4654 108.736C58.6933 114.734 68.7635 114.645 74.8783 108.539L87.6475 95.7883Z"
 				fill="#FFA116"
@@ -24,7 +31,14 @@ export const LeetCode = () => {
 
 export const GitHub = () => {
 	return (
-		<svg width="128" height="128" viewBox="0 0 128 128" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-20 h-20">
+		<svg
+			width="128"
+			height="128"
+			viewBox="0 0 128 128"
+			fill="none"
+			xmlns="http://www.w3.org/2000/svg"
+			className="w-[clamp(2rem,8dvw,4rem)] h-[clamp(2rem,8dvw,4rem)]"
+		>
 			<g clipPath="url(#clip0_2019_7)">
 				<path
 					d="M64 128C99.3462 128 128 99.3462 128 64C128 28.6538 99.3462 0 64 0C28.6538 0 0 28.6538 0 64C0 99.3462 28.6538 128 64 128Z"
@@ -64,7 +78,7 @@ export const GitHub = () => {
 
 export const LinkedIn = () => {
 	return (
-		<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" className="w-20 h-20">
+		<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" className="w-[clamp(2rem,8dvw,4rem)] h-[clamp(2rem,8dvw,4rem)]">
 			<path fill="#0076b2" d="M116 3H12a8.91 8.91 0 00-9 8.8v104.42a8.91 8.91 0 009 8.78h104a8.93 8.93 0 009-8.81V11.77A8.93 8.93 0 00116 3z" />
 			<path
 				fill="#fff"
@@ -76,7 +90,12 @@ export const LinkedIn = () => {
 
 export const YouTube = () => {
 	return (
-		<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 28.57  20" focusable="false" className="w-20 h-20">
+		<svg
+			xmlns="http://www.w3.org/2000/svg"
+			viewBox="0 0 28.57  20"
+			focusable="false"
+			className="w-[clamp(2rem,8dvw,4rem)] h-[clamp(2rem,8dvw,4rem)]"
+		>
 			<svg viewBox="0 0 28.57 20" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg">
 				<g>
 					<path
@@ -92,7 +111,13 @@ export const YouTube = () => {
 
 export const Instagram = () => {
 	return (
-		<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3364.7 3364.7" width="3365" height="3365" className="w-20 h-20">
+		<svg
+			xmlns="http://www.w3.org/2000/svg"
+			viewBox="0 0 3364.7 3364.7"
+			width="3365"
+			height="3365"
+			className="w-[clamp(2rem,8dvw,4rem)] h-[clamp(2rem,8dvw,4rem)]"
+		>
 			<defs>
 				<radialGradient id="0" cx="217.76" cy="3290.99" r="4271.92" gradientUnits="userSpaceOnUse">
 					<stop offset=".09" stopColor="#fa8f21" />

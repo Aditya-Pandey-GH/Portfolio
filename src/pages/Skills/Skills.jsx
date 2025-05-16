@@ -1,7 +1,7 @@
-import { DBsContent, LangsContent, TechsContent, ToolsContent } from "../../components/content";
-import Cover from "../../components/Cover";
 import SkillSet from "./SkillSet";
 import SkillSubSet from "./SkillSubSet";
+import Cover from "../../components/Cover";
+import { DBsContent, LangsContent, TechsContent, ToolsContent } from "../../components/content";
 
 const Skills = () => {
 	return (

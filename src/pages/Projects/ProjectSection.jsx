@@ -1,9 +1,9 @@
+// import { useState } from "react";
 import { Link } from "react-router-dom";
-import { RiseUpWhenVisible } from "../../components/anims";
-
 import { FaGithub, FaLink } from "react-icons/fa";
 import { FaCircleChevronDown } from "react-icons/fa6";
-// import { useEffect, useState } from "react";
+
+import { RiseUpWhenVisible } from "../../components/anims";
 
 const ProjectSection = ({ heading, route, content }) => {
 	// const [projects, setProjects] = useState(content);
@@ -34,13 +34,16 @@ const ProjectSection = ({ heading, route, content }) => {
 					<hr className="w-full border rounded-full text-neutral-500/50 dark:text-neutral-300/50" />
 				</div>
 				<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 my-8 mx-4 gap-x-4 gap-y-8">
-					{content.length > 3 && route
+					{/* {content.length > 3 && route
 						? content.slice(0, 3).map((item) => {
 								return <DisplayContent key={item.id} item={item} />;
 						  })
 						: content.map((item) => {
 								return <DisplayContent key={item.id} item={item} />;
-						  })}
+						  })} */}
+					{(content.length > 3 && route ? content.slice(0, 3) : content).map((item) => {
+						return <DisplayContent key={item.id} item={item} />;
+					})}
 				</div>
 			</section>
 		</RiseUpWhenVisible>

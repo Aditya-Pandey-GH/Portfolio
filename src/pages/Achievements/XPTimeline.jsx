@@ -4,11 +4,12 @@ import TimelineSeparator from "@mui/lab/TimelineSeparator";
 import TimelineConnector from "@mui/lab/TimelineConnector";
 import TimelineContent from "@mui/lab/TimelineContent";
 import TimelineDot from "@mui/lab/TimelineDot";
-import { useTheme } from "@mui/material";
+// import { useTheme } from "@mui/material";
+
 import { RiseUpWhenVisible } from "../../components/anims";
 
 const XPTimeline = ({ content = [] }) => {
-	const theme = useTheme();
+	// const theme = useTheme();
 	// const isMobile = useMediaQuery(theme.breakpoints.down("md")); // true for screen <600px
 
 	return (

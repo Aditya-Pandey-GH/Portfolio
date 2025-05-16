@@ -1,12 +1,11 @@
-import { RiseUpWhenVisible } from "../../components/anims";
-import Cover from "../../components/Cover";
-// import BulletPointer from "../../components/BulletPointer";
-import { BigEventsContent, CertsContent, SocialWelfareContent, XPContent } from "../../components/content";
 import { useState } from "react";
 import { Link } from "react-router-dom";
+
+import Cover from "../../components/Cover";
 import XPTimeline from "./XPTimeline";
-import { FaCircleChevronDown } from "react-icons/fa6";
-import { FaAngleDoubleDown, FaAngleDoubleUp } from "react-icons/fa";
+import SeeMore from "../../components/SeeMore";
+import { RiseUpWhenVisible } from "../../components/anims";
+import { BigEventsContent, CertsContent, SocialWelfareContent, XPContent } from "../../components/content";
 
 const Achievements = () => {
 	const [viewCerts, setViewCerts] = useState(false);
@@ -51,7 +50,7 @@ const Achievements = () => {
 				<section className="flex flex-col mt-8 sm:mt-12 mx-4 sm:mx-8">
 					<div className="flex flex-row justify-between">
 						<h2 className="font-khand font-bold text-light dark:text-dark text-[clamp(1.25rem,4.5dvw,2rem)]">INFORMAL EXPERIENCE</h2>
-						<button
+						{/* <button
 							className="font-roboto !tracking-widest cursor-pointer text-black dark:text-white text-[clamp(0.75rem,3dvw,1rem)] hover:opacity-50 transition-opacity duration-300 ease-in-out px-4"
 							onClick={() => setViewXP(!viewXP)}
 						>
@@ -60,7 +59,7 @@ const Achievements = () => {
 							) : (
 								<FaCircleChevronDown className="text-light dark:text-dark text-[clamp(1.5rem,4dvw,2rem)] rotate-180 transition-all duration-300 ease-in-out" />
 							)}
-						</button>
+						</button> */}
 					</div>
 					<div className="flex justify-center">
 						<hr className="w-full border rounded-full text-neutral-500/50 dark:text-neutral-300/50" />
@@ -85,28 +84,7 @@ const Achievements = () => {
 				</section>
 
 				{/* See More/Less */}
-				<button
-					className="font-roboto !tracking-widest cursor-pointer text-[clamp(0.75rem,3dvw,1rem)] px-4"
-					onClick={() => setViewXP(!viewXP)}
-				>
-					<div className="flex flex-row justify-center items-center gap-4 w-full h-full px-6 py-3 rounded-2xl border border-light dark:border-dark hover:bg-light dark:hover:bg-dark group transition-color duration-300 ease-in-out">
-						{!viewXP ? (
-							<>
-								<span className="font-bold text-[clamp(1rem,2dvw,1.25rem)] text-black dark:text-white group-hover:text-white group-hover:dark:text-black transition-color duration-300 ease-in-out">
-									See More
-								</span>
-								<FaAngleDoubleDown className="text-[clamp(1rem,2dvw,1.25rem)] text-black dark:text-white group-hover:text-white group-hover:dark:text-black transition-color duration-300 ease-in-out" />
-							</>
-						) : (
-							<>
-								<span className="font-bold text-[clamp(1rem,2dvw,1.25rem)] text-black dark:text-white group-hover:text-white group-hover:dark:text-black transition-color duration-300 ease-in-out">
-									See Less
-								</span>
-								<FaAngleDoubleUp className="text-[clamp(1rem,2dvw,1.25rem)] text-black dark:text-white group-hover:text-white group-hover:dark:text-black transition-color duration-300 ease-in-out" />
-							</>
-						)}
-					</div>
-				</button>
+				<SeeMore expanded={viewXP} setExpanded={setViewXP} />
 			</RiseUpWhenVisible>
 
 			{/* Big Events */}
@@ -114,7 +92,7 @@ const Achievements = () => {
 				<section className="flex flex-col mt-8 sm:mt-12 mx-4 sm:mx-8">
 					<div className="flex flex-row justify-between">
 						<h2 className="font-khand font-bold text-light dark:text-dark text-[clamp(1.25rem,4.5dvw,2rem)]">BIG EVENTS</h2>
-						<button
+						{/* <button
 							className="font-roboto !tracking-widest cursor-pointer text-black dark:text-white text-[clamp(0.75rem,3dvw,1rem)] hover:opacity-50 transition-opacity duration-300 ease-in-out px-4"
 							onClick={() => setViewBigEvents(!viewBigEvents)}
 						>
@@ -123,7 +101,7 @@ const Achievements = () => {
 							) : (
 								<FaCircleChevronDown className="text-light dark:text-dark text-[clamp(1.5rem,4dvw,2rem)] rotate-180 transition-all duration-300 ease-in-out" />
 							)}
-						</button>
+						</button> */}
 					</div>
 					<div className="flex justify-center">
 						<hr className="w-full border rounded-full text-neutral-500/50 dark:text-neutral-300/50" />
@@ -153,28 +131,7 @@ const Achievements = () => {
 				</section>
 
 				{/* See More/Less */}
-				<button
-					className="font-roboto !tracking-widest cursor-pointer text-[clamp(0.75rem,3dvw,1rem)] px-4"
-					onClick={() => setViewBigEvents(!viewBigEvents)}
-				>
-					<div className="flex flex-row justify-center items-center gap-4 w-full h-full px-6 py-3 rounded-2xl border border-light dark:border-dark hover:bg-light dark:hover:bg-dark group transition-color duration-300 ease-in-out">
-						{!viewBigEvents ? (
-							<>
-								<span className="font-bold text-[clamp(1rem,2dvw,1.25rem)] text-black dark:text-white group-hover:text-white group-hover:dark:text-black transition-color duration-300 ease-in-out">
-									See More
-								</span>
-								<FaAngleDoubleDown className="text-[clamp(1rem,2dvw,1.25rem)] text-black dark:text-white group-hover:text-white group-hover:dark:text-black transition-color duration-300 ease-in-out" />
-							</>
-						) : (
-							<>
-								<span className="font-bold text-[clamp(1rem,2dvw,1.25rem)] text-black dark:text-white group-hover:text-white group-hover:dark:text-black transition-color duration-300 ease-in-out">
-									See Less
-								</span>
-								<FaAngleDoubleUp className="text-[clamp(1rem,2dvw,1.25rem)] text-black dark:text-white group-hover:text-white group-hover:dark:text-black transition-color duration-300 ease-in-out" />
-							</>
-						)}
-					</div>
-				</button>
+				<SeeMore expanded={viewBigEvents} setExpanded={setViewBigEvents} />
 			</RiseUpWhenVisible>
 
 			{/* Certificates */}
@@ -182,7 +139,7 @@ const Achievements = () => {
 				<section className="flex flex-col mt-8 sm:mt-12 mx-4 sm:mx-8">
 					<div className="flex flex-row justify-between">
 						<h2 className="font-khand font-bold text-light dark:text-dark text-[clamp(1.25rem,4.5dvw,2rem)]">CERTIFICATES</h2>
-						<button
+						{/* <button
 							className="font-roboto !tracking-widest cursor-pointer text-black dark:text-white text-[clamp(0.75rem,3dvw,1rem)] hover:opacity-50 transition-opacity duration-300 ease-in-out px-4"
 							onClick={() => setViewCerts(!viewCerts)}
 						>
@@ -191,7 +148,7 @@ const Achievements = () => {
 							) : (
 								<FaCircleChevronDown className="text-light dark:text-dark text-[clamp(1.5rem,4dvw,2rem)] rotate-180 transition-all duration-300 ease-in-out" />
 							)}
-						</button>
+						</button> */}
 					</div>
 					<div className="flex justify-center">
 						<hr className="w-full border rounded-full text-neutral-500/50 dark:text-neutral-300/50" />
@@ -221,28 +178,7 @@ const Achievements = () => {
 				</section>
 
 				{/* See More/Less */}
-				<button
-					className="font-roboto !tracking-widest cursor-pointer text-[clamp(0.75rem,3dvw,1rem)] px-4"
-					onClick={() => setViewCerts(!viewCerts)}
-				>
-					<div className="flex flex-row justify-center items-center gap-4 w-full h-full px-6 py-3 rounded-2xl border border-light dark:border-dark hover:bg-light dark:hover:bg-dark group transition-color duration-300 ease-in-out">
-						{!viewCerts ? (
-							<>
-								<span className="font-bold text-[clamp(1rem,2dvw,1.25rem)] text-black dark:text-white group-hover:text-white group-hover:dark:text-black transition-color duration-300 ease-in-out">
-									See More
-								</span>
-								<FaAngleDoubleDown className="text-[clamp(1rem,2dvw,1.25rem)] text-black dark:text-white group-hover:text-white group-hover:dark:text-black transition-color duration-300 ease-in-out" />
-							</>
-						) : (
-							<>
-								<span className="font-bold text-[clamp(1rem,2dvw,1.25rem)] text-black dark:text-white group-hover:text-white group-hover:dark:text-black transition-color duration-300 ease-in-out">
-									See Less
-								</span>
-								<FaAngleDoubleUp className="text-[clamp(1rem,2dvw,1.25rem)] text-black dark:text-white group-hover:text-white group-hover:dark:text-black transition-color duration-300 ease-in-out" />
-							</>
-						)}
-					</div>
-				</button>
+				<SeeMore expanded={viewCerts} setExpanded={setViewCerts} />
 			</RiseUpWhenVisible>
 		</>
 	);

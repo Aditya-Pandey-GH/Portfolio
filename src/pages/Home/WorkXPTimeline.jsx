@@ -5,6 +5,7 @@ import TimelineConnector from "@mui/lab/TimelineConnector";
 import TimelineContent from "@mui/lab/TimelineContent";
 import TimelineDot from "@mui/lab/TimelineDot";
 import { useMediaQuery, useTheme } from "@mui/material";
+
 import { RiseUpWhenVisible } from "../../components/anims";
 
 const WorkXPTimeline = ({ content = [] }) => {

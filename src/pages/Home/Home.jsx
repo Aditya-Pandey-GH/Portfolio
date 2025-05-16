@@ -1,8 +1,8 @@
 import { RiseUpWhenVisible } from "../../components/anims";
-import BulletPointer from "../../components/BulletPointer";
-import { AboutMeContent, EducationContent, WorkXPContent } from "../../components/content";
 import Cover from "../../components/Cover";
 import EducationTimeline from "./EducationTimeline";
+import BulletPointer from "../../components/BulletPointer";
+import { AboutMeContent, EducationContent, WorkXPContent } from "../../components/content";
 
 const Home = () => {
 	return (
