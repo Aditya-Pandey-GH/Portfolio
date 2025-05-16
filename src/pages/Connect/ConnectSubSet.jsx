@@ -23,7 +23,7 @@ const SkillSubSet = ({ heading, content }) => {
 									{tools.tools.map((tool) => {
 										return (
 											<RiseUpWhenVisible key={tool.id}>
-												<Link to={tool.account} className="w-fit flex flex-col justify-center items-center">
+												<Link to={tool.account} target="_blank" className="w-fit flex flex-col justify-center items-center">
 													<span className="">{tool.icon}</span>
 													{/* <img src={tool.icon} alt={tool.id} className="w-[clamp(2rem,8dvw,4rem)] p-1" /> */}
 													<span className="text-center text-black dark:text-white text-[clamp(0.9rem,2dvw,1rem)]">

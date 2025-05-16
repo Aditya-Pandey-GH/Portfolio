@@ -66,8 +66,8 @@ const DisplayContent = ({ item }) => {
 							<Link
 								to={item.links.github}
 								target="_blank"
-								className="bg-white rounded border border-black drop-shadow-black drop-shadow-lg"
-								title="Source Code on GitHub"
+								className="bg-white rounded border border-black drop-shadow-black/50 drop-shadow-md"
+								title="Source Code"
 							>
 								<FaGithub className="text-3xl text-black p-1" />
 							</Link>
@@ -76,8 +76,8 @@ const DisplayContent = ({ item }) => {
 							<Link
 								to={item.links.live}
 								target="_blank"
-								className="bg-white rounded border border-black drop-shadow-black drop-shadow-lg"
-								title="Live preview"
+								className="bg-white rounded border border-black drop-shadow-black/50 drop-shadow-md"
+								title="Release / Live preview"
 							>
 								<FaLink className="text-3xl text-green-700 p-1" />
 							</Link>
