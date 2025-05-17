@@ -6,7 +6,7 @@ const YouTubeLoader = ({ videoId }) => {
 	const [clicked, setClicked] = useState(false);
 	// const [metaData, setMetaData] = useState({});
 	const [videoTitle, setVideoTitle] = useState("Loading...");
-	const [channelName, setChannelName] = useState("Loading...");
+	// const [channelName, setChannelName] = useState("Loading...");
 
 	const videoThumbnail = `https://img.youtube.com/vi/${videoId}/maxresdefault.jpg`;
 
@@ -18,7 +18,7 @@ const YouTubeLoader = ({ videoId }) => {
 			// console.table(data);
 			// setMetaData(data);
 			setVideoTitle(data.title.split("|")[0]);
-			setChannelName(data.author_name);
+			// setChannelName(data.author_name);
 			// setVideoThumbnail(data.thumbnail_url);
 		} else {
 			console.error("Error fetching video metadata:", error);
@@ -36,14 +36,16 @@ const YouTubeLoader = ({ videoId }) => {
 				<div className="w-fit rounded relative group" onClick={() => setClicked(!clicked)}>
 					{/* <button className="w-fit p-3 rounded relative group bg-linear-to-tr from-neutral-200 to-gray-400" onClick={handleClick}> */}
 					{/* <button className="w-fit p-3 rounded relative group bg-gray-500 dark:bg-gray-300" onClick={handleClick}> */}
-					<img
-						src={videoThumbnail}
-						alt={`YouTube Video Thumbnail for video ID ${videoId}`}
-						width={480}
-						height={270}
-						className="aspect-w-16 aspect-h-9 rounded-2xl shadow-black/50 not-dark:shadow-lg"
-						loading="lazy"
-					/>
+					<div className="flex justify-center">
+						<img
+							src={videoThumbnail}
+							alt={`YouTube Video Thumbnail for video ID ${videoId}`}
+							width={480}
+							height={270}
+							className="aspect-w-16 aspect-h-9 max-xs:w-5/6 rounded-2xl shadow-black/50 not-dark:shadow-lg"
+							loading="lazy"
+						/>
+					</div>
 
 					{/* Overlay */}
 					<div
