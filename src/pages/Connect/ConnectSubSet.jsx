@@ -13,20 +13,20 @@ const SkillSubSet = ({ heading, content }) => {
 				<div className="flex flex-col justify-start m-0 sm:m-4 p-4 sm:p-2 gap-4 sm:gap-8">
 					{content.map((tools) => (
 						<RiseUpWhenVisible key={tools.id}>
-							<div className="w-full text-light dark:text-dark not-dark:font-semibold \rounded-lg">
+							<div className="w-full text-light dark:text-dark not-dark:font-semibold">
 								{/* Title of the Tools */}
 								<div className="w-fit">
 									<span className="font-iceberg text-center text-[clamp(1rem,1dvw,2rem)]">{tools.title}</span>
 									<hr className="w-full border border-light dark:border-dark" />
 								</div>
-								<div className="w-fit flex flex-row flex-wrap gap-5 sm:gap-10 mt-4">
+								<div className="w-fit flex flex-row flex-wrap gap-4 sm:gap-8 mt-4">
 									{tools.tools.map((tool) => {
 										return (
 											<RiseUpWhenVisible key={tool.id}>
 												<Link to={tool.account} target="_blank" className="w-fit flex flex-col justify-center items-center">
 													<span className="">{tool.icon}</span>
 													{/* <img src={tool.icon} alt={tool.id} className="w-[clamp(2rem,8dvw,4rem)] p-1" /> */}
-													<span className="text-center text-black dark:text-white text-[clamp(0.9rem,2dvw,1rem)]">
+													<span className="text-center text-black dark:text-white text-[clamp(0.9rem,2dvw,1rem)] py-2">
 														{tool.name}
 													</span>
 												</Link>

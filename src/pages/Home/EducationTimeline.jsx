@@ -56,7 +56,7 @@ const EducationTimeline = ({ content = [] }) => {
 							<div className="w-full flex flex-col bg-neutral-100 dark:bg-neutral-700 p-4 rounded-2xl *:text-justify">
 								<div className="flex flex-row items-center mb-3 sm:mb-4 gap-2 xs:gap-4">
 									<div className="bg-white rounded-full p-2 not-dark:shadow-black/25 not-dark:shadow-[2px_5px_5px]">
-										<img src={item.logo} alt="profile" className="w-12 h-12 object-cover rounded-md" />
+										<img src={item.logo} alt={item.name} className="w-12 h-12 object-cover rounded-md" loading="lazy" />
 									</div>
 									<div className="flex flex-col">
 										<span className="font-roboto text-lg sm:text-xl font-bold text-light dark:text-dark">{item.name}</span>

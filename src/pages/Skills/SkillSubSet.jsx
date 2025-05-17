@@ -35,7 +35,7 @@ const SkillSubSet = ({ heading, content }) => {
 				<div className="flex flex-col md:grid-cols-2 justify-start m-0 sm:m-4">
 					{content.map((tools) => (
 						<RiseUpWhenVisible key={tools.id}>
-							<div className="w-full text-light dark:text-dark not-dark:font-semibold p-4 rounded-lg">
+							<div className="w-full text-light dark:text-dark not-dark:font-semibold p-4">
 								{/* Title of the Tools */}
 								<div className="w-fit">
 									<span className="font-iceberg text-center text-[clamp(1rem,1dvw,2rem)]">{tools.title}</span>
@@ -46,7 +46,7 @@ const SkillSubSet = ({ heading, content }) => {
 										return (
 											<RiseUpWhenVisible key={tool.id}>
 												<div className="flex flex-col justify-center items-center">
-													<img src={tool.icon} alt={tool.id} className="w-[clamp(2rem,8dvw,4rem)]" />
+													<img src={tool.icon} alt={tool.id} className="w-[clamp(2rem,8dvw,4rem)]" loading="lazy" />
 													<span className="text-center text-black dark:text-white text-[clamp(0.9rem,2dvw,1rem)]">
 														{tool.name}
 													</span>

@@ -8,13 +8,17 @@ import Connect from "./pages/Connect/Connect";
 import Sidebar from "./components/Sidebar";
 import NotFound from "./components/NotFound";
 import ProjectCategory from "./pages/Projects/ProjectCategory";
+import ScrollToTop from "./components/ScrollToTop";
+// import Cover from "./components/Cover";
 
 const App = () => {
 	return (
 		<>
+			<ScrollToTop />
 			<Sidebar />
 			<main className="w-full min-h-dvh p-0 sm:pl-28 sm:pr-4 sm:pt-4 absolute top-0 flex flex-col items-center">
 				<div className="w-full max-w-6xl h-fit flex flex-col flex-1">
+					{/* <Cover /> */}
 					<Routes>
 						<Route path="/" element={<Home />} />
 						<Route path="/skills" element={<Skills />} />
@@ -26,6 +30,21 @@ const App = () => {
 						<Route path="/designs" element={<Designs />} />
 						<Route path="/achievements" element={<Achievements />} />
 						<Route path="/connect" element={<Connect />} />
+
+						{/* Debug Routes */}
+						{/* <Route
+							path="/debug/full"
+							element={
+								<>
+									<Home />
+									<Skills />
+									<Projects />
+									<Designs />
+									<Achievements />
+									<Connect />
+								</>
+							}
+						/> */}
 
 						{/* If none of the above routes matches, Not Found page should open up */}
 						<Route path="*" element={<NotFound />} />

@@ -12,7 +12,7 @@ const SkillSet = ({ heading, content }) => {
 					{content.map((item) => (
 						<div key={item.id} className="flex flex-col justify-center items-center text-center">
 							<RiseUpWhenVisible>
-								<img src={item.icon} alt={item.id} className="w-[clamp(2rem,8dvw,4rem)]" />
+								<img src={item.icon} alt={item.id} className="w-[clamp(2rem,8dvw,4rem)]" loading="lazy" />
 							</RiseUpWhenVisible>
 							<RiseUpWhenVisible>
 								<span className="text-center text-[clamp(0.9rem,2dvw,1rem)]">{item.name}</span>

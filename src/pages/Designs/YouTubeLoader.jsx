@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 import { FaImage, FaPlay } from "react-icons/fa";
 
 const YouTubeLoader = ({ videoId }) => {
@@ -37,41 +38,42 @@ const YouTubeLoader = ({ videoId }) => {
 					{/* <button className="w-fit p-3 rounded relative group bg-gray-500 dark:bg-gray-300" onClick={handleClick}> */}
 					<img
 						src={videoThumbnail}
+						alt={`YouTube Video Thumbnail for video ID ${videoId}`}
 						width={480}
 						height={270}
-						className="aspect-w-16 aspect-h-9 rounded-2xl"
-						alt={`YouTube Video Thumbnail for video ID ${videoId}`}
+						className="aspect-w-16 aspect-h-9 rounded-2xl shadow-black/50 not-dark:shadow-lg"
+						loading="lazy"
 					/>
 
 					{/* Overlay */}
 					<div
-						className={`absolute inset-0 bg-black/75 rounded-2xl flex justify-center items-center cursor-pointer transition-opacity duration-200 ease-in-out ${
+						className={`absolute inset-0 bg-black/75 text-white rounded-2xl flex justify-center items-center cursor-pointer transition-opacity duration-300 ease-in-out ${
 							clicked ? "opacity-100" : "opacity-0"
 						}`}
 					>
 						<div className={`flex flex-col justify-center items-center space-y-2`}>
-							<a
+							<Link
 								href={videoThumbnail}
 								target="_blank"
 								rel="noopener noreferrer"
-								className={`text-white bg-green-600 flex flex-row justify-center items-center gap-2 px-4 py-2 rounded-lg hover:bg-green-800 duration-200 ${
+								className={`text-white bg-green-600 flex flex-row justify-center items-center gap-2 px-4 py-2 rounded-lg hover:bg-green-800 duration-300 ${
 									clicked ? "pointer-events-auto" : "pointer-events-none"
 								}`}
 							>
 								<FaImage />
 								View Thumbnail
-							</a>
-							<a
+							</Link>
+							<Link
 								href={`https://www.youtube.com/watch?v=${videoId}`}
 								target="_blank"
 								rel="noopener noreferrer"
-								className={`text-white bg-red-600 flex flex-row justify-center items-center gap-2 px-4 py-2 rounded-lg hover:bg-red-800 duration-200 ${
+								className={`text-white bg-red-600 flex flex-row justify-center items-center gap-2 px-4 py-2 rounded-lg hover:bg-red-800 duration-300 ${
 									clicked ? "pointer-events-auto" : "pointer-events-none"
 								}`}
 							>
 								<FaPlay />
 								Watch Video
-							</a>
+							</Link>
 						</div>
 					</div>
 
@@ -81,9 +83,9 @@ const YouTubeLoader = ({ videoId }) => {
 					</div> */}
 				</div>
 
-				<div className="text-center">
-					<h4 className="">{videoTitle}</h4>
-					<span className="">( {channelName} )</span>
+				<div className="p-4 text-center">
+					<h4 className="text-[clamp(0.9rem,2dvw,1rem)]">{videoTitle}</h4>
+					{/* <span className="">( {channelName} )</span> */}
 				</div>
 			</section>
 			{/* <div className="h-48"></div> */}

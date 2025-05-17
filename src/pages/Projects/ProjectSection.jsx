@@ -52,14 +52,15 @@ const ProjectSection = ({ heading, route, content }) => {
 
 const DisplayContent = ({ item }) => {
 	return (
-		<RiseUpWhenVisible key={item.id}>
-			<div className="h-full flex flex-col rounded-lg overflow-hidden border-2 not-dark:shadow-2xl">
-				<article className="relative">
-					<img src={item.thumb} alt={item.id} className="" />
+		<RiseUpWhenVisible key={item.id} className="flex justify-center">
+			<div className="w-full xs:w-3/4 md:w-full h-full flex flex-col rounded-lg overflow-hidden border-2 not-dark:shadow-2xl">
+				<div className="relative">
+					<img src={item.thumb} alt={item.id} className="w-full" loading="lazy" />
 					<img
 						src={item.icon}
 						alt={item.id}
 						className="w-20 xs:w-28 rounded-full absolute -bottom-10 xs:-bottom-14 left-2 md:left-4 border-2 border-black"
+						loading="lazy"
 					/>
 					<div className="absolute -bottom-12 right-2 flex flex-row gap-2">
 						{item.links.github && (
@@ -83,7 +84,7 @@ const DisplayContent = ({ item }) => {
 							</Link>
 						)}
 					</div>
-				</article>
+				</div>
 				<div className="flex flex-col p-4 mt-8 xs:mt-12">
 					<div className="w-fit mb-4">
 						<span className="text-light dark:text-dark font-roboto font-bold mb-2">{item.name}</span>
@@ -93,10 +94,10 @@ const DisplayContent = ({ item }) => {
 					<div className="my-2">
 						<h3 className="font-roboto font-bold">Tech Stack:</h3>
 						<div className="flex flex-row flex-wrap gap-2">
-							{item.techs.map((item, index) => {
+							{item.techs.map((tech, index) => {
 								return (
-									<span key={index} className="font-roboto px-2 py-1 bg-neutral-400 dark:bg-neutral-500 rounded-lg">
-										{item}
+									<span key={index} className="font-roboto px-2 py-1 bg-neutral-400/50 dark:bg-neutral-500/50 rounded">
+										{tech}
 									</span>
 								);
 							})}

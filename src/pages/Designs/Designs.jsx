@@ -41,7 +41,12 @@ const Designs = () => {
 						{(viewPosters ? PostersContent : PostersContent.slice(0, 3)).map((item, index) => (
 							<Link key={index} to={item.poster} target="_blank" className="w-fit flex items-center gap-4 mb-8">
 								<RiseUpWhenVisible className="flex flex-col items-center">
-									<img src={item.poster} alt={index} className="max-xs:w-2/3 rounded-2xl" />
+									<img
+										src={item.poster}
+										alt={index}
+										className="max-xs:w-2/3 rounded-2xl shadow-black/50 not-dark:shadow-xl"
+										loading="lazy"
+									/>
 								</RiseUpWhenVisible>
 							</Link>
 						))}
@@ -107,9 +112,14 @@ const Designs = () => {
 						{(viewNewsletters ? NewslettersContent : NewslettersContent.slice(0, 3)).map((item) => (
 							<RiseUpWhenVisible key={item.id} className="flex flex-col items-center">
 								<Link to={item.link} target="_blank" className="w-fit">
-									<img src={item.logo} alt={item.id} className="w-50 rounded-2xl" />
+									<img
+										src={item.logo}
+										alt={item.id}
+										className="w-50 rounded-2xl shadow-black/50 not-dark:shadow-lg"
+										loading="lazy"
+									/>
 								</Link>
-								<Link to={item.link} target="_blank" className="w-fit gap-4 p-2 text-center">
+								<Link to={item.link} target="_blank" className="w-fit gap-4 p-4 text-center">
 									<span className="font-roboto">{item.title}</span>
 								</Link>
 							</RiseUpWhenVisible>
@@ -145,7 +155,12 @@ const Designs = () => {
 						{(viewOthers ? OtherDesignsContent : OtherDesignsContent.slice(0, 3)).map((item, index) => (
 							<Link key={index} to={item.logo} target="_blank" className="w-fit flex items-center gap-4 mb-8">
 								<RiseUpWhenVisible className="flex flex-col items-center">
-									<img src={item.logo} alt={index} className="max-xs:w-5/6 rounded-2xl" />
+									<img
+										src={item.logo}
+										alt={index}
+										className="max-xs:w-5/6 rounded-2xl shadow-black/50 not-dark:shadow-xl"
+										loading="lazy"
+									/>
 								</RiseUpWhenVisible>
 							</Link>
 						))}

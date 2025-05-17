@@ -68,7 +68,7 @@ const Achievements = () => {
 						{(viewXP ? XPContent : XPContent.slice(0, 1)).map((item) => (
 							<RiseUpWhenVisible key={item.id} className="flex flex-col gap-0 md:gap-4">
 								<div className="flex flex-row flex-wrap gap-2">
-									<img src={item.logo} alt={item.company} className="w-20 rounded-lg" />
+									<img src={item.logo} alt={item.company} className="w-20 rounded-lg" loading="lazy" />
 									<div className="flex flex-col font-roboto text-justify justify-center">
 										<span className="font-bold text-[clamp(1.15rem,2dvw,1.4rem)] text-light dark:text-dark">{item.company}</span>
 										<span className="text-[clamp(0.9rem,2dvw,1rem)]">
@@ -113,7 +113,7 @@ const Achievements = () => {
 									<hr className="w-full relative -top-2 border rounded-full text-neutral-500/25 dark:text-neutral-300/25" />
 								)}
 								<div className="flex flex-col xs:flex-row items-center flex-wrap gap-2 sm:gap-4">
-									<img src={item.logo} alt={item.id} className="w-20 h-fit rounded-lg" />
+									<img src={item.logo} alt={item.id} className="w-20 h-fit rounded-lg" loading="lazy" />
 									<div className="flex flex-col font-roboto text-justify justify-center">
 										<span className="font-bold max-xs:text-center text-[clamp(1.15rem,2dvw,1.4rem)] text-light dark:text-dark">
 											{item.name}
@@ -159,7 +159,7 @@ const Achievements = () => {
 							<div key={item.id} className="flex flex-col md:flex-row max-md:items-center gap-0 md:gap-4">
 								<RiseUpWhenVisible className="">
 									<Link to={item.cert} target="_blank" className="w-60 flex">
-										<img src={item.cert} alt={item.id} className="w-60 rounded-2xl" />
+										<img src={item.cert} alt={item.id} className="w-60 rounded-2xl" loading="lazy" />
 									</Link>
 								</RiseUpWhenVisible>
 								<RiseUpWhenVisible className="">
