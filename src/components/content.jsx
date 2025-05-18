@@ -442,6 +442,39 @@ export const AppsContent = [
 ];
 
 // Designs Page
+export const NewslettersContent = [
+	{
+		id: "oct22",
+		title: "How 5G will transform India?",
+		link: "/designs/newsletters/2022-10.pdf",
+		logo: "/designs/newsletters/2022-10.avif",
+	},
+	{
+		id: "mar23",
+		title: "The Era of AI Chatbots",
+		link: "/designs/newsletters/2023-03.pdf",
+		logo: "/designs/newsletters/2023-03.avif",
+	},
+	{
+		id: "may23",
+		title: "ChatGPT: Revolutionizing Conversational AI",
+		link: "/designs/newsletters/2023-05.pdf",
+		logo: "/designs/newsletters/2023-05.avif",
+	},
+	{
+		id: "oct23",
+		title: "Data, Data Everywhere (Part 1)",
+		link: "/designs/newsletters/2023-10.pdf",
+		logo: "/designs/newsletters/2023-10.avif",
+	},
+	{
+		id: "nov23",
+		title: "Data, Data Everywhere (Part 2)",
+		link: "/designs/newsletters/2023-11.pdf",
+		logo: "/designs/newsletters/2023-11.avif",
+	},
+];
+
 export const PostersContent = [
 	{
 		// id: "ecoFriendlyDiwaliPosterMakingCompetitionOct2022",
@@ -510,39 +543,6 @@ export const ThumbsContent = [
 	"QTA6ti6IzN0",
 ].reverse();
 
-export const NewslettersContent = [
-	{
-		id: "oct22",
-		title: "How 5G will transform India?",
-		link: "/designs/newsletters/2022-10.pdf",
-		logo: "/designs/newsletters/2022-10.avif",
-	},
-	{
-		id: "mar23",
-		title: "The Era of AI Chatbots",
-		link: "/designs/newsletters/2023-03.pdf",
-		logo: "/designs/newsletters/2023-03.avif",
-	},
-	{
-		id: "may23",
-		title: "ChatGPT: Revolutionizing Conversational AI",
-		link: "/designs/newsletters/2023-05.pdf",
-		logo: "/designs/newsletters/2023-05.avif",
-	},
-	{
-		id: "oct23",
-		title: "Data, Data Everywhere (Part 1)",
-		link: "/designs/newsletters/2023-10.pdf",
-		logo: "/designs/newsletters/2023-10.avif",
-	},
-	{
-		id: "nov23",
-		title: "Data, Data Everywhere (Part 2)",
-		link: "/designs/newsletters/2023-11.pdf",
-		logo: "/designs/newsletters/2023-11.avif",
-	},
-];
-
 export const OtherDesignsContent = [
 	{
 		type: "Certificate",
@@ -563,6 +563,11 @@ export const OtherDesignsContent = [
 		type: "Certificate",
 		// desc: "This certificate was made for an initiative named One For All. This initiative involved collection of milk packets without clipping off the small cut-out from it, which is otherwise not easy to be recycled.",
 		logo: "/designs/others/OFACert.avif",
+	},
+	{
+		type: "Thumbnail",
+		// desc: "This certificate was made for an initiative named One For All. This initiative involved collection of milk packets without clipping off the small cut-out from it, which is otherwise not easy to be recycled.",
+		logo: "/designs/others/lmcThumb1.avif",
 	},
 	{
 		type: "Backdrop",
