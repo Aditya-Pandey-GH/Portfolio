@@ -32,7 +32,7 @@ const App = () => {
 						<Route path="/connect" element={<Connect />} />
 
 						{/* Debug Routes */}
-						{/* <Route
+						<Route
 							path="/debug/full"
 							element={
 								<>
@@ -44,7 +44,7 @@ const App = () => {
 									<Connect />
 								</>
 							}
-						/> */}
+						/>
 
 						{/* If none of the above routes matches, Not Found page should open up */}
 						<Route path="*" element={<NotFound />} />
