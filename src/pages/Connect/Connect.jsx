@@ -18,6 +18,7 @@ const Connect = () => {
 		setFormData((prev) => ({ ...prev, [name]: value }));
 	};
 
+	// FIXME: The limitRate doesn't work. Make it work
 	useEffect(() => {
 		emailjs.init({
 			publicKey: import.meta.env.VITE_PUBLIC_KEY,
@@ -39,7 +40,7 @@ const Connect = () => {
 			.sendForm(import.meta.env.VITE_SERVICE_ID, import.meta.env.VITE_TEMPLATE_ID, form.current)
 			.then((res) => {
 				console.log(res);
-				toast.success("Your message has been sent :)");
+				toast.success("Your mail has been sent :)");
 			})
 			.catch((err) => {
 				console.error(err);
@@ -59,31 +60,25 @@ const Connect = () => {
 			<RiseUpWhenVisible>
 				<section className="flex flex-col mt-8 sm:mt-12 mx-4 sm:mx-8">
 					<div className="flex flex-row justify-between">
-						<h2 className="font-khand font-bold text-light dark:text-dark text-[clamp(1.25rem,4.5dvw,2rem)]">CONTACT ME</h2>
+						<h2 className="font-khand font-bold text-light dark:text-dark text-xl xs:text-2xl md:text-3xl">CONTACT ME</h2>
 					</div>
 					<div className="flex justify-center sm:mb-4">
 						<hr className="w-full border rounded-full text-neutral-500/50 dark:text-neutral-300/50" />
 					</div>
 					<div className="flex flex-col justify-start items-center my-8 mx-4 leading-normal">
 						<form ref={form} onSubmit={submitForm} method="post" className="w-full max-w-lg flex flex-col gap-4 border-2 p-4 rounded-2xl">
-							<h3 className="font-roboto !tracking-normal font-bold text-light dark:text-dark text-[clamp(1.25rem,2dvw,1.75rem)] text-center">
-								CONTACT FORM
-							</h3>
+							<h3 className="font-bold text-light dark:text-dark text-lg xs:text-xl md:text-2xl text-center">CONTACT FORM</h3>
+
 							{/* Name */}
-							<div className="relative w-full bg-neutral-100 dark:bg-neutral-800 autofill:bg-transparent px-4 py-3 rounded-md group border-2 not-focus-within:border-transparent transition-all">
-								<input
-									type="text"
-									id="name"
-									name="name"
-									value={formData.name}
-									onChange={handleInputChange}
-									maxLength={20}
-									placeholder="Name"
-									autoComplete="off"
-									className="w-full placeholder:text-black/50 dark:placeholder:text-white/50 autofill:bg-transparent text-[clamp(1rem,2dvw,1.1rem)]"
-									required
-								/>
-							</div>
+							<InputBoxes
+								type="text"
+								id="name"
+								name="name"
+								placeholder="Name"
+								value={formData.name}
+								handleInputChange={handleInputChange}
+							/>
+
 							{/* <div className="grid grid-cols-1 xs:grid-cols-2 gap-4">
 								<div className="relative w-full bg-neutral-100 dark:bg-neutral-800 autofill:bg-transparent px-4 py-3 rounded-md group border-2 not-focus-within:border-transparent transition-all">
 									<input
@@ -131,54 +126,39 @@ const Connect = () => {
 							</div> */}
 
 							{/* Email ID */}
-							<div className="w-full flex-1 bg-neutral-100 dark:bg-neutral-800 autofill:bg-transparent px-4 py-3 rounded-md group border-2 not-focus-within:border-transparent transition-all">
-								<input
-									type="email"
-									id="email"
-									name="email"
-									value={formData.sender}
-									onChange={handleInputChange}
-									placeholder="Email ID"
-									autoComplete="off"
-									className="w-full placeholder:text-black/50 dark:placeholder:text-white/50 autofill:bg-transparent text-[clamp(1rem,2dvw,1.1rem)]"
-									required
-								/>
-							</div>
+							<InputBoxes
+								type="email"
+								id="email"
+								name="email"
+								placeholder="Email ID"
+								value={formData.email}
+								handleInputChange={handleInputChange}
+							/>
 
 							{/* Subject */}
-							<div className="relative bg-neutral-100 dark:bg-neutral-800 px-4 py-3 rounded-md group border-2 not-focus-within:border-transparent transition-all">
-								<input
-									type="text"
-									id="subject"
-									name="subject"
-									value={formData.subject}
-									onChange={handleInputChange}
-									placeholder="Subject"
-									autoComplete="off"
-									className="w-full placeholder:text-black/50 dark:placeholder:text-white/50 autofill:bg-transparent text-[clamp(1rem,2dvw,1.1rem)]"
-									required
-								/>
-							</div>
+							<InputBoxes
+								type="text"
+								id="subject"
+								name="subject"
+								placeholder="Subject"
+								value={formData.subject}
+								handleInputChange={handleInputChange}
+							/>
 
 							{/* Message */}
-							<div className="relative bg-neutral-100 dark:bg-neutral-800 px-4 py-3 rounded-md group border-2 not-focus-within:border-transparent transition-all">
-								<textarea
-									name="message"
-									id="message"
-									value={formData.message}
-									onChange={handleInputChange}
-									placeholder="Type your mail"
-									autoComplete="off"
-									className="w-full min-h-32 pr-2 placeholder:text-black/50 dark:placeholder:text-white/50 autofill:bg-transparent text-[clamp(1rem,2dvw,1.1rem)] resize-y text-justify"
-									required
-								/>
-							</div>
+							<TextArea
+								id="message"
+								name="message"
+								placeholder="Type your mail"
+								value={formData.message}
+								handleInputChange={handleInputChange}
+							/>
 
 							{/* Submit Button */}
 							<div className="flex justify-center">
 								<button
 									type="submit"
-									className="w-fit h-fit font-roboto font-semibold px-8 py-2 rounded-md cursor-pointer border-2 border-light dark:border-dark text-light dark:text-dark hover:text-white hover:dark:text-black text-[clamp(1rem,2dvw,1.1rem)] hover:bg-light dark:hover:bg-dark transition-color duration-300 ease-in-out"
+									className="w-fit h-fit  font-semibold px-8 py-2 rounded-md cursor-pointer border-2 border-light dark:border-dark text-light dark:text-dark hover:text-white hover:dark:text-black text-base md:text-lg hover:bg-light dark:hover:bg-dark transition-color duration-300 ease-in-out"
 								>
 									Submit
 								</button>
@@ -203,6 +183,41 @@ const Connect = () => {
 				transition={Bounce}
 			/>
 		</>
+	);
+};
+
+const InputBoxes = ({ type = "text", id, name, placeholder, value, handleInputChange }) => {
+	return (
+		<div className="w-full flex-1 bg-neutral-100 dark:bg-neutral-800 autofill:bg-transparent px-4 py-3 rounded-md group border-2 not-focus-within:border-transparent transition-all">
+			<input
+				type={type}
+				id={id}
+				name={name}
+				placeholder={placeholder}
+				value={value}
+				onChange={handleInputChange}
+				autoComplete="off"
+				className="w-full placeholder:text-black/50 dark:placeholder:text-white/50 text-base md:text-lg"
+				required
+			/>
+		</div>
+	);
+};
+
+const TextArea = ({ id, name, placeholder, value, handleInputChange }) => {
+	return (
+		<div className="relative bg-neutral-100 dark:bg-neutral-800 px-4 py-3 rounded-md group border-2 not-focus-within:border-transparent transition-all">
+			<textarea
+				id={id}
+				name={name}
+				placeholder={placeholder}
+				value={value}
+				onChange={handleInputChange}
+				autoComplete="off"
+				className="w-full min-h-32 pr-2 placeholder:text-black/50 dark:placeholder:text-white/50 text-base md:text-lg resize-y text-justify"
+				required
+			/>
+		</div>
 	);
 };
 

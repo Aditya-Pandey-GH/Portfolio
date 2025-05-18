@@ -20,25 +20,17 @@ const Achievements = () => {
 			{/* Social Welfare */}
 			<RiseUpWhenVisible>
 				<section className="flex flex-col mt-8 sm:mt-12 mx-4 sm:mx-8">
-					<h2 className="font-khand font-bold text-light dark:text-dark text-[clamp(1.25rem,4.5dvw,2rem)]">SOCIAL WELFARE</h2>
+					<h2 className="font-khand font-bold text-light dark:text-dark text-xl xs:text-2xl md:text-3xl">SOCIAL WELFARE</h2>
 					<div className="flex justify-center">
 						<hr className="w-full border rounded-full text-neutral-500/50 dark:text-neutral-300/50" />
 					</div>
 					<ul className="flex flex-col my-4 mx-4 gap-6 sm:gap-4 max-md:leading-normal">
 						{SocialWelfareContent.map((item, index) => (
 							<li key={index} className="text-justify">
-								<RiseUpWhenVisible className="flex flex-row justify-start items-start gap-4">
-									{/* <BulletPointer className="mt-0.5 -ml-2 mr-2" /> */}
-									{/* <div className="font-roboto">
-										<span className="font-roboto font-black">{item.year}: </span>
-										<span className="font-roboto">{item.desc}</span>
-									</div> */}
-									<span className="font-roboto font-black text-[clamp(1rem,2dvw,1.125rem)] text-light dark:text-dark">
-										{item.year}
-									</span>
-									<span className="font-roboto">{item.desc}</span>
+								<RiseUpWhenVisible className="flex flex-row justify-start items-start gap-4 lg:gap-8">
+									<span className="text-base sm:text-lg flex-0 text-light dark:text-dark font-black">{item.year}</span>
+									<span className="text-base sm:text-lg flex-1">{item.desc}</span>
 								</RiseUpWhenVisible>
-								{/* <RiseUpWhenVisible className="font-roboto float-right">{"~  " + item.year}</RiseUpWhenVisible> */}
 							</li>
 						))}
 					</ul>
@@ -49,9 +41,9 @@ const Achievements = () => {
 			<RiseUpWhenVisible className="flex flex-col justify-center items-center">
 				<section className="flex flex-col mt-8 sm:mt-12 mx-4 sm:mx-8">
 					<div className="flex flex-row justify-between">
-						<h2 className="font-khand font-bold text-light dark:text-dark text-[clamp(1.25rem,4.5dvw,2rem)]">INFORMAL EXPERIENCE</h2>
+						<h2 className="font-khand font-bold text-light dark:text-dark text-xl xs:text-2xl md:text-3xl">INFORMAL EXPERIENCE</h2>
 						{/* <button
-							className="font-roboto !tracking-widest cursor-pointer text-black dark:text-white text-[clamp(0.75rem,3dvw,1rem)] hover:opacity-50 transition-opacity duration-300 ease-in-out px-4"
+							className=" !tracking-widest cursor-pointer text-black dark:text-white text-[clamp(0.75rem,3dvw,1rem)] hover:opacity-50 transition-opacity duration-300 ease-in-out px-4"
 							onClick={() => setViewXP(!viewXP)}
 						>
 							{!viewXP ? (
@@ -67,14 +59,14 @@ const Achievements = () => {
 					<div className="flex flex-col justify-start my-4 mx-4 gap-5 sm:gap-10 leading-normal">
 						{(viewXP ? XPContent : XPContent.slice(0, 1)).map((item) => (
 							<RiseUpWhenVisible key={item.id} className="flex flex-col gap-0 md:gap-4">
-								<div className="flex flex-row flex-wrap gap-2">
+								<div className="flex flex-row flex-wrap gap-2 sm:gap-4">
 									<img src={item.logo} alt={item.company} className="w-20 rounded-lg" loading="lazy" />
-									<div className="flex flex-col font-roboto text-justify justify-center">
-										<span className="font-bold text-[clamp(1.15rem,2dvw,1.4rem)] text-light dark:text-dark">{item.company}</span>
-										<span className="text-[clamp(0.9rem,2dvw,1rem)]">
+									<div className="flex flex-col text-justify justify-center">
+										<span className="font-bold text-lg xs:text-xl md:text-2xl text-light dark:text-dark">{item.company}</span>
+										<span className="text-sm xs:text-base">
 											{item.start} - {item.end}
 										</span>
-										<span className="text-[clamp(1rem,2dvw,1.1rem)]">{item.location}</span>
+										<span className="text-base xs:text-lg">{item.location}</span>
 									</div>
 								</div>
 								<XPTimeline content={item.roles} />
@@ -91,9 +83,9 @@ const Achievements = () => {
 			<RiseUpWhenVisible className="flex flex-col justify-center items-center">
 				<section className="flex flex-col mt-8 sm:mt-12 mx-4 sm:mx-8">
 					<div className="flex flex-row justify-between">
-						<h2 className="font-khand font-bold text-light dark:text-dark text-[clamp(1.25rem,4.5dvw,2rem)]">BIG EVENTS</h2>
+						<h2 className="font-khand font-bold text-light dark:text-dark text-xl xs:text-2xl md:text-3xl">BIG EVENTS</h2>
 						{/* <button
-							className="font-roboto !tracking-widest cursor-pointer text-black dark:text-white text-[clamp(0.75rem,3dvw,1rem)] hover:opacity-50 transition-opacity duration-300 ease-in-out px-4"
+							className=" !tracking-widest cursor-pointer text-black dark:text-white text-[clamp(0.75rem,3dvw,1rem)] hover:opacity-50 transition-opacity duration-300 ease-in-out px-4"
 							onClick={() => setViewBigEvents(!viewBigEvents)}
 						>
 							{!viewBigEvents ? (
@@ -106,7 +98,7 @@ const Achievements = () => {
 					<div className="flex justify-center">
 						<hr className="w-full border rounded-full text-neutral-500/50 dark:text-neutral-300/50" />
 					</div>
-					<div className="flex flex-col justify-start my-8 mx-4 gap-4 sm:gap-8 leading-normal">
+					<div className="flex flex-col justify-start my-8 mx-4 gap-4 sm:gap-8">
 						{(viewBigEvents ? BigEventsContent : BigEventsContent.slice(0, 3)).map((item, index) => (
 							<RiseUpWhenVisible key={item.id} className="flex flex-col gap-4">
 								{index !== 0 && (
@@ -114,17 +106,15 @@ const Achievements = () => {
 								)}
 								<div className="flex flex-col xs:flex-row items-center flex-wrap gap-2 sm:gap-4">
 									<img src={item.logo} alt={item.id} className="w-20 h-fit rounded-lg" loading="lazy" />
-									<div className="flex flex-col font-roboto text-justify justify-center">
-										<span className="font-bold max-xs:text-center text-[clamp(1.15rem,2dvw,1.4rem)] text-light dark:text-dark">
+									<div className="flex flex-col text-justify justify-center">
+										<span className="font-bold max-xs:text-center text-lg xs:text-xl md:text-2xl text-light dark:text-dark">
 											{item.name}
 										</span>
-										<span className="max-xs:text-center text-[clamp(1rem,2dvw,1.1rem)]">{item.year}</span>
-										<span className="font-bold max-xs:text-center text-[clamp(0.9rem,2dvw,1rem)]">
-											{item.location.toUpperCase()}
-										</span>
+										<span className="max-xs:text-center text-sm xs:text-base">{item.year}</span>
+										<span className="max-xs:text-center text-base xs:text-lg">{item.location}</span>
 									</div>
 								</div>
-								<div className="text-[clamp(1rem,2dvw,1.1rem)]">{item.desc}</div>
+								<div className="text-base sm:text-lg">{item.desc}</div>
 							</RiseUpWhenVisible>
 						))}
 					</div>
@@ -138,9 +128,9 @@ const Achievements = () => {
 			<RiseUpWhenVisible className="flex flex-col justify-center items-center mb-8">
 				<section className="flex flex-col mt-8 sm:mt-12 mx-4 sm:mx-8">
 					<div className="flex flex-row justify-between">
-						<h2 className="font-khand font-bold text-light dark:text-dark text-[clamp(1.25rem,4.5dvw,2rem)]">CERTIFICATES</h2>
+						<h2 className="font-khand font-bold text-light dark:text-dark text-xl xs:text-2xl md:text-3xl">CERTIFICATES</h2>
 						{/* <button
-							className="font-roboto !tracking-widest cursor-pointer text-black dark:text-white text-[clamp(0.75rem,3dvw,1rem)] hover:opacity-50 transition-opacity duration-300 ease-in-out px-4"
+							className=" !tracking-widest cursor-pointer text-black dark:text-white text-[clamp(0.75rem,3dvw,1rem)] hover:opacity-50 transition-opacity duration-300 ease-in-out px-4"
 							onClick={() => setViewCerts(!viewCerts)}
 						>
 							{!viewCerts ? (
@@ -153,23 +143,25 @@ const Achievements = () => {
 					<div className="flex justify-center">
 						<hr className="w-full border rounded-full text-neutral-500/50 dark:text-neutral-300/50" />
 					</div>
-					<div className="flex flex-col justify-start my-4 mx-4 gap-5 sm:gap-10 leading-normal">
+					<div className="flex flex-col justify-start my-4 mx-4 gap-8 leading-normal">
 						{/* <div className="flex flex-col justify-start my-4 mx-4 gap-5 sm:gap-10"> */}
 						{(viewCerts ? CertsContent : CertsContent.slice(0, 1)).map((item) => (
-							<div key={item.id} className="flex flex-col md:flex-row max-md:items-center gap-0 md:gap-4">
+							<div key={item.id} className="flex flex-col md:flex-row max-md:items-center gap-2 md:gap-4">
 								<RiseUpWhenVisible className="">
 									<Link to={item.cert} target="_blank" className="w-60 flex">
 										<img src={item.cert} alt={item.id} className="w-60 rounded-2xl" loading="lazy" />
 									</Link>
 								</RiseUpWhenVisible>
 								<RiseUpWhenVisible className="">
-									<div className="flex flex-col *:font-roboto text-justify">
-										<h3 className="text-center md:text-justify font-bold text-[clamp(1.25rem,2dvw,1.35rem)] text-light dark:text-dark py-2">
+									<div className="flex flex-col gap-2 md:gap-4 *: text-justify">
+										<h3 className="text-center md:text-justify font-bold text-lg xs:text-xl md:text-2xl text-light dark:text-dark">
 											{item.title}
 										</h3>
-										<span className="text-[clamp(1rem,2dvw,1.1rem)]">{item.desc}</span>
-										<span className="text-[clamp(1rem,2dvw,1rem)]">By: {item.by}</span>
-										<span className="text-[clamp(1rem,2dvw,1rem)]">On: {item.on}</span>
+										<span className="text-base sm:text-lg">{item.desc}</span>
+										<div className="flex flex-col">
+											<span className="text-sm sm:text-base">By: {item.by}</span>
+											<span className="text-sm sm:text-base">On: {item.on}</span>
+										</div>
 									</div>
 								</RiseUpWhenVisible>
 							</div>

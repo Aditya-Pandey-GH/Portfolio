@@ -6,17 +6,19 @@ const SkillSubSet = ({ heading, content }) => {
 	return (
 		<RiseUpWhenVisible>
 			<section className="flex flex-col mt-4 sm:mt-8 mx-4 sm:mx-8">
-				<h2 className="font-khand font-bold text-light dark:text-dark text-[clamp(1.25rem,4.5dvw,2rem)]">{heading}</h2>
+				<h2 className="font-khand font-bold text-light dark:text-dark text-xl xs:text-2xl md:text-3xl">{heading}</h2>
 				<div className="flex justify-center">
 					<hr className="w-full border rounded-full text-neutral-500/50 dark:text-neutral-300/50" />
 				</div>
-				<div className="flex flex-col justify-start m-0 sm:m-4 p-4 sm:p-2 gap-4 sm:gap-8">
+				<div className="flex flex-col md:grid-cols-2 justify-start m-0 sm:mt-4">
 					{content.map((tools) => (
 						<RiseUpWhenVisible key={tools.id}>
-							<div className="w-full text-light dark:text-dark not-dark:font-semibold">
+							<div className="w-full not-dark:font-semibold p-2">
 								{/* Title of the Tools */}
 								<div className="w-fit">
-									<span className="font-iceberg text-center text-[clamp(1rem,1dvw,2rem)]">{tools.title}</span>
+									<span className="font-bold text-light dark:text-dark text-center text-base xs:text-lg md:text-xl">
+										{tools.title}
+									</span>
 									<hr className="w-full border border-light dark:border-dark" />
 								</div>
 								<div className="w-fit flex flex-row flex-wrap gap-4 sm:gap-8 mt-4">
@@ -25,10 +27,7 @@ const SkillSubSet = ({ heading, content }) => {
 											<RiseUpWhenVisible key={tool.id}>
 												<Link to={tool.account} target="_blank" className="w-fit flex flex-col justify-center items-center">
 													<span className="">{tool.icon}</span>
-													{/* <img src={tool.icon} alt={tool.id} className="w-[clamp(2rem,8dvw,4rem)] p-1" /> */}
-													<span className="text-center text-black dark:text-white text-[clamp(0.9rem,2dvw,1rem)] py-2">
-														{tool.name}
-													</span>
+													<span className="text-center text-sm sm:text-base lg:text-lg sm:p-2">{tool.name}</span>
 												</Link>
 											</RiseUpWhenVisible>
 										);

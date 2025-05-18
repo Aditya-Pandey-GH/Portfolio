@@ -5,21 +5,36 @@
 
 @custom-variant dark (&:where(.dark, .dark *));
 
+* {
+	@apply !outline-none;
+}
+
 :root {
-	font-family: "Roboto Condensed", system-ui, Avenir, Helvetica, Arial, sans-serif;
 	@apply bg-neutral-200 dark:bg-neutral-900 text-black dark:text-white transition-colors duration-300 ease-in-out overflow-y-scroll;
 }
 
 @theme {
-	/* --color-light: #034da2; */
+	/* Colors */
 	--color-light: #034da2;
 	--color-dark: #ffc700;
+
+	/*Breakpoints */
 	--breakpoint-xs: 425px;
+
+	/* Fonts */
+	--font-roboto: "Roboto Condensed", system-ui, Avenir, Helvetica, Arial, sans-serif;
+	--font-khand: "Khand", sans-serif;
+	--font-iceberg: "Iceberg", sans-serif;
+
+	/* Font Sizes */
+	--text-4xxl: 2.5rem;
 }
 
-body {
-	/* scrollbar-width: thin; */
-	@apply tracking-wide outline-none;
+@layer base {
+	body {
+		scrollbar-width: thin;
+		@apply tracking-wide font-roboto;
+	}
 }
 
 a {
@@ -45,23 +60,7 @@ a:hover {
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
+	@apply bg-neutral-600;
 	background: #555;
 }
 /* Sidebar Scrollbar End */
-
-@layer utilities {
-	/* Custom Fonts Start */
-	.font-iceberg {
-		font-family: "Iceberg", sans-serif;
-		font-style: normal;
-	}
-	.font-khand {
-		font-family: "Khand", sans-serif;
-		font-style: normal;
-	}
-	.font-roboto {
-		font-family: "Roboto Condensed", sans-serif;
-		font-style: normal;
-	}
-	/* Custom Fonts End */
-}

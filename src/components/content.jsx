@@ -98,7 +98,8 @@ export const EducationContent = [
 		logo: "/home/education/hrssss.avif",
 		start: "2020",
 		end: "2021",
-		school: "Hansraj Smarak Sr. Sec. School",
+		// school: "Hansraj Smarak Sr. Sec. School",
+		school: "Hansraj Smarak Sr Sec School",
 		location: "New Delhi",
 		board: "CBSE",
 		settings: {
@@ -171,7 +172,8 @@ export const LangsContent = [
 	},
 	{
 		id: "js",
-		name: "JavaScript",
+		// name: "JavaScript",
+		name: "JS",
 		icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg",
 	},
 	{
@@ -365,7 +367,7 @@ export const WebsitesContent = [
 	// },
 	{
 		id: "portfolio",
-		name: "Aditya Pandey's Portfolio Website",
+		name: "Portfolio Website",
 		desc: "This is my portfolio website. My skills, achievements, work and professional work are all mentioned on this website.",
 		techs: ["React.js", "Vite.js", "CSS", "Tailwind"],
 		icon: "/projects/websites/portfolio/Icon.avif",
@@ -662,11 +664,11 @@ export const XPContent = [
 		roles: [
 			{
 				role: "Club Coordinator",
-				desc: "Served as the Student Coordinator of TekQbe, the official IT club of JIMS, from Feb 2022 to Jun 2024. Led the planning and execution of various technical events and fests, while collaborating with faculty and fellow team-mates. Developed strong skills in leadership, teamwork, event coordination, and club operations.",
+				desc: "Served as the Student Coordinator of TekQbe, the official IT club of JIMS, from Feb 2022 to Jun 2024. Led the planning and execution of various technical events and fests, while collaborating with faculty and fellow team mates. Developed strong skills in leadership, team work, event coordination, and club operations.",
 			},
 			{
 				role: "Graphic Designer",
-				desc: "Worked as the Graphic Designer for TekQbe, where I created a wide range of visual assets including event posters, cover art, mementos, and certificates. Contributed to the club's branding and promotion efforts by producing consistent, high-quality graphics tailored for both print and digital platforms.",
+				desc: "Worked as the Graphic Designer for TekQbe, where I created a wide range of visual assets including event posters, cover art, mementos, and certificates. Contributed to the club's branding and promotion efforts by producing consistent, high quality graphics tailored for both print and digital platforms.",
 			},
 		],
 	},
@@ -734,7 +736,7 @@ export const BigEventsContent = [
 	{
 		id: "ecoArt",
 		name: "Eco Art",
-		year: "May 2023",
+		year: "May 2022",
 		location: "JIMS, Delhi",
 		desc: "Organized a large-scale event at JIMS, Sector-5, Rohini to promote awareness about plastic and milk packet recycling. Participants created posters and hand paintings highlighting environmental sustainability, and I also performed an awareness act with fellow organizers.",
 		logo: "/achievements/achievements/ofa.avif",

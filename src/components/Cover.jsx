@@ -11,11 +11,15 @@ const Cover = () => {
 						<div>
 							<img src="/cover/prog1.webp" alt="Programmer" className="w-20 sm:w-40" loading="lazy" />
 						</div>
-						<div className="w-full flex flex-col justify-center items-center">
-							<span className="font-khand font-semibold text-[min(2.25rem,7dvw)] text-white text-shadow-black text-shadow-sm !tracking-normal">
+						<div className="w-full flex flex-col justify-center items-center gap-2">
+							<span className="font-khand font-semibold text-2xl xs:text-3xl sm:text-4xl lg:text-4xxl text-white text-shadow-black text-shadow-sm !tracking-normal">
 								{"<Aditya Pandey />"}
 							</span>
-							<span className="font-iceberg font-semibold text-[min(1.15rem,3.5dvw)] text-black">Designer & Web Developer;</span>
+							{/* <span className="font-khand font-semibold text-[min(2.25rem,7dvw)] text-white text-shadow-black text-shadow-sm !tracking-normal">{"<Aditya Pandey />"}</span> */}
+							<span className="font-iceberg font-semibold text-xs xs:text-base sm:text-lg lg:text-xl text-black">
+								Designer & Web Developer;
+							</span>
+							{/* <span className="font-iceberg font-semibold text-[min(1.15rem,3.5dvw)] text-black">Designer & Web Developer;</span> */}
 						</div>
 						<div>
 							<img src="/cover/prog2.webp" alt="Programmer" className="w-20 sm:w-40" loading="lazy" />
@@ -30,8 +34,6 @@ const Cover = () => {
 						<img
 							src="/cover/pfp.avif"
 							alt="Aditya Pandey"
-							// width={1000}
-							// height={1000}
 							className="w-24 xs:w-32 md:w-40 lg:w-50 rounded-full border-3 md:border-4 border-black"
 							loading="lazy"
 						/>
@@ -41,10 +43,11 @@ const Cover = () => {
 				{/* Name & DOB */}
 				<section className="pt-16 xs:pt-20 md:pt-26 lg:pt-32 mx-4 sm:mx-8">
 					<div className="flex flex-col leading-5 sm:leading-7">
-						<h1 className="font-khand font-bold text-light dark:text-dark text-[clamp(1.5rem,5dvw,2.25rem)]">ADITYA PANDEY</h1>
-						<span className="font-roboto text-black dark:text-white text-[clamp(0.85rem,2.5dvw,1.25rem)] !tracking-normal font-bold !italic -mt-1 xs:mt-0 sm:-mt-1">
-							[ September 16, 2003 ]
-						</span>
+						<h1 className="font-khand font-bold text-light dark:text-dark text-2xl xs:text-3xl sm:text-4xl lg:text-4xxl">
+							ADITYA PANDEY
+						</h1>
+						<span className="text-sm sm:text-base lg:text-lg -mt-2 text-neutral-800 dark:text-neutral-300">September 16, 2003</span>
+						<span className="text-base sm:text-lg lg:text-xl mt-2">Web Developer | Aspiring Game Developer</span>
 					</div>
 				</section>
 			</>

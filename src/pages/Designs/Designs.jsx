@@ -22,9 +22,9 @@ const Designs = () => {
 			<RiseUpWhenVisible className="flex flex-col justify-center items-center">
 				<section className="flex flex-col mt-8 sm:mt-12 mx-4 sm:mx-8">
 					<div className="flex flex-row justify-between">
-						<h2 className="font-khand font-bold text-light dark:text-dark text-[clamp(1.25rem,4.5dvw,2rem)]">NEWSLETTERS</h2>
+						<h2 className="font-khand font-bold text-light dark:text-dark text-xl xs:text-2xl md:text-3xl">NEWSLETTERS</h2>
 						{/* <button
-							className="font-roboto !tracking-widest cursor-pointer text-black dark:text-white text-[clamp(0.75rem,3dvw,1rem)] hover:opacity-50 transition-opacity duration-300 ease-in-out px-4"
+							className=" !tracking-widest cursor-pointer text-black dark:text-white text-[clamp(0.75rem,3dvw,1rem)] hover:opacity-50 transition-opacity duration-300 ease-in-out px-4"
 							onClick={() => setViewNewsletters(!viewNewsletters)}
 						>
 							{!viewNewsletters ? (
@@ -49,7 +49,7 @@ const Designs = () => {
 									/>
 								</Link>
 								<Link to={item.link} target="_blank" className="w-fit gap-4 p-4 text-center">
-									<span className="font-roboto">{item.title}</span>
+									<span className="text-sm sm:text-base lg:text-lg">{item.title}</span>
 								</Link>
 							</RiseUpWhenVisible>
 						))}
@@ -66,7 +66,7 @@ const Designs = () => {
 					<div className="flex flex-row justify-between">
 						<h2 className="font-khand font-bold text-light dark:text-dark text-[clamp(1.25rem,4.5dvw,2rem)]">POSTERS</h2>
 						{/* <button
-							className="font-roboto !tracking-widest cursor-pointer text-black dark:text-white text-[clamp(0.75rem,3dvw,1rem)] hover:opacity-50 transition-opacity duration-300 ease-in-out px-4"
+							className=" !tracking-widest cursor-pointer text-black dark:text-white text-[clamp(0.75rem,3dvw,1rem)] hover:opacity-50 transition-opacity duration-300 ease-in-out px-4"
 							onClick={() => setViewPosters(!viewPosters)}
 						>
 							{!viewPosters ? (
@@ -105,7 +105,7 @@ const Designs = () => {
 					<div className="flex flex-row justify-between">
 						<h2 className="font-khand font-bold text-light dark:text-dark text-[clamp(1.25rem,4.5dvw,2rem)]">THUMBNAILS</h2>
 						{/* <button
-							className="font-roboto !tracking-widest cursor-pointer text-black dark:text-white text-[clamp(0.75rem,3dvw,1rem)] hover:opacity-50 transition-opacity duration-300 ease-in-out px-4"
+							className=" !tracking-widest cursor-pointer text-black dark:text-white text-[clamp(0.75rem,3dvw,1rem)] hover:opacity-50 transition-opacity duration-300 ease-in-out px-4"
 							onClick={() => setViewThumbs(!viewThumbs)}
 						>
 							{!viewThumbs ? (
@@ -137,7 +137,7 @@ const Designs = () => {
 					<div className="flex flex-row justify-between">
 						<h2 className="font-khand font-bold text-light dark:text-dark text-[clamp(1.25rem,4.5dvw,2rem)]">OTHER DESIGNS</h2>
 						{/* <button
-							className="font-roboto !tracking-widest cursor-pointer text-black dark:text-white text-[clamp(0.75rem,3dvw,1rem)] hover:opacity-50 transition-opacity duration-300 ease-in-out px-4"
+							className=" !tracking-widest cursor-pointer text-black dark:text-white text-[clamp(0.75rem,3dvw,1rem)] hover:opacity-50 transition-opacity duration-300 ease-in-out px-4"
 							onClick={() => setViewOthers(!viewOthers)}
 						>
 							{!viewOthers ? (

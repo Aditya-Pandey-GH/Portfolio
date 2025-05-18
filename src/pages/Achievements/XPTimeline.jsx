@@ -35,10 +35,10 @@ const XPTimeline = ({ content = [] }) => {
 					</TimelineSeparator>
 					<TimelineContent>
 						<RiseUpWhenVisible>
-							<div className="relative -top-2 w-full flex flex-col p-4 rounded-2xl *:text-justify">
-								<div className="font-roboto flex flex-col">
-									<span className="text-lg sm:text-xl font-bold text-light dark:text-dark">{item.role}</span>
-									<span className="font-roboto">{item.desc}</span>
+							<div className="font-roboto relative -top-2 w-full flex flex-col px-4 mt-4 rounded-2xl">
+								<div className="flex flex-col">
+									<span className="text-justify text-lg sm:text-xl font-bold text-light dark:text-dark">{item.role}</span>
+									<span className="text-justify text-base sm:text-lg mt-2">{item.desc}</span>
 								</div>
 							</div>
 						</RiseUpWhenVisible>

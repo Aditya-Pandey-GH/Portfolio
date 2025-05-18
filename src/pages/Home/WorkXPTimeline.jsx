@@ -48,19 +48,17 @@ const WorkXPTimeline = ({ content = [] }) => {
 					<TimelineContent className="w-full">
 						<RiseUpWhenVisible>
 							<div className="w-full flex flex-col bg-white dark:bg-neutral-700 p-4 rounded-2xl *:text-justify">
-								<span className="font-roboto text-xl sm:text-2xl font-bold !tracking-normal text-light dark:text-yellow-400">
-									{item.role}
-								</span>
-								<span className="font-roboto text-sm sm:text-base font-bold italic">{`${item.company}, ${item.branch}`}</span>
-								<span className="font-roboto text-sm sm:text-base">
+								<span className=" text-xl sm:text-2xl font-bold !tracking-normal text-light dark:text-yellow-400">{item.role}</span>
+								<span className=" text-sm sm:text-base font-bold italic">{`${item.company}, ${item.branch}`}</span>
+								<span className=" text-sm sm:text-base">
 									{item.start} – {item.end}
 								</span>
-								{/* <span className="font-roboto text-sm sm:text-base mt-4">{item.desc}</span> */}
+								{/* <span className=" text-sm sm:text-base mt-4">{item.desc}</span> */}
 								<div className="flex flex-row flex-wrap gap-x-4 gap-y-2 mt-4">
 									{item.techs.map((tech, index) => (
 										<span
 											key={index}
-											className="font-roboto dark:font-semibold text-sm sm:text-base rounded py-1 px-4 bg-neutral-700 text-white dark:bg-white dark:text-neutral-700"
+											className=" dark:font-semibold text-sm sm:text-base rounded py-1 px-4 bg-neutral-700 text-white dark:bg-white dark:text-neutral-700"
 										>
 											{tech}
 										</span>

@@ -13,7 +13,8 @@ const Home = () => {
 			{/* About Me */}
 			<RiseUpWhenVisible>
 				<section className="flex flex-col mt-8 sm:mt-12 mx-4 sm:mx-8">
-					<h2 className="font-khand font-bold text-light dark:text-dark text-[clamp(1.25rem,4.5dvw,2rem)]">ABOUT ME</h2>
+					<h2 className="font-khand font-bold text-light dark:text-dark text-xl xs:text-2xl md:text-3xl">ABOUT ME</h2>
+					{/* <h2 className="font-khand font-bold text-light dark:text-dark text-[clamp(1.25rem,4.5dvw,2rem)]">ABOUT ME</h2> */}
 					<div className="flex justify-center">
 						<hr className="w-full border rounded-full text-neutral-500/50 dark:text-neutral-300/50" />
 					</div>
@@ -22,7 +23,7 @@ const Home = () => {
 							<li key={index} className="text-justify">
 								<RiseUpWhenVisible className="flex flex-row justify-start items-start">
 									<BulletPointer className="mt-0.5 -ml-2 mr-2" />
-									<div className="font-roboto">{item}</div>
+									<div className="text-sm sm:text-base lg:text-lg">{item}</div>
 								</RiseUpWhenVisible>
 							</li>
 						))}
@@ -33,7 +34,7 @@ const Home = () => {
 			{/* Education */}
 			<RiseUpWhenVisible>
 				<section className="flex flex-col mt-4 sm:mt-8 mx-4 sm:mx-8">
-					<h2 className="font-khand font-bold text-light dark:text-dark text-[clamp(1.25rem,4.5dvw,2rem)]">EDUCATION</h2>
+					<h2 className="font-khand font-bold text-light dark:text-dark text-xl xs:text-2xl md:text-3xl">EDUCATION</h2>
 					<div className="flex justify-center">
 						<hr className="w-full border rounded-full text-neutral-500/50 dark:text-neutral-300/50" />
 					</div>

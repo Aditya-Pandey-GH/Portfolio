@@ -10,7 +10,7 @@ const ProjectSection = ({ heading, route, content }) => {
 
 	return (
 		<RiseUpWhenVisible>
-			<section className="flex flex-col mt-8 sm:mt-12 mx-4 sm:mx-8">
+			<section className="flex flex-col mt-8 sm:mt-12 mx-4 sm:mx-8 ">
 				<div className="flex flex-row justify-between items-center">
 					{!route && (
 						<Link
@@ -18,15 +18,17 @@ const ProjectSection = ({ heading, route, content }) => {
 							className="hover:opacity-50 transition-opacity duration-300 ease-in-out px-4"
 							title="Go Back to Projects Page"
 						>
-							<FaCircleChevronDown className="text-light dark:text-dark text-[clamp(1.5rem,4.5dvw,2rem)] rotate-90 transition-all duration-300 ease-in-out" />
-							{/* <span className="font-roboto !tracking-widest text-black dark:text-white text-[clamp(0.75rem,3dvw,1rem)]">View All</span> */}
+							<FaCircleChevronDown className="text-light dark:text-dark text-lg xs:text-xl md:text-2xl rotate-90 transition-all duration-300 ease-in-out" />
 						</Link>
 					)}
-					<h2 className="flex-1 font-khand font-bold text-light dark:text-dark text-[clamp(1.25rem,4.5dvw,2rem)]">{heading}</h2>
+					<h2 className="flex-1 font-khand font-bold text-light dark:text-dark text-xl xs:text-2xl md:text-3xl">{heading}</h2>
 					{content.length > 3 && route && (
-						<Link to={`/projects/${route}`} className="hover:opacity-50 transition-opacity duration-300 ease-in-out px-4">
-							<FaCircleChevronDown className="text-light dark:text-dark text-[clamp(1.5rem,4.5dvw,2rem)] -rotate-90 transition-all duration-300 ease-in-out" />
-							{/* <span className="font-roboto !tracking-widest text-black dark:text-white text-[clamp(0.75rem,3dvw,1rem)]">View All</span> */}
+						<Link
+							to={`/projects/${route}`}
+							className="hover:opacity-50 transition-opacity duration-300 ease-in-out px-4"
+							title={`Show all ${heading.toLowerCase()}`}
+						>
+							<FaCircleChevronDown className="text-light dark:text-dark text-lg xs:text-xl md:text-2xl -rotate-90 transition-all duration-300 ease-in-out" />
 						</Link>
 					)}
 				</div>
@@ -34,13 +36,6 @@ const ProjectSection = ({ heading, route, content }) => {
 					<hr className="w-full border rounded-full text-neutral-500/50 dark:text-neutral-300/50" />
 				</div>
 				<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 my-8 mx-4 gap-x-4 gap-y-8">
-					{/* {content.length > 3 && route
-						? content.slice(0, 3).map((item) => {
-								return <DisplayContent key={item.id} item={item} />;
-						  })
-						: content.map((item) => {
-								return <DisplayContent key={item.id} item={item} />;
-						  })} */}
 					{(content.length > 3 && route ? content.slice(0, 3) : content).map((item) => {
 						return <DisplayContent key={item.id} item={item} />;
 					})}
@@ -87,16 +82,16 @@ const DisplayContent = ({ item }) => {
 				</div>
 				<div className="flex flex-col p-4 mt-8 xs:mt-12">
 					<div className="w-fit mb-4">
-						<span className="text-light dark:text-dark font-roboto font-bold mb-2">{item.name}</span>
+						<span className="text-sm xs:text-base text-light dark:text-dark font-bold mb-2">{item.name}</span>
 						<hr className="w-full text-light dark:text-dark -mt-1" />
 					</div>
-					<span className="font-roboto text-justify">{item.desc}</span>
+					<span className="text-sm xs:text-base text-justify">{item.desc}</span>
 					<div className="my-2">
-						<h3 className="font-roboto font-bold">Tech Stack:</h3>
+						<h3 className="text-sm xs:text-base font-bold">Tech Stack:</h3>
 						<div className="flex flex-row flex-wrap gap-2">
 							{item.techs.map((tech, index) => {
 								return (
-									<span key={index} className="font-roboto px-2 py-1 bg-neutral-400/50 dark:bg-neutral-500/50 rounded">
+									<span key={index} className="text-sm xs:text-base px-2 py-1 bg-neutral-400/50 dark:bg-neutral-500/50 rounded">
 										{tech}
 									</span>
 								);
