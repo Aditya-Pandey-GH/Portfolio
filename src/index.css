@@ -5,11 +5,6 @@
 
 @custom-variant dark (&:where(.dark, .dark *));
 
-* {
-	/* scrollbar-width: thin; */
-	@apply tracking-wide outline-none;
-}
-
 :root {
 	font-family: "Roboto Condensed", system-ui, Avenir, Helvetica, Arial, sans-serif;
 	@apply bg-neutral-200 dark:bg-neutral-900 text-black dark:text-white transition-colors duration-300 ease-in-out overflow-y-scroll;
@@ -20,6 +15,11 @@
 	--color-light: #034da2;
 	--color-dark: #ffc700;
 	--breakpoint-xs: 425px;
+}
+
+body {
+	/* scrollbar-width: thin; */
+	@apply tracking-wide outline-none;
 }
 
 a {
