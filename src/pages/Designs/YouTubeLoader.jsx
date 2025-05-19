@@ -86,7 +86,7 @@ const YouTubeLoader = ({ videoId }) => {
 				</div>
 
 				<div className="p-4 text-center">
-					<h4 className="text-sm sm:text-base lg:text-lg">{videoTitle}</h4>
+					<span className="text-sm sm:text-base lg:text-lg">{videoTitle}</span>
 					{/* <span className="">( {channelName} )</span> */}
 				</div>
 			</section>
