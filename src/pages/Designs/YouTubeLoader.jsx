@@ -1,14 +1,12 @@
 import { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
 import { FaImage, FaPlay } from "react-icons/fa";
 
 const YouTubeLoader = ({ videoId }) => {
 	const [clicked, setClicked] = useState(false);
 	// const [metaData, setMetaData] = useState({});
 	const [videoTitle, setVideoTitle] = useState("Loading...");
+	const [videoThumbnail, setVideoThumbnail] = useState("");
 	// const [channelName, setChannelName] = useState("Loading...");
-
-	const videoThumbnail = `https://img.youtube.com/vi/${videoId}/maxresdefault.jpg`;
 
 	// Fetch metadata of the video
 	const fetchMetaData = async () => {
@@ -18,6 +16,7 @@ const YouTubeLoader = ({ videoId }) => {
 			// console.table(data);
 			// setMetaData(data);
 			setVideoTitle(data.title.split("|")[0]);
+			setVideoThumbnail(`https://img.youtube.com/vi/${videoId}/maxresdefault.jpg`);
 			// setChannelName(data.author_name);
 			// setVideoThumbnail(data.thumbnail_url);
 		} else {
@@ -54,7 +53,7 @@ const YouTubeLoader = ({ videoId }) => {
 						}`}
 					>
 						<div className={`flex flex-col justify-center items-center space-y-2`}>
-							<Link
+							<a
 								href={videoThumbnail}
 								target="_blank"
 								rel="noopener noreferrer"
@@ -64,8 +63,8 @@ const YouTubeLoader = ({ videoId }) => {
 							>
 								<FaImage />
 								View Thumbnail
-							</Link>
-							<Link
+							</a>
+							<a
 								href={`https://www.youtube.com/watch?v=${videoId}`}
 								target="_blank"
 								rel="noopener noreferrer"
@@ -75,7 +74,7 @@ const YouTubeLoader = ({ videoId }) => {
 							>
 								<FaPlay />
 								Watch Video
-							</Link>
+							</a>
 						</div>
 					</div>
 
