@@ -397,7 +397,8 @@ export const WebsitesContent = [
 		icon: "/projects/websites/azfFoods/Icon.avif",
 		thumb: "/projects/websites/azfFoods/Thumb.avif",
 		links: {
-			github: "",
+			// github: "",
+			github: "https://github.com/Aditya-Pandey-GH/AZF-Foods",
 			// live: "https://azffoods.vercel.app/",
 			live: "https://azffoods.com.au/",
 		},
@@ -411,7 +412,8 @@ export const WebsitesContent = [
 		thumb: "/projects/websites/healthElev/Thumb.avif",
 		links: {
 			github: "https://github.com/Aditya-Pandey-GH/Health-Elevator-Legacy",
-			live: "",
+			// live: "",
+			live: "https://youtu.be/l5zPGm_0p40",
 		},
 	},
 ];
@@ -479,49 +481,41 @@ export const NewslettersContent = [
 
 export const PostersContent = [
 	{
-		// id: "ecoFriendlyDiwaliPosterMakingCompetitionOct2022",
 		title: "Eco-Friendly Diwali",
 		poster: "/designs/posters/diwaliPoster.avif",
 		// desc: "This poster was made for a poster-making competition. The theme for that event was Eco-Friendly Diwali. It was conducted on October 28, 2022 by the Eco Club of Jagan Institute of Management Studies, Sector-5, Rohini.",
 	},
 	{
-		// id: "bcaOrientationSessionDec2022",
 		title: "BCA Orientation (2022-25)",
 		poster: "/designs/posters/orientation.avif",
 		// desc: "This poster was made for the orientation session that was to be held for the students enrolled in BCA program of batch 2022-25 at Jagan Institute of Management Studies, Sector-5, Rohini. It was organized on December 1, 2022.",
 	},
 	{
-		// id: "airNoisePollutionNukkadNatakDec2022",
 		title: "Air or Noise Pollution",
 		poster: "/designs/posters/pollution.avif",
 		// desc: "This poster was made for a Nukkad Natak event which was to be organized to spread awareness about Air and Noise Pollution. It was conducted on December 13, 2022 by the Eco Club of Jagan Institute of Management Studies, Sector-5, Rohini.",
 	},
 	{
-		// id: "sankalpAuditionsDec2022",
 		title: "Sankalp Auditions (2022-25)",
 		poster: "/designs/posters/sankalp.avif",
 		// desc: "This poster was made for Sankalp, the theatre society of  Jagan Institute of Management Studies, Sector-5, Rohini, to cast students from 2022-25 batch into the society. It was scheduled for December 28, 2022.",
 	},
 	{
-		// id: "codeItTekQbeJun2023",
 		title: "Code-It",
 		poster: "/designs/posters/codeIt.avif",
 		// desc: 'This poster was made for a coding-based event named "Code-It". It was conducted on June 14, 2023 by the IT Club (TekQbe) at Jagan Institute of Management Studies, Sector-5, Rohini.',
 	},
 	{
-		// id: "farewellPartyAug2023",
 		title: "Farewell Party (2020-23)",
 		poster: "/designs/posters/farewell.avif",
 		// desc: "This poster was made for the Farewell Party of the students of MCA, BBA, BCA and BA Eco Hons.. It was conducted on August 12, 2023 by the Cultural Club at Jagan Institute of Management Studies, Sector-5, Rohini.",
 	},
 	{
-		// id: "codeHuntTekQbeEvent2023",
 		title: "Code Hunt",
 		poster: "/designs/posters/codeHunt.avif",
 		// desc: "This poster was made for a 3 round coding-based event named Code Hunt. It was conducted in 2023, by the IT Club (TekQbe) of Jagan Institute of Management Studies, Sector-5, Rohini.",
 	},
 	{
-		// id: "saiTiffinSep2024",
 		title: "Sai Tiffin Service",
 		poster: "/designs/posters/saiTiffin.avif",
 		// desc: "This poster was made to promote a local tiffin service, called SAI Tiffin Service. This tiffin service was started in September 2024, and aimed at providing the tiffin service to the people of Shalimar Garden, at a lower price than market price.",
