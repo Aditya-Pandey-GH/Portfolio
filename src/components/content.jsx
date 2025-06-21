@@ -350,7 +350,7 @@ export const GamesContent = [
 			live: "https://github.com/Aditya-Pandey-GH/Flappy-Bird-Clone/releases/latest",
 		},
 	},
-];
+].reverse();
 
 export const WebsitesContent = [
 	// {
@@ -375,6 +375,19 @@ export const WebsitesContent = [
 		links: {
 			github: "https://github.com/Aditya-Pandey-GH/Portfolio",
 			live: "https://aditya-pandey.vercel.app/",
+		},
+	},
+	{
+		id: "healthElev",
+		name: "Health Elevator",
+		desc: "Health Elevator is a website that helps the users to search for the nearby medical stores, and set the reminders for medicines. All the reminders will be sent to your WhatsApp number that you want to recieve your reminders on, since most of the people are active on WhatsApp.",
+		techs: ["Node.js", "Express.js", "MongoDB", "React", "CSS", "Bootstrap", "Tailwind"],
+		icon: "/projects/websites/healthElev/Icon.avif",
+		thumb: "/projects/websites/healthElev/Thumb.avif",
+		links: {
+			github: "https://github.com/Aditya-Pandey-GH/Health-Elevator-Legacy",
+			// live: "",
+			live: "https://youtu.be/l5zPGm_0p40",
 		},
 	},
 	{
@@ -404,19 +417,18 @@ export const WebsitesContent = [
 		},
 	},
 	{
-		id: "healthElev",
-		name: "Health Elevator",
-		desc: "Health Elevator is a website that helps the users to search for the nearby medical stores, and set the reminders for medicines. All the reminders will be sent to your WhatsApp number that you want to recieve your reminders on, since most of the people are active on WhatsApp.",
-		techs: ["Node.js", "Express.js", "MongoDB", "React", "CSS", "Bootstrap", "Tailwind"],
-		icon: "/projects/websites/healthElev/Icon.avif",
-		thumb: "/projects/websites/healthElev/Thumb.avif",
+		id: "partially-true",
+		name: "Partially True",
+		desc: "Partially True is a browser based game. In this game, the computer chooses a number and you have to guess what the digits are. For each digit you enter, the computer will tell you which digit is in the number, which one is not, and which one is at the wrong place.",
+		techs: ["React.js", "Vite.js", "Tailwind"],
+		icon: "/projects/websites/partiallyTrue/Icon.avif",
+		thumb: "/projects/websites/partiallyTrue/Thumb.avif",
 		links: {
-			github: "https://github.com/Aditya-Pandey-GH/Health-Elevator-Legacy",
-			// live: "",
-			live: "https://youtu.be/l5zPGm_0p40",
+			github: "https://github.com/Aditya-Pandey-GH/Partially-True",
+			live: "https://partially-true.vercel.app",
 		},
 	},
-];
+].reverse();
 
 export const AppsContent = [
 	{
@@ -443,7 +455,7 @@ export const AppsContent = [
 			live: "",
 		},
 	},
-];
+].reverse();
 
 // Designs Page
 export const NewslettersContent = [
@@ -537,6 +549,7 @@ export const ThumbsContent = [
 	"TnBjIPoa4R0",
 	"hVHoZ2JJUUA",
 	"QTA6ti6IzN0",
+	"_Tgetvnn7BE",
 ].reverse();
 
 export const OtherDesignsContent = [

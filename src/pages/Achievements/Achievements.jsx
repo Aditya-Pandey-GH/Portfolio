@@ -149,7 +149,12 @@ const Achievements = () => {
 							<div key={item.id} className="flex flex-col md:flex-row max-md:items-center gap-2 md:gap-4">
 								<RiseUpWhenVisible className="">
 									<Link to={item.cert} target="_blank" className="w-60 flex">
-										<img src={item.cert} alt={item.id} className="w-60 rounded-2xl" loading="lazy" />
+										<img
+											src={item.cert}
+											alt={item.id}
+											className="w-60 rounded-2xl shadow-black/50 not-dark:shadow-lg"
+											loading="lazy"
+										/>
 									</Link>
 								</RiseUpWhenVisible>
 								<RiseUpWhenVisible className="">
