@@ -347,7 +347,8 @@ export const GamesContent = [
 		thumb: "/projects/games/flappy/Thumb.avif",
 		links: {
 			github: "https://github.com/Aditya-Pandey-GH/Flappy-Bird-Clone",
-			live: "https://github.com/Aditya-Pandey-GH/Flappy-Bird-Clone/releases/latest",
+			live: "https://game-zoned.itch.io/flappy-bird",
+			// live: "https://github.com/Aditya-Pandey-GH/Flappy-Bird-Clone/releases/latest",
 		},
 	},
 ].reverse();
