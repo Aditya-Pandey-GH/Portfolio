@@ -9,17 +9,19 @@ const Skills = () => {
 			{/* Cover Art and Intro */}
 			<Cover />
 
-			{/* Languages */}
-			<SkillSet heading={"LANGUAGES"} content={LangsContent} />
+			<div className="mt-8 sm:mt-12 mb-4 sm:mb-0">
+				{/* Languages */}
+				<SkillSet heading={"LANGUAGES"} content={LangsContent} />
 
-			{/* DataBases */}
-			<SkillSet heading={"DATABASES"} content={DBsContent} />
+				{/* DataBases */}
+				<SkillSet heading={"DATABASES"} content={DBsContent} />
 
-			{/* Technologies & Frameworks */}
-			<SkillSet heading={"TECHNOLOGIES & FRAMEWORKS"} content={TechsContent} />
+				{/* Technologies & Frameworks */}
+				<SkillSet heading={"TECHNOLOGIES & FRAMEWORKS"} content={TechsContent} />
 
-			{/* Tools */}
-			<SkillSubSet heading={"TOOLS"} content={ToolsContent} />
+				{/* Tools */}
+				<SkillSubSet heading={"TOOLS"} content={ToolsContent} />
+			</div>
 		</>
 	);
 };

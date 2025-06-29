@@ -92,7 +92,6 @@ const Sidebar = () => {
 						</h1>
 					</div>
 
-					{/* Change the value of height from '100vh-5rem' to appropriate value according to your project requirements 👇 */}
 					<div className="w-full h-[calc(100dvh-5rem)] sm:h-[calc(100dvh-8rem)] overflow-y-auto overflow-x-hidden flex flex-col justify-between">
 						{/* <div className="w-full h-[calc(100dvh-5rem)] overflow-y-auto overflow-x-hidden flex flex-col justify-between"> */}
 						{/* Pages */}
