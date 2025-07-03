@@ -547,6 +547,8 @@ export const ThumbsContent = [
 	"R9yA6mmFGkI",
 	"irowRLpyCWU",
 	"maFhCbyzG5c",
+	"FBjGjlDT790",
+	"PPep_IpFXhI",
 	"TnBjIPoa4R0",
 	"hVHoZ2JJUUA",
 	"QTA6ti6IzN0",
