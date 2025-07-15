@@ -1,8 +1,10 @@
 import { RiseUpWhenVisible } from "../../components/anims";
 import Cover from "../../components/Cover";
 import EducationTimeline from "./EducationTimeline";
+import WorkXPTimeline from "./WorkXPTimeline";
 import BulletPointer from "../../components/BulletPointer";
-import { AboutMeContent, EducationContent, WorkXPContent } from "../../components/content";
+import { AboutMeContent, EducationContent, HobbyContent, WorkXPContent } from "../../components/content";
+import HobbySet from "./HobbySet";
 
 const Home = () => {
 	return (
@@ -41,6 +43,9 @@ const Home = () => {
 					<EducationTimeline content={EducationContent} />
 				</section>
 			</RiseUpWhenVisible>
+
+			{/* Hobbies */}
+			<HobbySet heading={"HOBBIES"} content={HobbyContent} />
 
 			{/* Jobs */}
 			{/* <RiseUpWhenVisible>

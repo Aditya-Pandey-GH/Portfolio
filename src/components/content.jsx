@@ -121,40 +121,42 @@ export const EducationContent = [
 	},
 ];
 
+export const HobbyContent = [
+	{
+		// id: "singing",
+		title: "Singing",
+		icon: "/home/hobby/singing.webp",
+	},
+	{
+		// id: "gaming",
+		title: "Gaming",
+		icon: "/home/hobby/gaming.webp",
+	},
+	{
+		// id: "writing",
+		title: "Writing",
+		icon: "/home/hobby/writing.webp",
+	},
+	{
+		// id: "reading",
+		title: "Reading",
+		icon: "/home/hobby/reading.webp",
+	},
+];
+
 export const WorkXPContent = [
 	{
-		id: "google_soft_dev",
-		logo: "https://pngimg.com/d/google_PNG19630.png",
-		company: "Google LLC",
+		id: "jims",
+		logo: "/home/education/jims.avif",
+		company: "JIMS, Sector-5, Rohini",
 		branch: "New Delhi",
-		role: "Software Engineer",
-		start: "Mar 2024",
-		end: "May 2030",
-		// desc: "I have worked in Google LLC, ( New Delhi branch ) as a Software Developer for 6 years.",
-		techs: ["HTML", "CSS", "JS", "MERN", "ViteJS"],
-	},
-	{
-		id: "ms_soft_dev",
-		// logo: "https://mailmeteor.com/logos/assets/PNG/Microsoft_Logo_512px.png",
-		logo: "https://logos-world.net/wp-content/uploads/2020/09/Microsoft-Symbol.png",
-		company: "Microsoft Corporation",
-		branch: "New Delhi",
-		role: "Software Engineer",
-		start: "Mar 2024",
-		end: "May 2030",
-		// desc: "I have worked in Google LLC, ( New Delhi branch ) as a Software Developer for 6 years.",
-		techs: ["HTML", "CSS", "JS", "MERN", "ViteJS", "Tailwind CSS"],
-	},
-	{
-		id: "amazon_soft_dev",
-		logo: "https://upload.wikimedia.org/wikipedia/commons/d/de/Amazon_icon.png",
-		company: "Amazon Inc.",
-		branch: "New Delhi",
-		role: "Software Engineer",
-		start: "Mar 2024",
-		end: "May 2030",
-		// desc: "I have worked in Google LLC, ( New Delhi branch ) as a Software Developer for 6 years.",
-		techs: ["HTML", "CSS", "JS", "MERN", "ViteJS"],
+		role: "Web Developer",
+		start: "Jan 2025",
+		end: "Feb 2025",
+		techs: ["HTML", "CSS", "JS"],
+		settings: {
+			bg: "#034da2",
+		},
 	},
 ];
 
@@ -541,19 +543,20 @@ export const ThumbsContent = [
 	"sgpzSnycztg",
 	"JUWIQRL62V0",
 	"_BxOQkpalmQ",
-	"2Y0jFLYFcMY",
-	"n26HVo_bazU",
+	// "2Y0jFLYFcMY",
+	// "n26HVo_bazU",
 	"VUyd6ieASus",
-	"R9yA6mmFGkI",
-	"irowRLpyCWU",
+	// "R9yA6mmFGkI",
+	// "irowRLpyCWU",
 	"maFhCbyzG5c",
 	"FBjGjlDT790",
 	"94iwoTPCnKo",
 	"PPep_IpFXhI",
-	"TnBjIPoa4R0",
-	"hVHoZ2JJUUA",
+	// "TnBjIPoa4R0",
+	// "hVHoZ2JJUUA",
 	"QTA6ti6IzN0",
-	"_Tgetvnn7BE",
+	// "_Tgetvnn7BE",
+	"-veiGxp3axc",
 ].reverse();
 
 export const OtherDesignsContent = [
@@ -605,7 +608,6 @@ export const OtherDesignsContent = [
 ];
 
 // Achievements Page
-
 export const SocialWelfareContent = [
 	{
 		desc: "Performed a themed act on Republic Day to raise public awareness about the challenges faced by the elderly and the growing need for compassion toward residents of old-age homes.",
@@ -790,8 +792,8 @@ export const BigEventsContent = [
 export const SocialContent = [
 	{
 		id: "professional",
-		title: "Professional Accounts",
-		tools: [
+		type: "Professional Accounts",
+		socialMediaACs: [
 			{
 				id: "github",
 				name: "GitHub",
@@ -814,8 +816,8 @@ export const SocialContent = [
 	},
 	{
 		id: "personal",
-		title: "Personal Accounts",
-		tools: [
+		type: "Personal Accounts",
+		socialMediaACs: [
 			{
 				id: "youtube",
 				name: "YouTube",
