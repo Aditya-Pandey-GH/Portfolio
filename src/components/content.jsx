@@ -556,7 +556,8 @@ export const ThumbsContent = [
 	// "hVHoZ2JJUUA",
 	"QTA6ti6IzN0",
 	// "_Tgetvnn7BE",
-	"-veiGxp3axc",
+	// "-veiGxp3axc",
+	"tC1TCjrnnPI",
 ].reverse();
 
 export const OtherDesignsContent = [
