@@ -121,7 +121,7 @@ const Sidebar = () => {
 												{item.path == "/" + location.pathname.split("/")[1] ? item.selectedLogo : item.logo}
 											</span>
 											<span
-												className={`font-iceberg group-hover:text-light group-hover:dark:text-dark transition-all ease-in-out duration-300 ${
+												className={`group-hover:text-light group-hover:dark:text-dark transition-all ease-in-out duration-300 ${
 													isSidebarOpen ? "opacity-100" : "opacity-0"
 												} ${item.path == "/" + location.pathname.split("/")[1] && "!text-light dark:!text-dark"}`}
 											>
@@ -169,7 +169,7 @@ const Sidebar = () => {
 											</div>
 										</div>
 										<span
-											className={`font-iceberg group-hover:text-light group-hover:dark:text-dark transition-all ease-in-out duration-300 ${
+											className={`group-hover:text-light group-hover:dark:text-dark transition-all ease-in-out duration-300 ${
 												isSidebarOpen ? "opacity-100" : "opacity-0"
 											}`}
 										>
