@@ -6,6 +6,7 @@ import XPTimeline from "./XPTimeline";
 import SeeMore from "../../components/SeeMore";
 import { RiseUpWhenVisible } from "../../components/anims";
 import { BigEventsContent, CertsContent, SocialWelfareContent, XPContent } from "../../components/content";
+import EventsTimeline from "./EventsTimeline";
 
 const Achievements = () => {
 	const [viewCerts, setViewCerts] = useState(false);
@@ -104,20 +105,29 @@ const Achievements = () => {
 								{index !== 0 && (
 									<hr className="w-full relative -top-2 border rounded-full text-neutral-500/25 dark:text-neutral-300/25" />
 								)}
-								<div className="flex flex-col xs:flex-row items-center flex-wrap gap-2 sm:gap-4">
+								<div className="text-justify flex flex-col xs:flex-row items-center flex-wrap gap-2 sm:gap-4">
 									<img src={item.logo} alt={item.id} className="w-20 h-fit rounded-lg" loading="lazy" />
 									<div className="flex flex-col text-justify justify-center">
 										<span className="font-bold max-xs:text-center text-lg xs:text-xl md:text-2xl text-light dark:text-dark">
 											{item.name}
 										</span>
-										<span className="max-xs:text-center text-sm xs:text-base">{item.year}</span>
+										<span className="max-xs:text-center text-sm xs:text-base text-neutral-700 dark:text-neutral-300">
+											{item.year}
+										</span>
 										<span className="max-xs:text-center text-base xs:text-lg">{item.location}</span>
 									</div>
 								</div>
-								<div className="text-base sm:text-lg">{item.desc}</div>
+								<div className="text-justify text-base sm:text-lg">{item.desc}</div>
 							</RiseUpWhenVisible>
 						))}
 					</div>
+					{/* <div className="flex flex-col justify-start my-8 mx-4">
+						{(viewBigEvents ? BigEventsContent : BigEventsContent.slice(0, 3)).map((item, index) => (
+							<RiseUpWhenVisible key={item.id} className="flex flex-col gap-4">
+								<EventsTimeline content={item} />
+							</RiseUpWhenVisible>
+						))}
+					</div> */}
 				</section>
 
 				{/* See More/Less */}

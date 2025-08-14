@@ -4,36 +4,38 @@ import TimelineSeparator from "@mui/lab/TimelineSeparator";
 import TimelineConnector from "@mui/lab/TimelineConnector";
 import TimelineContent from "@mui/lab/TimelineContent";
 import TimelineDot from "@mui/lab/TimelineDot";
-import { useMediaQuery, useTheme } from "@mui/material";
+// import { useTheme } from "@mui/material";
 
 import { RiseUpWhenVisible } from "../../components/anims";
 
-const EducationTimeline = ({ content = [] }) => {
-	const theme = useTheme();
-	const isMobile = useMediaQuery(theme.breakpoints.down("md"));
+const EventsTimeline = ({ content = {} }) => {
+	// const theme = useTheme();
+	// const isMobile = useMediaQuery(theme.breakpoints.down("md")); // true for screen <600px
 
 	return (
-		<Timeline position={isMobile ? "right" : "alternate"} className="my-4 !p-0">
-			{content.map((item) => (
+		<Timeline position="right" className="!p-0">
+			{content.map((item, index) => (
 				<TimelineItem
-					key={item.id}
+					key={index}
 					className="*:content-none"
-					sx={
-						isMobile && {
-							"&::before": {
-								content: "none",
-							},
-						}
-					}
+					sx={{
+						"&::before": {
+							content: "none",
+						},
+					}}
 				>
 					<TimelineSeparator>
-						<TimelineConnector />
-						<TimelineDot color="inherit" className="w-5 h-5 overflow-hidden !p-0 !my-4" style={{ backgroundColor: item.settings.bg }} />
+						{/* <TimelineConnector /> */}
+						<TimelineDot
+							color="inherit"
+							className="w-5 h-5 overflow-hidden !p-0 !my-4 !border-4 bg-light dark:bg-dark !border-white dark:!border-neutral-700"
+						/>
+
 						<TimelineConnector />
 					</TimelineSeparator>
 					<TimelineContent>
-						<RiseUpWhenVisible>
-							<div className="font-roboto w-full flex flex-col bg-neutral-100 dark:bg-neutral-800 p-6 rounded-2xl *:text-justify">
+						<RiseUpWhenVisible className="flex flex-col space-y-2">
+							<div className="font-roboto w-full flex flex-col my-4 rounded-2xl *:text-justify">
 								<div className="flex flex-row items-center mb-3 sm:mb-4 gap-2 xs:gap-4">
 									<div className="bg-white rounded-full p-2 not-dark:shadow-black/25 not-dark:shadow-[2px_5px_5px]">
 										<img src={item.logo} alt={item.name} className="w-12 h-12 object-cover rounded-md" loading="lazy" />
@@ -57,4 +59,4 @@ const EducationTimeline = ({ content = [] }) => {
 	);
 };
 
-export default EducationTimeline;
+export default EventsTimeline;

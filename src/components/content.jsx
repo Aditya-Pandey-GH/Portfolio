@@ -55,15 +55,14 @@ export const SidebarContent = [
 
 // Home Page
 export const AboutMeContent = [
-	// "Hi, I am Aditya Pandey.",
-	"I am a Web Developer. I have a good command over tech stacks like MERN Stack and I am currently exploring Vite JS.",
-	"I am a tech enthusiast, having a keen interest and passion for tech related stuff.",
-	// "I am a good team-leader who can lead a team of hard-working individuals.",
-	"I am a good team-worker who has coordination skills to work and adapt quickly with any team.",
-	"I am a confident speaker, having a good command on my communication skills.",
-	"Not only this, but I am also a good presentation creator, with a good command over the tools like Microsoft PowerPoint, Canva and Figma.",
-	"I have prior experience of graphic designing and video editing as well.",
-	"I am aspiring to become a Game Developer in the near future and I wish to lead the world of game development with my professionalism.",
+	"I am a tech enthusiast with a keen interest and passion for technology.",
+	"I am a web developer specializing in the MERN stack, with React.js as my forte. I am currently learning backend development.",
+	"I am a strong team player with coordination skills that allow me to work and adapt quickly in any team environment.",
+	"I am also an effective team leader with the ability to guide and motivate a team of hardworking individuals.",
+	// "I am a confident speaker with a strong command over my communication skills.",
+	"I excel at creating presentations and have proficiency in tools such as Microsoft PowerPoint, Canva, and Figma.",
+	"I also have prior experience in graphic design and video editing.",
+	"I aspire to become a game developer in the near future and aim to lead the world of game development with professionalism.",
 ];
 
 export const EducationContent = [
@@ -91,6 +90,7 @@ export const EducationContent = [
 		settings: {
 			bg: "#034da2",
 		},
+		desc: "From 2021 to 2024, I pursued my Bachelor of Computer Applications (BCA) at JIMS, a college affiliated with Guru Gobind Singh Indraprastha University (GGSIPU). During my three-year program, I gained a comprehensive understanding of core computer science principles. The curriculum covered a wide range of subjects, including programming languages like C, C++, and Java, data structures, database management systems (DBMS), web development technologies, and software engineering. My time at JIMS not only provided me with a solid theoretical foundation but also honed my practical skills through various projects and assignments, preparing me for a career in the IT industry.",
 	},
 	{
 		id: "xii",
@@ -105,6 +105,7 @@ export const EducationContent = [
 		settings: {
 			bg: "#c70000",
 		},
+		desc: "I completed my 11th and 12th grades at Hansraj Smarak Sr Sec School from 2020 to 2021. My academic focus was on the Science stream with a combination of Physics, Chemistry, Mathematics, and Computer Science (PCM / CS). The curriculum under the CBSE board provided me with a strong foundation in scientific and logical reasoning. My studies in Computer Science during this period sparked my initial interest in the field, which ultimately led me to pursue a degree in BCA. The rigorous coursework and competitive environment at this school were instrumental in developing my problem-solving abilities and preparing me for higher education.",
 	},
 	{
 		id: "x",
@@ -118,6 +119,7 @@ export const EducationContent = [
 		settings: {
 			bg: "#52a3c5",
 		},
+		desc: "I completed my schooling up to the 10th grade at Everest Public School, a CBSE-affiliated institution in Ghaziabad, from 2018 to 2019. This period of my education was crucial in building a broad and fundamental knowledge base across various subjects, including Mathematics, Science, Social Science, and languages. The school's emphasis on a well-rounded education helped me develop strong communication skills and a disciplined approach to learning. The foundational concepts and study habits I established at Everest Public School were essential building blocks for my subsequent academic journey and personal growth.",
 	},
 ];
 
@@ -549,7 +551,7 @@ export const ThumbsContent = [
 	// "R9yA6mmFGkI",
 	// "irowRLpyCWU",
 	"maFhCbyzG5c",
-	"FBjGjlDT790",
+	// "FBjGjlDT790",
 	"94iwoTPCnKo",
 	"PPep_IpFXhI",
 	// "TnBjIPoa4R0",
@@ -558,6 +560,7 @@ export const ThumbsContent = [
 	// "_Tgetvnn7BE",
 	// "-veiGxp3axc",
 	"tC1TCjrnnPI",
+	"z9YVdeQLyUE",
 ].reverse();
 
 export const OtherDesignsContent = [
@@ -629,41 +632,6 @@ export const SocialWelfareContent = [
 	{
 		desc: "Conducted a street play dedicated to raising awareness about air pollution and its significant adverse effects on the environment and human well-being.",
 		year: "Dec 2022",
-	},
-];
-
-export const CertsContent = [
-	{
-		id: "mernTraining",
-		title: "MERN Stack Training",
-		desc: "This was awarded for the completion of Summer training of MERN stack, at Jagan Institute of Management Studies, Sector-5 (Rohini).",
-		cert: "/achievements/certs/mernStack.avif",
-		by: "Tech Explica",
-		on: "September 2023",
-	},
-	{
-		id: "ofa-bajajCert",
-		title: "Plastic Recycling",
-		desc: "This was awarded for launching a small-scale initiative (One For All), which consisted of the collection of plastic milk packets, and then sending them to plastic recyclers.",
-		cert: "/achievements/certs/oneForAll.avif",
-		by: "Bajaj & Others",
-		on: "July 2022",
-	},
-	{
-		id: "networkBulls",
-		title: "Network Bull (Cisco)",
-		desc: "This was awarded for participating in a one-day industrial visit on network implementation and cyber security.",
-		cert: "/achievements/certs/cyberSec.avif",
-		by: "Network Bull",
-		on: "May 2022",
-	},
-	{
-		id: "ipr-event",
-		title: "NIPAM",
-		desc: "This was awarded for participating in the IP Awareness Training Program under National Intellectual Property Awareness Mission, called Scope for All.",
-		cert: "/achievements/certs/scopeForAll.avif",
-		by: "NIPAM",
-		on: "February 2022",
 	},
 ];
 
@@ -744,7 +712,7 @@ export const BigEventsContent = [
 		name: "Code It",
 		year: "February 2022",
 		location: "JIMS, Delhi",
-		desc: "Achieved 3rd place in the Code-It coding competition, competing against senior students from the 2nd and 3rd years as well as the MCA program.",
+		desc: "Secured 3rd place in the 'Code It' competition, competing against senior BCA and MCA students. Demonstrated problem-solving, coding efficiency, and time management skills under pressure, proving my ability to perform in a competitive environment against more experienced participants.",
 		logo: "/achievements/achievements/codeIt.avif",
 	},
 	{
@@ -752,7 +720,7 @@ export const BigEventsContent = [
 		name: "Eco Art",
 		year: "May 2022",
 		location: "JIMS, Delhi",
-		desc: "Organized a large-scale event at JIMS, Sector-5, Rohini to promote awareness about plastic and milk packet recycling. Participants created posters and hand paintings highlighting environmental sustainability, and I also performed an awareness act with fellow organizers.",
+		desc: "Organized 'Eco Art' to raise awareness about plastic and milk packet recycling. Managed event coordination, contributed to creative planning, and performed an awareness act. Encouraged environmental responsibility through posters, hand paintings, and interactive sessions with participants and visitors.",
 		logo: "/achievements/achievements/ofa.avif",
 	},
 	{
@@ -760,7 +728,7 @@ export const BigEventsContent = [
 		name: "Tech Jitters",
 		year: "July 2022",
 		location: "JIMS, Delhi",
-		desc: "Worked as a coordinator for Tech Jitters, an inter-college technical fest hosted by TekQbe, the IT Club of JIMS, managing event logistics and participant coordination.",
+		desc: "Worked as coordinator for 'Tech Jitters,' an inter-college technical fest by TekQbe. Managed logistics, supported participants, and ensured smooth execution of events. Gained valuable experience in event management, teamwork, and problem-solving under time constraints.",
 		logo: "/achievements/achievements/techJitters.avif",
 	},
 	{
@@ -768,7 +736,7 @@ export const BigEventsContent = [
 		name: "Smart India Hackathon 2022",
 		year: "August 2022",
 		location: "BIT Mesra, Jharkhand",
-		desc: "Secured 4th place in Smart India Hackathon 2022. Gained valuable experience in a competitive hackathon environment and deepened my understanding of real-world coding challenges.",
+		desc: "Secured 4th place in Smart India Hackathon 2022 at BIT Mesra. Collaborated on a real-world project, presenting innovative solutions to judges. Enhanced technical expertise, teamwork, and the ability to work under intense national-level competition.",
 		logo: "/achievements/achievements/sih.avif",
 	},
 	{
@@ -776,7 +744,7 @@ export const BigEventsContent = [
 		name: "JIMS Internal Hackathon 2023",
 		year: "September 2023",
 		location: "JIMS, Delhi",
-		desc: "Won 1st place in JIMS Internal Hackathon 2023, which served as the qualifying round for Smart India Hackathon 2023, showcasing innovative problem-solving and teamwork.",
+		desc: "Won 1st place in JIMS Internal Hackathon 2023, qualifying for Smart India Hackathon. Delivered an innovative project within tight deadlines, showcasing technical expertise, creativity, and collaborative skills. Strengthened problem-solving abilities for larger competitive platforms.",
 		logo: "/achievements/achievements/sih.avif",
 	},
 	{
@@ -784,8 +752,43 @@ export const BigEventsContent = [
 		name: "Code Kshetra",
 		year: "February 2024",
 		location: "JIMS, Delhi",
-		desc: "Served as an organizer for Code Kshetra, a national-level hackathon conducted in collaboration with the Geek Room society and supported by sponsors including Coding Ninjas, Devfolio, Polygon, and Rise In.",
+		desc: "Organized 'Code Kshetra,' a national-level hackathon with sponsors like Coding Ninjas, Devfolio, and Polygon. Managed registrations, coordinated with teams and sponsors, and ensured event success. Developed strong leadership and event management skills through large scale coordination.",
 		logo: "/achievements/achievements/codeKshetra.avif",
+	},
+].reverse();
+
+export const CertsContent = [
+	{
+		id: "mernTraining",
+		title: "MERN Stack Training",
+		desc: "This was awarded for the completion of Summer training of MERN stack, at Jagan Institute of Management Studies, Sector-5 (Rohini).",
+		cert: "/achievements/certs/mernStack.avif",
+		by: "Tech Explica",
+		on: "September 2023",
+	},
+	{
+		id: "ofa-bajajCert",
+		title: "Plastic Recycling",
+		desc: "This was awarded for launching a small-scale initiative (One For All), which consisted of the collection of plastic milk packets, and then sending them to plastic recyclers.",
+		cert: "/achievements/certs/oneForAll.avif",
+		by: "Bajaj & Others",
+		on: "July 2022",
+	},
+	{
+		id: "networkBulls",
+		title: "Network Bull (Cisco)",
+		desc: "This was awarded for participating in a one-day industrial visit on network implementation and cyber security.",
+		cert: "/achievements/certs/cyberSec.avif",
+		by: "Network Bull",
+		on: "May 2022",
+	},
+	{
+		id: "ipr-event",
+		title: "NIPAM",
+		desc: "This was awarded for participating in the IP Awareness Training Program under National Intellectual Property Awareness Mission, called Scope for All.",
+		cert: "/achievements/certs/scopeForAll.avif",
+		by: "NIPAM",
+		on: "February 2022",
 	},
 ];
 

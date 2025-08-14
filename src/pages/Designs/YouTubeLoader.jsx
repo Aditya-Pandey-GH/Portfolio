@@ -5,7 +5,7 @@ const YouTubeLoader = ({ videoId }) => {
 	const [clicked, setClicked] = useState(false);
 	// const [metaData, setMetaData] = useState({});
 	const [videoTitle, setVideoTitle] = useState("Loading...");
-	const [videoThumbnail, setVideoThumbnail] = useState("");
+	const [videoThumbnail, setVideoThumbnail] = useState("Loading...");
 	// const [channelName, setChannelName] = useState("Loading...");
 
 	// Fetch metadata of the video
