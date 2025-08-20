@@ -39,7 +39,7 @@ const Designs = () => {
 					</div>
 					<div className="grid grid-cols-1 xs:grid-cols-2 md:grid-cols-3 my-8 mx-4 gap-8 lg:gap-12">
 						{(viewNewsletters ? NewslettersContent : NewslettersContent.slice(0, 3)).map((item) => (
-							<RiseUpWhenVisible key={item.id} className="flex flex-col items-center">
+							<RiseUpWhenVisible key={item.id} className="flex flex-col items-center hover:scale-105 duration-200">
 								<Link to={item.link} target="_blank" className="w-fit flex justify-center">
 									<img
 										src={item.logo}
@@ -81,7 +81,12 @@ const Designs = () => {
 					</div>
 					<div className="columns-1 xs:columns-2 md:columns-3 mx-4 my-8 gap-8">
 						{(viewPosters ? PostersContent : PostersContent.slice(0, 3)).map((item, index) => (
-							<Link key={index} to={item.poster} target="_blank" className="w-fit flex items-center gap-4 mb-8">
+							<Link
+								key={index}
+								to={item.poster}
+								target="_blank"
+								className="w-fit flex items-center gap-4 mb-8 hover:scale-105 duration-200"
+							>
 								<RiseUpWhenVisible className="flex flex-col items-center">
 									<img
 										src={item.poster}
@@ -153,7 +158,12 @@ const Designs = () => {
 					</div>
 					<div className="columns-1 xs:columns-2 lg:columns-3 mx-4 my-8 gap-8">
 						{(viewOthers ? OtherDesignsContent : OtherDesignsContent.slice(0, 3)).map((item, index) => (
-							<Link key={index} to={item.logo} target="_blank" className="w-fit flex items-center gap-4 mb-8">
+							<Link
+								key={index}
+								to={item.logo}
+								target="_blank"
+								className="w-fit flex items-center gap-4 mb-8 hover:scale-105 duration-200"
+							>
 								<RiseUpWhenVisible className="flex flex-col items-center">
 									<img
 										src={item.logo}

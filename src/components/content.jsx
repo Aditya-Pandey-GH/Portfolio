@@ -60,7 +60,7 @@ export const AboutMeContent = [
 	"I am a strong team player with coordination skills that allow me to work and adapt quickly in any team environment.",
 	"I am also an effective team leader with the ability to guide and motivate a team of hardworking individuals.",
 	// "I am a confident speaker with a strong command over my communication skills.",
-	"I excel at creating presentations and have proficiency in tools such as Microsoft PowerPoint, Canva, and Figma.",
+	"I also excel at creating presentations and have proficiency in tools such as Microsoft PowerPoint, Canva, and Figma.",
 	"I also have prior experience in graphic design and video editing.",
 	"I aspire to become a game developer in the near future and aim to lead the world of game development with professionalism.",
 ];
@@ -133,6 +133,11 @@ export const HobbyContent = [
 		// id: "gaming",
 		title: "Gaming",
 		icon: "/home/hobby/gaming.webp",
+	},
+	{
+		// id: "acting",
+		title: "Acting",
+		icon: "/home/hobby/acting.webp",
 	},
 	{
 		// id: "writing",
@@ -314,15 +319,15 @@ export const ToolsContent = [
 				icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg",
 			},
 			{
-				id: "canva",
-				name: "Canva",
-				icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/canva/canva-original.svg",
-			},
-			{
 				id: "adobe-ps",
 				// name: "Adobe Photoshop",
 				name: "Photoshop",
 				icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/photoshop/photoshop-original.svg",
+			},
+			{
+				id: "canva",
+				name: "Canva",
+				icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/canva/canva-original.svg",
 			},
 		],
 	},

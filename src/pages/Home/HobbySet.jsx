@@ -10,7 +10,10 @@ const HobbySet = ({ heading, content }) => {
 				</div>
 				<div className="flex flex-row flex-wrap justify-start m-4 gap-4 sm:gap-8">
 					{content.map((item, index) => (
-						<RiseUpWhenVisible key={index} className="flex flex-col justify-center items-center text-center m-2">
+						<RiseUpWhenVisible
+							key={index}
+							className="flex flex-col justify-center items-center text-center m-2 hover:scale-110 duration-200"
+						>
 							<img src={item.icon} alt={item.id} className="w-8 xs:w-12 md:w-16" loading="lazy" />
 							<span className="text-center text-sm sm:text-base lg:text-lg sm:p-2">{item.title}</span>
 						</RiseUpWhenVisible>

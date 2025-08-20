@@ -31,7 +31,7 @@ const YouTubeLoader = ({ videoId }) => {
 
 	return (
 		<>
-			<section className="w-fit flex flex-col justify-center items-center">
+			<section className="w-fit flex flex-col justify-center items-center hover:scale-105 duration-200">
 				<div className="w-fit rounded relative group" onClick={() => setClicked(!clicked)}>
 					{/* <button className="w-fit p-3 rounded relative group bg-linear-to-tr from-neutral-200 to-gray-400" onClick={handleClick}> */}
 					{/* <button className="w-fit p-3 rounded relative group bg-gray-500 dark:bg-gray-300" onClick={handleClick}> */}

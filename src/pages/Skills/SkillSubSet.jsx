@@ -46,7 +46,10 @@ const SkillSubSet = ({ heading, content }) => {
 								<div className="flex flex-row flex-wrap gap-5 sm:gap-10 mt-4">
 									{tools.tools.map((tool) => {
 										return (
-											<RiseUpWhenVisible key={tool.id} className="flex flex-col justify-center items-center">
+											<RiseUpWhenVisible
+												key={tool.id}
+												className="flex flex-col justify-center items-center hover:scale-110 duration-200"
+											>
 												<img src={tool.icon} alt={tool.id} className="w-8 xs:w-12 md:w-16" loading="lazy" />
 												<span className="text-center text-sm sm:text-base lg:text-lg sm:p-2">{tool.name}</span>
 											</RiseUpWhenVisible>

@@ -162,7 +162,7 @@ const Achievements = () => {
 										<img
 											src={item.cert}
 											alt={item.id}
-											className="w-60 rounded-2xl shadow-black/50 not-dark:shadow-lg"
+											className="w-60 rounded-2xl shadow-black/50 not-dark:shadow-lg hover:scale-105 duration-200"
 											loading="lazy"
 										/>
 									</Link>

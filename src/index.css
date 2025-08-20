@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap"); /* Roboto Condensed */
 @import url("https://fonts.googleapis.com/css2?family=Khand:wght@300;400;500;600;700&display=swap"); /* Khand */
+@import url("https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap"); /* Rajdhani */
 
 @import "tailwindcss";
 
@@ -22,8 +23,9 @@
 	--breakpoint-xs: 425px;
 
 	/* Fonts */
-	--font-roboto: "Roboto Condensed", system-ui, Avenir, Helvetica, Arial, sans-serif;
-	--font-khand: "Khand", sans-serif;
+	--font-roboto: "Roboto Condensed", system-ui, sans-serif;
+	--font-khand: "Khand", system-ui, sans-serif;
+	--font-rajdhani: "Rajdhani", system-ui, sans-serif;
 
 	/* Font Sizes */
 	--text-4xxl: 2.5rem;

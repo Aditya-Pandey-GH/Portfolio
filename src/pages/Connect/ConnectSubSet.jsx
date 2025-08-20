@@ -25,7 +25,11 @@ const ConnectSubSet = ({ heading, content }) => {
 									{socialMediaTypes.socialMediaACs.map((social) => {
 										return (
 											<RiseUpWhenVisible key={social.id}>
-												<Link to={social.account} target="_blank" className="w-fit flex flex-col justify-center items-center">
+												<Link
+													to={social.account}
+													target="_blank"
+													className="w-fit flex flex-col justify-center items-center hover:scale-110 duration-200"
+												>
 													<span className="">{social.icon}</span>
 													{/* <span className="text-center text-sm sm:text-base lg:text-lg sm:p-2">{social.name}</span> */}
 												</Link>

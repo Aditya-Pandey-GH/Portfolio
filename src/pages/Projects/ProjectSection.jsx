@@ -62,7 +62,7 @@ const DisplayContent = ({ item }) => {
 							<Link
 								to={item.links.github}
 								target="_blank"
-								className="bg-white rounded border border-black drop-shadow-black/50 drop-shadow-md"
+								className="bg-white rounded border border-black drop-shadow-black/50 drop-shadow-md hover:scale-110 duration-200"
 								title="Source Code"
 							>
 								<FaGithub className="text-3xl text-black p-1" />
@@ -72,7 +72,7 @@ const DisplayContent = ({ item }) => {
 							<Link
 								to={item.links.live}
 								target="_blank"
-								className="bg-white rounded border border-black drop-shadow-black/50 drop-shadow-md"
+								className="bg-white rounded border border-black drop-shadow-black/50 drop-shadow-md hover:scale-110 duration-200"
 								title="Release / Live preview"
 							>
 								<FaLink className="text-3xl text-green-700 p-1" />
@@ -91,7 +91,10 @@ const DisplayContent = ({ item }) => {
 						<div className="flex flex-row flex-wrap gap-2">
 							{item.techs.map((tech, index) => {
 								return (
-									<span key={index} className="text-sm xs:text-base px-2 py-1 bg-neutral-400/50 dark:bg-neutral-500/50 rounded">
+									<span
+										key={index}
+										className="text-sm xs:text-base px-2 py-1 bg-neutral-400/50 dark:bg-neutral-500/50 rounded hover:scale-110 duration-200"
+									>
 										{tech}
 									</span>
 								);
