@@ -375,18 +375,18 @@ export const WebsitesContent = [
 	// 		live: "",
 	// 	},
 	// },
-	{
-		id: "portfolio",
-		name: "Portfolio Website",
-		desc: "This is my portfolio website. My skills, achievements, work and professional work are all mentioned on this website.",
-		techs: ["React.js", "Vite.js", "CSS", "Tailwind"],
-		icon: "/projects/websites/portfolio/Icon.avif",
-		thumb: "/projects/websites/portfolio/Thumb.avif",
-		links: {
-			github: "https://github.com/Aditya-Pandey-GH/Portfolio",
-			live: "https://aditya-pandey.vercel.app/",
-		},
-	},
+	// {
+	// 	id: "portfolio",
+	// 	name: "Portfolio Website",
+	// 	desc: "This is my portfolio website. My skills, achievements, work and professional work are all mentioned on this website.",
+	// 	techs: ["React.js", "Vite.js", "CSS", "Tailwind"],
+	// 	icon: "/projects/websites/portfolio/Icon.avif",
+	// 	thumb: "/projects/websites/portfolio/Thumb.avif",
+	// 	links: {
+	// 		github: "https://github.com/Aditya-Pandey-GH/Portfolio",
+	// 		live: "https://aditya-pandey.vercel.app/",
+	// 	},
+	// },
 	{
 		id: "healthElev",
 		name: "Health Elevator",
