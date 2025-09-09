@@ -363,18 +363,18 @@ export const GamesContent = [
 ].reverse();
 
 export const WebsitesContent = [
-	// {
-	// 	id: "jimsPrePlace",
-	// 	name: "JIMS Pre-Placement Portal {In Progress}",
-	// 	desc: "JIMS Pre-Placement Portal is a web for all the pre-placement related content for JIMS, making it easy for the students to access it later. Also, with a simple admin portal, the admin can easily add or delete or modify multiple things in the website.",
-	// 	techs: ["Node.js", "Express.js", "MongoDB", "React", "Cascading Style Sheets (CSS)"],
-	// 	icon: "",
-	// 	thumb: "",
-	// 	links: {
-	// 		github: "",
-	// 		live: "",
-	// 	},
-	// },
+	{
+		id: "jimsPrePlace",
+		name: "JIMS Pre-Placement Portal",
+		desc: "JIMS Pre-Placement Portal is a web for all the pre-placement related content for JIMS, making it easy for the students to access it later. Also, with a simple admin portal, the admin can easily add or delete or modify multiple things in the website.",
+		techs: ["Node.js", "Express.js", "MongoDB", "React", "Cascading Style Sheets (CSS)"],
+		icon: "/projects/websites/jimsPrePlace/Icon.avif",
+		thumb: "/projects/websites/jimsPrePlace/Thumb.avif",
+		links: {
+			github: "https://github.com/Aditya-Pandey-GH/JIMS-PrePlacement-Portal",
+			live: "",
+		},
+	},
 	// {
 	// 	id: "portfolio",
 	// 	name: "Portfolio Website",
@@ -388,19 +388,6 @@ export const WebsitesContent = [
 	// 	},
 	// },
 	{
-		id: "healthElev",
-		name: "Health Elevator",
-		desc: "Health Elevator is a website that helps the users to search for the nearby medical stores, and set the reminders for medicines. All the reminders will be sent to your WhatsApp number that you want to recieve your reminders on, since most of the people are active on WhatsApp.",
-		techs: ["Node.js", "Express.js", "MongoDB", "React", "CSS", "Bootstrap", "Tailwind"],
-		icon: "/projects/websites/healthElev/Icon.avif",
-		thumb: "/projects/websites/healthElev/Thumb.avif",
-		links: {
-			github: "https://github.com/Aditya-Pandey-GH/Health-Elevator-Legacy",
-			// live: "",
-			live: "https://youtu.be/l5zPGm_0p40",
-		},
-	},
-	{
 		id: "evilSimon",
 		name: "Evil Simon",
 		desc: "Evil Simon is the hard mode of Simon Says game. The concept of this game is same as the original Simon Says game, but the Evil Simon has a bit of difficulty to offer, and you have to overcome that difficulty, by making and breaking high scores.",
@@ -412,10 +399,23 @@ export const WebsitesContent = [
 			live: "https://evil-simon.vercel.app",
 		},
 	},
+	{
+		id: "healthElev",
+		name: "Health Elevator",
+		desc: "Health Elevator is a website that helps the users to search for the nearby medical stores and set the reminders for medicines. Since most of the people actively use WhatsApp, all the reminders will be sent to the WhatsApp number that you want to receive your reminders on.",
+		techs: ["Node.js", "Express.js", "MongoDB", "React", "CSS", "Bootstrap", "Tailwind"],
+		icon: "/projects/websites/healthElev/Icon.avif",
+		thumb: "/projects/websites/healthElev/Thumb.avif",
+		links: {
+			github: "https://github.com/Aditya-Pandey-GH/Health-Elevator-Legacy",
+			// live: "",
+			live: "https://youtu.be/l5zPGm_0p40",
+		},
+	},
 	// {
 	// 	id: "azfFoods",
 	// 	name: "AZF Foods",
-	// 	desc: "At AZF foods, We're inspired by a true love for cooking and a dedication to delivering the finest, most authentic spices. The aim is to provide high-quality, sustainably sourced spices that bring every dish to life.",
+	// 	desc: "AZF Foods is a one stop solution to all your spicy problems. The aim is to provide high-quality, most authentic, sustainably sourced spices that bring every dish to life.",
 	// 	techs: ["HTML", "CSS", "JavaScript", "MongoDB"],
 	// 	icon: "/projects/websites/azfFoods/Icon.avif",
 	// 	thumb: "/projects/websites/azfFoods/Thumb.avif",
@@ -462,6 +462,18 @@ export const AppsContent = [
 		thumb: "/projects/apps/miniGamesPlus/Thumb.avif",
 		links: {
 			github: "https://github.com/Aditya-Pandey-GH/G-12-Plus",
+			live: "",
+		},
+	},
+	{
+		id: "jimsCanteen",
+		name: "JIMS Canteen",
+		desc: "JIMS Canteen is a canteen management system for JIMS Rohini (Sector-5), which helps the canteen manager to manage the canteen easily.",
+		techs: ["Android Studio", "XML", "Java", "Firebase", "React", "Node", "Express", "CSS", "MongoDB"],
+		icon: "/projects/apps/jimsCanteen/Icon.avif",
+		thumb: "/projects/apps/jimsCanteen/Thumb.avif",
+		links: {
+			github: "https://github.com/Aditya-Pandey-GH/JIMS-Canteen",
 			live: "",
 		},
 	},

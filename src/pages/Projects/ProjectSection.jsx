@@ -73,7 +73,7 @@ const DisplayContent = ({ item }) => {
 								to={item.links.live}
 								target="_blank"
 								className="bg-white rounded border border-black drop-shadow-black/50 drop-shadow-md hover:scale-110 duration-200"
-								title="Release / Live preview"
+								title="Project Demo"
 							>
 								<FaLink className="text-3xl text-green-700 p-1" />
 							</Link>
