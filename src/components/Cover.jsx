@@ -91,9 +91,11 @@ const Cover = () => {
 
 				{/* My Photo */}
 				<div className="absolute -bottom-12 xs:-bottom-16 md:-bottom-20 lg:-bottom-25 left-4 sm:left-8 rounded-full hover:scale-105 duration-300">
-					<div className="w-24 xs:w-32 md:w-40 lg:w-50 rounded-full overflow-hidden border-3 md:border-4 border-neutral-200 dark:border-neutral-900 transition-colors duration-300 bg-radial from-[#9ECBFF] to-[#034DA2] dark:from-[#FFEEB2] dark:to-[#FFC700] dark:to-75%">
-						<img src="/cover/dp.webp" alt="Aditya Pandey" />
-					</div>
+					<img
+						src="/cover/dp.webp"
+						alt="Aditya Pandey"
+						className="w-24 xs:w-32 md:w-40 lg:w-50 rounded-full border-3 md:border-4 border-neutral-200 dark:border-neutral-900 transition-colors duration-300 bg-radial from-[#9ECBFF] to-[#034DA2] dark:from-[#FFEEB2] dark:to-[#FFC700] dark:to-75%"
+					/>
 				</div>
 			</section>
 
