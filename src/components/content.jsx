@@ -5,7 +5,7 @@ import { HiOutlinePhoto, HiMiniPhoto } from "react-icons/hi2"; // Designs
 import { PiMedalLight, PiMedalFill } from "react-icons/pi"; // Achievements
 import { BsTelephone, BsFillTelephoneFill } from "react-icons/bs"; // Connect
 
-import { GitHub, Instagram, LeetCode, LinkedIn, YouTube } from "../pages/Connect/SocialMediaLogo";
+import { GitHub, Instagram, Itch, LeetCode, LinkedIn, YouTube } from "../pages/Connect/SocialMediaLogo";
 
 // Sidebar
 export const SidebarContent = [
@@ -170,6 +170,26 @@ export const WorkXPContent = [
 // Skills Page
 export const LangsContent = [
 	{
+		id: "java",
+		name: "Java",
+		icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg",
+	},
+	{
+		id: "c#",
+		name: "C#",
+		icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg",
+	},
+	{
+		id: "cpp",
+		name: "C++",
+		icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg",
+	},
+	{
+		id: "python",
+		name: "Python",
+		icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg",
+	},
+	{
 		id: "html",
 		name: "HTML",
 		icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg",
@@ -184,26 +204,6 @@ export const LangsContent = [
 		// name: "JavaScript",
 		name: "JS",
 		icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg",
-	},
-	{
-		id: "c#",
-		name: "C#",
-		icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg",
-	},
-	{
-		id: "java",
-		name: "Java",
-		icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg",
-	},
-	{
-		id: "python",
-		name: "Python",
-		icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg",
-	},
-	{
-		id: "cpp",
-		name: "C++",
-		icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg",
 	},
 	{
 		id: "c",
@@ -304,19 +304,30 @@ export const ToolsContent = [
 		],
 	},
 	{
+		id: "api-test",
+		title: "API Testing Tools",
+		tools: [
+			{
+				id: "postman",
+				name: "Postman",
+				icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postman/postman-original.svg",
+			},
+		],
+	},
+	{
 		id: "design",
 		title: "Designing Tools",
 		tools: [
+			{
+				id: "figma",
+				name: "Figma",
+				icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg",
+			},
 			{
 				id: "ms-ppt",
 				// name: "Microsoft PowerPoint",
 				name: "PowerPoint",
 				icon: "https://cdn.jsdelivr.net/gh/GameZonedYT/Logos@main/Logos/powerpoint.svg",
-			},
-			{
-				id: "figma",
-				name: "Figma",
-				icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg",
 			},
 			{
 				id: "adobe-ps",
@@ -816,6 +827,12 @@ export const SocialContent = [
 		type: "Professional Accounts",
 		socialMediaACs: [
 			{
+				id: "itch",
+				name: "Itch.io",
+				account: "https://gamezoned.itch.io",
+				icon: <Itch />,
+			},
+			{
 				id: "github",
 				name: "GitHub",
 				account: "https://www.github.com/Aditya-Pandey-GH",
@@ -833,6 +850,7 @@ export const SocialContent = [
 				account: "https://www.leetcode.com/u/Aditya-Pandey-LC",
 				icon: <LeetCode />,
 			},
+			// <a href="https://gamezoned.itch.io"><img src="https://cdn.jsdelivr.net/gh/GameZonedYT/Logos@main/Logos/itch-io.svg" width="40" height="40" align="center" alt="GitHub" /></a>
 		],
 	},
 	{

@@ -65,7 +65,7 @@ const Connect = () => {
 					<div className="flex justify-center sm:mb-4">
 						<hr className="w-full border rounded-full text-neutral-500/50 dark:text-neutral-300/50" />
 					</div>
-					<div className="flex flex-col justify-start items-center my-8 mx-4 leading-normal">
+					<RiseUpWhenVisible className="flex flex-col justify-start items-center my-8 mx-4 leading-normal">
 						<form ref={form} onSubmit={submitForm} method="post" className="w-full max-w-lg flex flex-col gap-4 border-2 p-4 rounded-2xl">
 							<h3 className="font-bold text-light dark:text-dark text-lg xs:text-xl md:text-2xl text-center">CONTACT FORM</h3>
 
@@ -74,7 +74,8 @@ const Connect = () => {
 								type="text"
 								id="name"
 								name="name"
-								placeholder="Name"
+								heading="Full Name"
+								placeholder="Brian Snyder"
 								value={formData.name}
 								handleInputChange={handleInputChange}
 							/>
@@ -130,7 +131,8 @@ const Connect = () => {
 								type="email"
 								id="email"
 								name="email"
-								placeholder="Email ID"
+								heading="Email ID"
+								placeholder="brian-snyder@gmail.com"
 								value={formData.email}
 								handleInputChange={handleInputChange}
 							/>
@@ -140,7 +142,8 @@ const Connect = () => {
 								type="text"
 								id="subject"
 								name="subject"
-								placeholder="Subject"
+								heading="Subject"
+								placeholder="Job Opportunity"
 								value={formData.subject}
 								handleInputChange={handleInputChange}
 							/>
@@ -149,7 +152,9 @@ const Connect = () => {
 							<TextArea
 								id="message"
 								name="message"
-								placeholder="Type your mail"
+								heading="Message"
+								placeholder="Type your message here..."
+								// placeholder={`Hi Aditya,\nWe would like to discuss a job opportunity with you.`}
 								value={formData.message}
 								handleInputChange={handleInputChange}
 							/>
@@ -164,7 +169,7 @@ const Connect = () => {
 								</button>
 							</div>
 						</form>
-					</div>
+					</RiseUpWhenVisible>
 				</section>
 			</RiseUpWhenVisible>
 
@@ -186,38 +191,44 @@ const Connect = () => {
 	);
 };
 
-const InputBoxes = ({ type = "text", id, name, placeholder, value, handleInputChange }) => {
+const InputBoxes = ({ type = "text", id, name, heading, placeholder, value, handleInputChange }) => {
 	return (
-		<div className="w-full flex-1 bg-neutral-100 dark:bg-neutral-800 autofill:bg-transparent px-4 py-3 rounded-md group border-2 not-focus-within:border-transparent transition-all">
-			<input
-				type={type}
-				id={id}
-				name={name}
-				placeholder={placeholder}
-				value={value}
-				onChange={handleInputChange}
-				autoComplete="off"
-				className="w-full placeholder:text-black/50 dark:placeholder:text-white/50 text-base md:text-lg"
-				required
-			/>
-		</div>
+		<RiseUpWhenVisible className="relative flex flex-col">
+			<div className="w-full flex-1 px-2 group not-focus-within:border-transparent transition-all">{heading}</div>
+			<div className="w-full flex-1 bg-neutral-100 dark:bg-neutral-800 autofill:bg-transparent px-4 py-3 rounded-md group border-2 not-focus-within:border-transparent transition-all">
+				<input
+					type={type}
+					id={id}
+					name={name}
+					placeholder={placeholder}
+					value={value}
+					onChange={handleInputChange}
+					autoComplete="off"
+					className="w-full placeholder:text-black/50 dark:placeholder:text-white/50 text-base md:text-lg"
+					required
+				/>
+			</div>
+		</RiseUpWhenVisible>
 	);
 };
 
-const TextArea = ({ id, name, placeholder, value, handleInputChange }) => {
+const TextArea = ({ id, name, heading, placeholder, value, handleInputChange }) => {
 	return (
-		<div className="relative bg-neutral-100 dark:bg-neutral-800 px-4 py-3 rounded-md group border-2 not-focus-within:border-transparent transition-all">
-			<textarea
-				id={id}
-				name={name}
-				placeholder={placeholder}
-				value={value}
-				onChange={handleInputChange}
-				autoComplete="off"
-				className="w-full min-h-32 pr-2 placeholder:text-black/50 dark:placeholder:text-white/50 text-base md:text-lg resize-y text-justify"
-				required
-			/>
-		</div>
+		<RiseUpWhenVisible className="relative flex flex-col">
+			<div className="w-full flex-1 px-2 group not-focus-within:border-transparent transition-all">{heading}</div>
+			<div className="relative bg-neutral-100 dark:bg-neutral-800 px-4 py-3 rounded-md group border-2 not-focus-within:border-transparent transition-all">
+				<textarea
+					id={id}
+					name={name}
+					placeholder={placeholder}
+					value={value}
+					onChange={handleInputChange}
+					autoComplete="off"
+					className="w-full min-h-32 pr-2 placeholder:text-black/50 dark:placeholder:text-white/50 text-base md:text-lg resize-y text-justify"
+					required
+				/>
+			</div>
+		</RiseUpWhenVisible>
 	);
 };
 
