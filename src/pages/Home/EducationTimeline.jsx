@@ -13,11 +13,11 @@ const EducationTimeline = ({ content = [] }) => {
 	const isMobile = useMediaQuery(theme.breakpoints.down("md"));
 
 	return (
-		<Timeline position={isMobile ? "left" : "alternate"} className="my-4 !p-0">
+		<Timeline position={isMobile ? "right" : "alternate"} className="my-12 !p-0">
 			{content.map((item) => (
 				<TimelineItem
 					key={item.id}
-					className="*:content-none"
+					className="*:content-none -my-6"
 					sx={
 						isMobile && {
 							"&::before": {
