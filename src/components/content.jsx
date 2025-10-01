@@ -66,16 +66,20 @@ export const AboutMeContent = [
 ];
 
 export const EducationContent = [
-	// {
-	// 	id: "mca",
-	// 	name: "MCA",
-	// 	logo: "/home/education/*.avif",
-	// 	start: "2025",
-	// 	end: "2027",
-	// 	school: "College",
-	// 	location: "New Delhi",
-	// 	board: "University",
-	// },
+	{
+		id: "mca",
+		name: "MCA",
+		logo: "/home/education/usict.avif",
+		start: "2025",
+		end: "2027",
+		school: "USICT, Dwarka",
+		location: "New Delhi",
+		board: "GGSIPU",
+		settings: {
+			bg: "#ffc700",
+		},
+		desc: "From 2025 to 2027, I pursued my Masters of Computer Applications (MCA) at USICT, a college affiliated with Guru Gobind Singh Indraprastha University (GGSIPU). During my two-year program, I gained a comprehensive understanding of core computer science principles. The curriculum covered a wide range of subjects, including programming languages like C, C++, and Java, data structures, database management systems (DBMS), web development technologies, and software engineering. My time at USICT not only provided me with a solid theoretical foundation but also honed my practical skills through various projects and assignments, preparing me for a career in the IT industry.",
+	},
 	{
 		id: "bca",
 		name: "BCA",
