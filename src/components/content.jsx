@@ -223,11 +223,11 @@ export const DBsContent = [
 		name: "MongoDB",
 		icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg",
 	},
-	// {
-	// 	id: "mysql",
-	// 	name: "MySQL",
-	// 	icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg",
-	// },
+	{
+		id: "mysql",
+		name: "MySQL",
+		icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg",
+	},
 	// {
 	// 	id: "oracle-sql",
 	// 	name: "Oracle SQL",
@@ -248,23 +248,23 @@ export const TechsContent = [
 	},
 	{
 		id: "vite",
-		name: "Vite JS",
+		name: "Vite",
 		icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vitejs/vitejs-original.svg",
 	},
 	{
 		id: "react",
-		name: "React JS",
+		name: "React",
 		icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
 	},
 	{
 		id: "express",
-		name: "Express JS",
+		name: "Express",
 		// icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg",
 		icon: "https://cdn.jsdelivr.net/gh/GameZonedYT/Logos@latest/Logos/express.svg",
 	},
 	{
 		id: "node",
-		name: "Node JS",
+		name: "Node",
 		icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg",
 	},
 	// {
