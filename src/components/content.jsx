@@ -848,12 +848,12 @@ export const SocialContent = [
 				account: "https://www.linkedin.com/in/aditya-pandey-in",
 				icon: <LinkedIn />,
 			},
-			{
-				id: "leetcode",
-				name: "LeetCode",
-				account: "https://www.leetcode.com/u/Aditya-Pandey-LC",
-				icon: <LeetCode />,
-			},
+			// {
+			// 	id: "leetcode",
+			// 	name: "LeetCode",
+			// 	account: "https://www.leetcode.com/u/Aditya-Pandey-LC",
+			// 	icon: <LeetCode />,
+			// },
 			// <a href="https://gamezoned.itch.io"><img src="https://cdn.jsdelivr.net/gh/GameZonedYT/Logos@main/Logos/itch-io.svg" width="40" height="40" align="center" alt="GitHub" /></a>
 		],
 	},
