@@ -1,51 +1,31 @@
-import Timeline from "@mui/lab/Timeline";
-import TimelineItem from "@mui/lab/TimelineItem";
-import TimelineSeparator from "@mui/lab/TimelineSeparator";
-import TimelineConnector from "@mui/lab/TimelineConnector";
-import TimelineContent from "@mui/lab/TimelineContent";
-import TimelineDot from "@mui/lab/TimelineDot";
-// import { useTheme } from "@mui/material";
-
 import { RiseUpWhenVisible } from "../../components/anims";
+import BulletPointer from "../../components/BulletPointer";
 
-const XPTimeline = ({ content = [] }) => {
+const XPTimeline = ({ infXPItems = [] }) => {
 	// const theme = useTheme();
 	// const isMobile = useMediaQuery(theme.breakpoints.down("md")); // true for screen <600px
 
 	return (
-		<Timeline position="right" className="my-4 !p-0">
-			{content.map((item, index) => (
-				// {content.map((item, index) => (
-				<TimelineItem
-					key={index}
-					className="*:content-none"
-					sx={{
-						"&::before": {
-							content: "none",
-						},
-					}}
-				>
-					<TimelineSeparator>
-						{/* <TimelineConnector /> */}
-						<TimelineDot
-							color="inherit"
-							className="w-5 h-5 overflow-hidden !p-0 !my-4 !border-4 bg-light dark:bg-dark !border-white dark:!border-neutral-700"
-						/>
-						<TimelineConnector />
-					</TimelineSeparator>
-					<TimelineContent>
-						<RiseUpWhenVisible>
-							<div className="font-roboto relative -top-2 w-full flex flex-col px-4 mt-4 rounded-2xl">
-								<div className="flex flex-col">
-									<span className="text-justify text-lg sm:text-xl font-bold text-light dark:text-dark">{item.role}</span>
-									<span className="text-justify text-base sm:text-lg mt-2">{item.desc}</span>
-								</div>
+		<>
+			<section className="flex flex-col mb-4">
+				{infXPItems.map((infXPItem, infXPIndex) => (
+					<RiseUpWhenVisible key={infXPIndex} className="w-full h-full mt-4 flex flex-row gap-4 px-2 group">
+						{/* Timeline Bar */}
+						<div className="flex flex-col gap-3 items-center relative top-2">
+							<div className="relative -top-0.5 transition-all duration-300">
+								<BulletPointer className="w-6" />
 							</div>
-						</RiseUpWhenVisible>
-					</TimelineContent>
-				</TimelineItem>
-			))}
-		</Timeline>
+							<div className="w-0.5 h-full flex-1 bg-neutral-700 dark:bg-neutral-100 rounded-full group-last:hidden"></div>
+						</div>
+						{/* Right Content Section */}
+						<section className="w-full h-full px-4 py-1 rounded-lg flex flex-col gap-2 text-justify">
+							<h3 className="text-lg sm:text-xl font-bold text-light dark:text-dark">{infXPItem.role}</h3>
+							<h4 className="text-base sm:text-lg font-normal text-black dark:text-white">{infXPItem.desc}</h4>
+						</section>
+					</RiseUpWhenVisible>
+				))}
+			</section>
+		</>
 	);
 };
 

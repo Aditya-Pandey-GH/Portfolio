@@ -1,59 +1,75 @@
-import Timeline from "@mui/lab/Timeline";
-import TimelineItem from "@mui/lab/TimelineItem";
-import TimelineSeparator from "@mui/lab/TimelineSeparator";
-import TimelineConnector from "@mui/lab/TimelineConnector";
-import TimelineContent from "@mui/lab/TimelineContent";
-import TimelineDot from "@mui/lab/TimelineDot";
-import { useMediaQuery, useTheme } from "@mui/material";
+// import { VerticalTimeline, VerticalTimelineElement } from "react-vertical-timeline-component";
+// import "react-vertical-timeline-component/style.min.css";
+
+// import Timeline from "@mui/lab/Timeline";
+// import TimelineItem from "@mui/lab/TimelineItem";
+// import TimelineSeparator from "@mui/lab/TimelineSeparator";
+// import TimelineConnector from "@mui/lab/TimelineConnector";
+// import TimelineContent from "@mui/lab/TimelineContent";
+// import TimelineDot from "@mui/lab/TimelineDot";
+// import { useMediaQuery, useTheme } from "@mui/material";
 
 import { RiseUpWhenVisible } from "../../components/anims";
 
-const EducationTimeline = ({ content = [] }) => {
-	const theme = useTheme();
-	const isMobile = useMediaQuery(theme.breakpoints.down("md"));
+const EducationTimeline = ({ eduItems = [] }) => {
+	// const theme = useTheme();
+	// const isMobile = useMediaQuery(theme.breakpoints.down("md"));
+
+	// console.log(eduData);
+	// const eduItem = eduItems[0];
 
 	return (
-		<Timeline position={isMobile ? "right" : "alternate"} className="my-4 lg:my-12 !p-0">
-			{content.map((item) => (
-				<TimelineItem
-					key={item.id}
-					className="*:content-none lg:-my-6"
-					sx={
-						isMobile && {
-							"&::before": {
-								content: "none",
-							},
+		<>
+			<section className="flex flex-col mb-4">
+				{eduItems.map((eduItem, eduIndex) => (
+					<RiseUpWhenVisible key={eduItem.id} className="w-full h-full mt-4 flex flex-row gap-4 px-2 group">
+						{/* Left Content Section */}
+						{
+							<section
+								className={`w-full h-full bg-neutral-100 not-dark:shadow-xl dark:bg-neutral-800 px-6 py-4 rounded-lg text-justify hidden md:block ${eduIndex % 2 == 0 && "invisible"}`}
+							>
+								<h3 className="text-lg sm:text-xl font-bold text-light dark:text-dark">{eduItem.name}</h3>
+								<h4 className="font-medium text-neutral-700 dark:text-neutral-400 mb-2">{eduItem.start + " - " + eduItem.end}</h4>
+								<h4 className="font-semibold text-black dark:text-white">{eduItem.school}</h4>
+								<h4 className="font-normal dark:font-light text-black dark:text-white">{eduItem.board}</h4>
+							</section>
 						}
-					}
-				>
-					<TimelineSeparator>
-						<TimelineConnector />
-						<TimelineDot color="inherit" className="w-5 h-5 overflow-hidden !p-0 !my-4" style={{ backgroundColor: item.settings.bg }} />
-						<TimelineConnector />
-					</TimelineSeparator>
-					<TimelineContent>
-						<RiseUpWhenVisible>
-							<div className="font-roboto w-full flex flex-col bg-neutral-100 dark:bg-neutral-800 p-6 rounded-2xl *:text-justify">
-								<div className="flex flex-row items-center mb-3 sm:mb-4 gap-2 xs:gap-4">
-									<div className="bg-white rounded-full p-2 not-dark:shadow-black/25 not-dark:shadow-[2px_5px_5px]">
-										<img src={item.logo} alt={item.name} className="w-12 h-12 object-cover rounded-md" loading="lazy" />
-									</div>
-									<div className="flex flex-col">
-										<span className="text-lg sm:text-xl font-bold text-light dark:text-dark">{item.name}</span>
-										<span className="text-xs sm:text-sm font-bold -mt-1">
-											{item.start} – {item.end}
-										</span>
-									</div>
-								</div>
-								<span className="text-sm sm:text-base">{item.school}</span>
-								<span className="text-sm sm:text-base">{item.location}</span>
-								<span className="text-sm sm:text-base">{item.board}</span>
+						{/* Timeline Bar */}
+						<div className="flex flex-col gap-3 items-center relative top-2">
+							<div className="bg-white rounded-full relative -top-0.5 hover:scale-125 transition-all duration-300">
+								<img src={eduItem.logo} alt={eduItem.name} className="w-20 md:w-48 p-1 rounded-full" />
+								{/* <svg
+									xmlns="http://www.w3.org/2000/svg"
+									viewBox="0 0 32 32"
+									aria-hidden="true"
+									className="w-12"
+									fill={eduItem.settings.bg}
+								>
+									<circle
+										cx="16"
+										cy="16"
+										r="10"
+										strokeLinecap="round"
+										strokeLinejoin="round"
+										className="stroke-2 stroke-white"
+									></circle>
+								</svg> */}
 							</div>
-						</RiseUpWhenVisible>
-					</TimelineContent>
-				</TimelineItem>
-			))}
-		</Timeline>
+							<div className="w-1 h-full flex-1 bg-neutral-700 dark:bg-neutral-100 rounded-full group-last:hidden"></div>
+						</div>
+						{/* Right Content Section */}
+						<section
+							className={`w-full h-full bg-neutral-100 not-dark:shadow-xl dark:bg-neutral-800 px-6 py-4 rounded-lg text-justify ${eduIndex % 2 != 0 && "md:invisible"}`}
+						>
+							<h3 className="text-lg sm:text-xl font-bold text-light dark:text-dark">{eduItem.name}</h3>
+							<h4 className="font-medium text-neutral-700 dark:text-neutral-400 mb-2">{eduItem.start + " - " + eduItem.end}</h4>
+							<h4 className="font-semibold text-black dark:text-white">{eduItem.school}</h4>
+							<h4 className="font-normal dark:font-light text-black dark:text-white">{eduItem.board}</h4>
+						</section>
+					</RiseUpWhenVisible>
+				))}
+			</section>
+		</>
 	);
 };
 

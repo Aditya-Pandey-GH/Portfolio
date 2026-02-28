@@ -75,6 +75,7 @@ export const EducationContent = [
 		school: "USICT, Dwarka",
 		location: "New Delhi",
 		board: "GGSIPU",
+		learnings: [],
 		settings: {
 			bg: "#ffc700",
 		},
@@ -91,6 +92,7 @@ export const EducationContent = [
 		school: "JIMS, Sector-5, Rohini",
 		location: "New Delhi",
 		board: "GGSIPU",
+		learnings: [],
 		settings: {
 			bg: "#034da2",
 		},
@@ -106,6 +108,7 @@ export const EducationContent = [
 		school: "Hansraj Smarak Sr Sec School",
 		location: "New Delhi",
 		board: "CBSE",
+		learnings: ["Academics"],
 		settings: {
 			bg: "#c70000",
 		},
@@ -120,10 +123,12 @@ export const EducationContent = [
 		school: "Everest Public School",
 		location: "Ghaziabad",
 		board: "CBSE",
+		learnings: ["HTML", "Visual Basic", "Extra curricular activities", "Co-curricular activities", "Communication skills"],
 		settings: {
 			bg: "#52a3c5",
 		},
-		desc: "I completed my schooling up to the 10th grade at Everest Public School, a CBSE-affiliated institution in Ghaziabad, from 2018 to 2019. This period of my education was crucial in building a broad and fundamental knowledge base across various subjects, including Mathematics, Science, Social Science, and languages. The school's emphasis on a well-rounded education helped me develop strong communication skills and a disciplined approach to learning. The foundational concepts and study habits I established at Everest Public School were essential building blocks for my subsequent academic journey and personal growth.",
+		// desc: "I completed my schooling up to the 10th grade at Everest Public School, a CBSE-affiliated institution in Ghaziabad, from 2018 to 2019. This period of my education was crucial in building a broad and fundamental knowledge base across various subjects, including Mathematics, Science, Social Science, and languages. The school's emphasis on a well-rounded education helped me develop strong communication skills and a disciplined approach to learning. The foundational concepts and study habits I established at Everest Public School were essential building blocks for my subsequent academic journey and personal growth.",
+		desc: "During my time at Everest Public School, I was an academic topper. Not just this, I also participated in various extra co-curricular activities like music, speech, debate, essay writing, drawing, and many more.",
 	},
 ];
 
@@ -744,7 +749,7 @@ export const BigEventsContent = [
 		name: "Code It",
 		year: "February 2022",
 		location: "JIMS, Delhi",
-		desc: "Secured 3rd place in the 'Code It' competition, competing against senior BCA and MCA students. Demonstrated problem-solving, coding efficiency, and time management skills under pressure, proving my ability to perform in a competitive environment against more experienced participants.",
+		desc: "Secured 3rd place in the Code It competition, competing against senior BCA and MCA students. Demonstrated problem-solving, coding efficiency, and time management skills under pressure, proving my ability to perform in a competitive environment against more experienced participants.",
 		logo: "/achievements/achievements/codeIt.avif",
 	},
 	{
@@ -752,7 +757,7 @@ export const BigEventsContent = [
 		name: "Eco Art",
 		year: "May 2022",
 		location: "JIMS, Delhi",
-		desc: "Organized 'Eco Art' to raise awareness about plastic and milk packet recycling. Managed event coordination, contributed to creative planning, and performed an awareness act. Encouraged environmental responsibility through posters, hand paintings, and interactive sessions with participants and visitors.",
+		desc: "Organized Eco Art to raise awareness about plastic and milk packet recycling. Managed event coordination, contributed to creative planning, and performed an awareness act. Encouraged environmental responsibility through posters, hand paintings, and interactive sessions with participants and visitors.",
 		logo: "/achievements/achievements/ofa.avif",
 	},
 	{
@@ -760,7 +765,7 @@ export const BigEventsContent = [
 		name: "Tech Jitters",
 		year: "July 2022",
 		location: "JIMS, Delhi",
-		desc: "Worked as coordinator for 'Tech Jitters,' an inter-college technical fest by TekQbe. Managed logistics, supported participants, and ensured smooth execution of events. Gained valuable experience in event management, teamwork, and problem-solving under time constraints.",
+		desc: "Worked as coordinator for Tech Jitters, an inter-college technical fest by TekQbe. Managed logistics, supported participants, and ensured smooth execution of events. Gained valuable experience in event management, teamwork, and problem-solving under time constraints.",
 		logo: "/achievements/achievements/techJitters.avif",
 	},
 	{
@@ -772,7 +777,7 @@ export const BigEventsContent = [
 		logo: "/achievements/achievements/sih.avif",
 	},
 	{
-		id: "JIH23",
+		id: "jih23",
 		name: "JIMS Internal Hackathon 2023",
 		year: "September 2023",
 		location: "JIMS, Delhi",
@@ -784,8 +789,24 @@ export const BigEventsContent = [
 		name: "Code Kshetra",
 		year: "February 2024",
 		location: "JIMS, Delhi",
-		desc: "Organized 'Code Kshetra,' a national-level hackathon with sponsors like Coding Ninjas, Devfolio, and Polygon. Managed registrations, coordinated with teams and sponsors, and ensured event success. Developed strong leadership and event management skills through large scale coordination.",
+		desc: "Organized Code Kshetra, a national-level hackathon with sponsors like Coding Ninjas, Devfolio, and Polygon. Managed registrations, coordinated with teams and sponsors, and ensured event success. Developed strong leadership and event management skills through large scale coordination.",
 		logo: "/achievements/achievements/codeKshetra.avif",
+	},
+	{
+		id: "techsprint",
+		name: "Tech Sprint",
+		year: "January 2026",
+		location: "BPIT, Delhi",
+		desc: "Won 1st place in Tech Sprint, an online hackathon conducted by Google Developer Group at Bhagwan Parshuram Institute of Technology. Developed an impactful solution for a real-world problem, showcasing technical expertise and problem-solving skills.",
+		logo: "/achievements/achievements/techSprint.avif",
+	},
+	{
+		id: "algorush",
+		name: "Algo Rush",
+		year: "February 2026",
+		location: "JIMS, Delhi",
+		desc: "Judged Algo Rush, an 8 hour hackathon conducted by Bhagwan Parshuram Institute of Technology. Evaluated submissions, provided constructive feedback, and ensured fair and competitive judging process.",
+		logo: "/achievements/achievements/algoRush.avif",
 	},
 ].reverse();
 

@@ -6,7 +6,6 @@ import XPTimeline from "./XPTimeline";
 import SeeMore from "../../components/SeeMore";
 import { RiseUpWhenVisible } from "../../components/anims";
 import { BigEventsContent, CertsContent, SocialWelfareContent, XPContent } from "../../components/content";
-import EventsTimeline from "./EventsTimeline";
 
 const Achievements = () => {
 	const [viewCerts, setViewCerts] = useState(false);
@@ -40,7 +39,7 @@ const Achievements = () => {
 
 			{/* Informal Experience */}
 			<RiseUpWhenVisible className="flex flex-col justify-center items-center">
-				<section className="flex flex-col mt-8 sm:mt-12 mx-4 sm:mx-8">
+				<section className="w-full flex flex-col mt-8 sm:mt-12 px-4 sm:px-8">
 					<div className="flex flex-row justify-between">
 						<h2 className="font-khand font-bold text-light dark:text-dark text-xl xs:text-2xl md:text-3xl">INFORMAL EXPERIENCE</h2>
 						{/* <button
@@ -70,7 +69,7 @@ const Achievements = () => {
 										<span className="text-base xs:text-lg">{item.location}</span>
 									</div>
 								</div>
-								<XPTimeline content={item.roles} />
+								<XPTimeline infXPItems={item.roles} />
 							</RiseUpWhenVisible>
 						))}
 					</div>

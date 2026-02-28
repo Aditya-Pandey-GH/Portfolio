@@ -1,7 +1,7 @@
 import { RiseUpWhenVisible } from "../../components/anims";
 import Cover from "../../components/Cover";
 import EducationTimeline from "./EducationTimeline";
-import WorkXPTimeline from "./WorkXPTimeline";
+// import WorkXPTimeline from "./WorkXPTimeline";
 import BulletPointer from "../../components/BulletPointer";
 import { AboutMeContent, EducationContent, HobbyContent, WorkXPContent } from "../../components/content";
 import HobbySet from "./HobbySet";
@@ -40,7 +40,7 @@ const Home = () => {
 					<div className="flex justify-center">
 						<hr className="w-full border rounded-full text-neutral-500/50 dark:text-neutral-300/50" />
 					</div>
-					<EducationTimeline content={EducationContent} />
+					<EducationTimeline eduItems={EducationContent} />
 				</section>
 			</RiseUpWhenVisible>
 
