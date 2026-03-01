@@ -24,8 +24,10 @@ const Home = () => {
 						{AboutMeContent.map((item, index) => (
 							<li key={index} className="text-justify">
 								<RiseUpWhenVisible className="flex flex-row justify-start items-start">
-									<BulletPointer className="mt-0.5 -ml-2 mr-2" />
-									<div className="text-sm sm:text-base lg:text-lg">{item}</div>
+									<div>
+										<BulletPointer className="mt-0.5 -ml-2 mr-2" />
+									</div>
+									<span className="text-sm sm:text-base lg:text-lg">{item}</span>
 								</RiseUpWhenVisible>
 							</li>
 						))}
