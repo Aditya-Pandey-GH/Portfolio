@@ -5,7 +5,7 @@ import { HiOutlinePhoto, HiMiniPhoto } from "react-icons/hi2"; // Designs
 import { PiMedalLight, PiMedalFill } from "react-icons/pi"; // Achievements
 import { BsTelephone, BsFillTelephoneFill } from "react-icons/bs"; // Connect
 
-import { GitHub, Instagram, Itch, LeetCode, LinkedIn, YouTube } from "../pages/Connect/SocialMediaLogo";
+import { GitHub, Instagram, Itch, LeetCode, LinkedIn, PixilArt, YouTube } from "../pages/Connect/SocialMediaLogo";
 
 // Sidebar
 export const SidebarContent = [
@@ -854,19 +854,19 @@ export const SocialContent = [
 			{
 				id: "itch",
 				name: "Itch.io",
-				account: "https://gamezoned.itch.io",
+				account: "https://gamezoned.itch.io/",
 				icon: <Itch />,
 			},
 			{
 				id: "github",
 				name: "GitHub",
-				account: "https://www.github.com/Aditya-Pandey-GH",
+				account: "https://www.github.com/Aditya-Pandey-GH/",
 				icon: <GitHub />,
 			},
 			{
 				id: "linkedin",
 				name: "LinkedIn",
-				account: "https://www.linkedin.com/in/aditya-pandey-in",
+				account: "https://www.linkedin.com/in/aditya-pandey-in/",
 				icon: <LinkedIn />,
 			},
 			// {
@@ -885,14 +885,38 @@ export const SocialContent = [
 			{
 				id: "youtube",
 				name: "YouTube",
-				account: "https://www.youtube.com/@GameZonedYT",
+				account: "https://www.youtube.com/@GameZonedYT/videos/",
 				icon: <YouTube />,
 			},
 			{
 				id: "instagram",
 				name: "Instagram",
-				account: "https://www.instagram.com/adipandey.in",
+				account: "https://www.instagram.com/adipandey.in/",
 				icon: <Instagram />,
+			},
+		],
+	},
+	{
+		id: "coding",
+		type: "Coding Profiles",
+		socialMediaACs: [
+			{
+				id: "leetcode",
+				name: "LeetCode",
+				account: "https://leetcode.com/u/Aditya-Pandey-LC/",
+				icon: <LeetCode />,
+			},
+		],
+	},
+	{
+		id: "art",
+		type: "Art Profiles",
+		socialMediaACs: [
+			{
+				id: "pixilart",
+				name: "PixilArt",
+				account: "https://www.pixilart.com/adipandeypixil/gallery/",
+				icon: <PixilArt />,
 			},
 		],
 	},

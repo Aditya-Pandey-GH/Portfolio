@@ -7,10 +7,10 @@ const Cover = () => {
 			<section className="relative w-full bg-linear-to-br from-neutral-200 via-neutral-300 to-neutral-400 rounded-none sm:rounded-2xl">
 				<div className="w-full relative flex justify-between items-center sm:rounded-2xl overflow-hidden">
 					{/* Props */}
-					<img src="/cover/props.webp" alt="Props" className="max-w-40 sm:max-w-60" loading="lazy" />
+					<img src="/cover/props.webp" alt="Props" className="invisible xs:visible max-w-70 sm:max-w-96 opacity-50" loading="lazy" />
 
 					{/* Text */}
-					<div className="xs:absolute xs:w-full xs:flex xs:justify-center xs:items-center">
+					<div className="absolute w-full flex justify-center items-center">
 						<div className="w-fit h-fit flex flex-col xs:flex-row xs:flex-1 xs:justify-center items-center xs:space-x-4 sm:space-x-8 lg:space-x-12 gap-y-4 xs:gap-y-0 pr-2 xs:pr-0">
 							{/* Simply Realistic */}
 							<div className="flex flex-col items-center -space-y-2 xs:space-y-0">
@@ -79,13 +79,29 @@ const Cover = () => {
 											<span className="text-black text-sm xs:text-base sm:text-lg font-medium">aditya-pandey-in</span>
 										</div>
 									</Link>
+									{/* LinkedIn */}
+									<Link
+										to="https://www.youtube.com/@GameZonedYT"
+										target="_blank"
+										className="flex flex-row justify-center items-center space-x-1 xs:space-x-2 hover:scale-115 duration-300"
+									>
+										<img
+											src="https://upload.wikimedia.org/wikipedia/commons/0/09/YouTube_full-color_icon_%282017%29.svg"
+											alt="LinkedIn"
+											className="w-4 sm:w-6"
+										/>
+										<div className="flex flex-row justify-center items-center space-x-1">
+											<span className="text-black text-xl xs:text-2xl sm:text-3xl font-medium">/</span>
+											<span className="text-black text-sm xs:text-base sm:text-lg font-medium">@GameZonedYT</span>
+										</div>
+									</Link>
 								</div>
 							</div>
 						</div>
 					</div>
 
 					<div className="rounded-2xl overflow-hidden">
-						<div className="w-20 sm:w-30 lg:w-40 h-20 sm:h-30 lg:h-40 absolute -right-10 sm:-right-15 lg:-right-20 -bottom-10 sm:-bottom-15 lg:-bottom-20 bg-linear-to-br from-neutral-300 to-neutral-400 border-6 sm:border-8 lg:border-10 border-yellow-900 hidden xs:flex rotate-45"></div>
+						<div className="w-20 sm:w-30 lg:w-40 h-20 sm:h-30 lg:h-40 absolute -right-10 sm:-right-15 lg:-right-20 -bottom-10 sm:-bottom-15 lg:-bottom-20 bg-linear-to-br from-neutral-300 to-neutral-400 border-6 sm:border-8 lg:border-10 border-yellow-900 flex rotate-45"></div>
 					</div>
 				</div>
 

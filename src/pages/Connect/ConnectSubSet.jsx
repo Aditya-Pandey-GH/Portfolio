@@ -10,7 +10,7 @@ const ConnectSubSet = ({ heading, content }) => {
 				<div className="flex justify-center">
 					<hr className="w-full border rounded-full text-neutral-500/50 dark:text-neutral-300/50" />
 				</div>
-				<div className="flex flex-col md:grid-cols-2 justify-start m-0 sm:mt-4">
+				<div className="flex flex-col justify-start m-0 sm:mt-4">
 					{content.map((socialMediaTypes) => (
 						<RiseUpWhenVisible key={socialMediaTypes.id}>
 							<div className="w-full not-dark:font-semibold p-2">
@@ -30,8 +30,10 @@ const ConnectSubSet = ({ heading, content }) => {
 													target="_blank"
 													className="w-fit flex flex-col justify-center items-center hover:scale-110 duration-200"
 												>
-													<span className="">{social.icon}</span>
-													{/* <span className="text-center text-sm sm:text-base lg:text-lg sm:p-2">{social.name}</span> */}
+													<span title={social.name} className="">
+														{social.icon}
+													</span>
+													<span className="text-center text-sm sm:text-base lg:text-lg sm:p-2">{social.name}</span>
 												</Link>
 											</RiseUpWhenVisible>
 										);
