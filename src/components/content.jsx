@@ -55,14 +55,19 @@ export const SidebarContent = [
 
 // Home Page
 export const AboutMeContent = [
-	"I am a tech enthusiast with a keen interest and passion for technology.",
-	"I am a web developer specializing in the MERN stack, with React.js as my forte. I am currently learning backend development.",
-	"I am a strong team player with coordination skills that allow me to work and adapt quickly in any team environment.",
-	"I am also an effective team leader with the ability to guide and motivate a team of hardworking individuals.",
+	"I am a web developer and currently working on MERN stack.",
+	"I am learning game development with Unity and C#.",
+	// "I am a confident speaker, having a strong command on verbal communication skills.",
+	"I am a tech enthusiast with a keen interest and passion for technological stuff.",
+	"I am a strong team player with coordination skills and the ability to adapt quickly in any team environment.",
+	// "I am a tech enthusiast with a keen interest and passion for technology.",
+	// "I am a web developer specializing in the MERN stack, with React.js as my forte. I am currently learning backend development.",
+	// "I am a strong team player with coordination skills that allow me to work and adapt quickly in any team environment.",
+	// "I am also an effective team leader with the ability to guide and motivate a team of hardworking individuals.",
 	// "I am a confident speaker with a strong command over my communication skills.",
-	"I also excel at creating presentations and have proficiency in tools such as Microsoft PowerPoint, Canva, and Figma.",
-	"I also have prior experience in graphic design and video editing.",
-	"I aspire to become a game developer in the near future and aim to lead the world of game development with professionalism.",
+	// "I also excel at creating presentations and have proficiency in tools such as Microsoft PowerPoint, Canva, and Figma.",
+	// "I also have prior experience in graphic design and video editing.",
+	// "I aspire to become a game developer in the near future and aim to lead the world of game development with professionalism.",
 ];
 
 export const EducationContent = [
@@ -179,26 +184,6 @@ export const WorkXPContent = [
 // Skills Page
 export const LangsContent = [
 	{
-		id: "java",
-		name: "Java",
-		icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg",
-	},
-	{
-		id: "c#",
-		name: "C#",
-		icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg",
-	},
-	{
-		id: "cpp",
-		name: "C++",
-		icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg",
-	},
-	{
-		id: "python",
-		name: "Python",
-		icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg",
-	},
-	{
 		id: "html",
 		name: "HTML",
 		icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg",
@@ -213,6 +198,26 @@ export const LangsContent = [
 		// name: "JavaScript",
 		name: "JS",
 		icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg",
+	},
+	{
+		id: "java",
+		name: "Java",
+		icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg",
+	},
+	{
+		id: "python",
+		name: "Python",
+		icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg",
+	},
+	{
+		id: "c#",
+		name: "C#",
+		icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg",
+	},
+	{
+		id: "cpp",
+		name: "C++",
+		icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg",
 	},
 	{
 		id: "c",

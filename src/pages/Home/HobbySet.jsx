@@ -14,7 +14,7 @@ const HobbySet = ({ heading, content }) => {
 							key={index}
 							className="flex flex-col justify-center items-center text-center m-2 hover:scale-110 duration-200"
 						>
-							<img src={item.icon} alt={item.id} className="w-8 xs:w-12 md:w-16" loading="lazy" />
+							<img src={item.icon} alt={item.id} className="w-8 xs:w-12 md:w-16 not-dark:drop-shadow-2xl" loading="lazy" />
 							<span className="text-center text-sm sm:text-base lg:text-lg sm:p-2">{item.title}</span>
 						</RiseUpWhenVisible>
 					))}

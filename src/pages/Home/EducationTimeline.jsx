@@ -26,7 +26,7 @@ const EducationTimeline = ({ eduItems = [] }) => {
 						{/* Left Content Section */}
 						{
 							<section
-								className={`w-full h-full bg-neutral-100 not-dark:shadow-xl dark:bg-neutral-800 px-6 py-4 rounded-lg text-justify hidden md:block ${eduIndex % 2 == 0 && "invisible"}`}
+								className={`w-full h-full bg-neutral-100 not-dark:shadow-xl dark:bg-neutral-800 transition-colors duration-300 px-6 py-4 rounded-lg text-justify hidden md:block ${eduIndex % 2 == 0 && "invisible"}`}
 							>
 								<h3 className="text-lg sm:text-xl font-bold text-light dark:text-dark">{eduItem.name}</h3>
 								<h4 className="font-medium text-neutral-700 dark:text-neutral-400 mb-2">{eduItem.start + " - " + eduItem.end}</h4>
@@ -36,7 +36,7 @@ const EducationTimeline = ({ eduItems = [] }) => {
 						}
 						{/* Timeline Bar */}
 						<div className="flex flex-col gap-3 items-center relative top-2">
-							<div className="bg-white rounded-full relative -top-0.5 hover:scale-125 transition-all duration-300">
+							<div className="bg-white rounded-full relative -top-0.5 not-dark:shadow-lg hover:scale-125 transition-all duration-300">
 								<img src={eduItem.logo} alt={eduItem.name} className="w-20 md:w-48 p-1 rounded-full" />
 								{/* <svg
 									xmlns="http://www.w3.org/2000/svg"
@@ -59,7 +59,7 @@ const EducationTimeline = ({ eduItems = [] }) => {
 						</div>
 						{/* Right Content Section */}
 						<section
-							className={`w-full h-full bg-neutral-100 not-dark:shadow-xl dark:bg-neutral-800 px-6 py-4 rounded-lg text-justify ${eduIndex % 2 != 0 && "md:invisible"}`}
+							className={`w-full h-full bg-neutral-100 not-dark:shadow-xl dark:bg-neutral-800 transition-colors duration-300 px-6 py-4 rounded-lg text-justify ${eduIndex % 2 != 0 && "md:invisible"}`}
 						>
 							<h3 className="text-lg sm:text-xl font-bold text-light dark:text-dark">{eduItem.name}</h3>
 							<h4 className="font-medium text-neutral-700 dark:text-neutral-400 mb-2">{eduItem.start + " - " + eduItem.end}</h4>
