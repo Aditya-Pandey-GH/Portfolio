@@ -181,7 +181,7 @@ const Sidebar = () => {
 								{/* Download Resume */}
 								<li className="hover:bg-neutral-200 dark:hover:bg-neutral-700 transition-all" onClick={() => setIsSidebarOpen(false)}>
 									<Link
-										to="/Aditya Pandey Resume.pdf"
+										to="/Aditya_Pandey_Resume.pdf"
 										target="_blank"
 										className="flex items-center gap-2 p-4 cursor-pointer group"
 										title="Download Resume"
