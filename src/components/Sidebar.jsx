@@ -60,17 +60,17 @@ const Sidebar = () => {
 					<div className="z-10">
 						<span
 							className={`w-6 h-0.5 absolute left-3 top-4.25 rounded-full bg-black dark:bg-white transition-all ease-out duration-300 ${
-								isSidebarOpen ? "!top-5.5 rotate-45" : ""
+								isSidebarOpen ? "top-5.5! rotate-45" : ""
 							}`}
 						></span>
 						<span
 							className={`w-6 h-0.5 absolute left-3 top-5.75 rounded-full bg-black dark:bg-white transition-all ease-out duration-300 ${
-								isSidebarOpen ? "!top-5.5 scale-x-0" : ""
+								isSidebarOpen ? "top-5.5! scale-x-0" : ""
 							}`}
 						></span>
 						<span
 							className={`w-6 h-0.5 absolute left-3 top-7.25 rounded-full bg-black dark:bg-white transition-all ease-out duration-300 ${
-								isSidebarOpen ? "!top-5.5 -rotate-45" : ""
+								isSidebarOpen ? "top-5.5! -rotate-45" : ""
 							}`}
 						></span>
 					</div>
@@ -123,7 +123,7 @@ const Sidebar = () => {
 											<span
 												className={`group-hover:text-light group-hover:dark:text-dark transition-all ease-in-out duration-300 ${
 													isSidebarOpen ? "opacity-100" : "opacity-0"
-												} ${item.path == "/" + location.pathname.split("/")[1] && "!text-light dark:!text-dark"}`}
+												} ${item.path == "/" + location.pathname.split("/")[1] && "text-light! dark:text-dark!"}`}
 											>
 												{item.name}
 											</span>
@@ -181,7 +181,7 @@ const Sidebar = () => {
 								{/* Download Resume */}
 								<li className="hover:bg-neutral-200 dark:hover:bg-neutral-700 transition-all" onClick={() => setIsSidebarOpen(false)}>
 									<Link
-										to="/Aditya_Pandey_Resume.pdf"
+										to="/Aditya Pandey Resume.pdf"
 										target="_blank"
 										className="flex items-center gap-2 p-4 cursor-pointer group"
 										title="Download Resume"

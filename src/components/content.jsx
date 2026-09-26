@@ -184,6 +184,16 @@ export const WorkXPContent = [
 // Skills Page
 export const LangsContent = [
 	{
+		id: "python",
+		name: "Python",
+		icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg",
+	},
+	{
+		id: "java",
+		name: "Java",
+		icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg",
+	},
+	{
 		id: "html",
 		name: "HTML",
 		icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg",
@@ -198,16 +208,6 @@ export const LangsContent = [
 		// name: "JavaScript",
 		name: "JS",
 		icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg",
-	},
-	{
-		id: "java",
-		name: "Java",
-		icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg",
-	},
-	{
-		id: "python",
-		name: "Python",
-		icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg",
 	},
 	{
 		id: "c#",
@@ -338,16 +338,16 @@ export const ToolsContent = [
 				icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg",
 			},
 			{
-				id: "ms-ppt",
-				// name: "Microsoft PowerPoint",
-				name: "PowerPoint",
-				icon: "https://cdn.jsdelivr.net/gh/GameZonedYT/Logos@main/Logos/powerpoint.svg",
-			},
-			{
 				id: "adobe-ps",
 				// name: "Adobe Photoshop",
 				name: "Photoshop",
 				icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/photoshop/photoshop-original.svg",
+			},
+			{
+				id: "ms-ppt",
+				// name: "Microsoft PowerPoint",
+				name: "PowerPoint",
+				icon: "https://cdn.jsdelivr.net/gh/GameZonedYT/Logos@main/Logos/powerpoint.svg",
 			},
 			{
 				id: "canva",
@@ -366,8 +366,25 @@ export const ToolsContent = [
 				name: "Filmora",
 				icon: "https://cdn.jsdelivr.net/gh/GameZonedYT/Logos@main/Logos/filmora.svg",
 			},
+			{
+				id: "adobe-pre-pro",
+				// name: "Adobe Premiere Pro",
+				name: "Premiere Pro",
+				icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/premierepro/premierepro-original.svg",
+			},
 		],
 	},
+	// {
+	// 	id: "3d",
+	// 	title: "3D Modelling Tools",
+	// 	tools: [
+	// 		{
+	// 			id: "blender",
+	// 			name: "Blender",
+	// 			icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/blender/blender-original.svg",
+	// 		},
+	// 	],
+	// },
 ];
 
 // Projects Page
