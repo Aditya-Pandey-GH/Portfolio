@@ -16,8 +16,10 @@
 
 @theme {
 	/* Colors */
-	--color-light: #034da2;
-	--color-dark: #ffc700;
+	/*--color-light: #034da2;
+	--color-dark: #ffc700;*/
+	--color-light: #003fcc;
+	--color-dark: #fe51a3;
 
 	/*Breakpoints */
 	--breakpoint-xs: 425px;

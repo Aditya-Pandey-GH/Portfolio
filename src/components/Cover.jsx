@@ -79,7 +79,7 @@ const Cover = () => {
 											<span className="text-black text-sm xs:text-base sm:text-lg font-medium">aditya-pandey-in</span>
 										</div>
 									</Link>
-									{/* LinkedIn */}
+									{/* YouTube */}
 									<Link
 										to="https://www.youtube.com/@GameZonedYT"
 										target="_blank"
@@ -87,12 +87,12 @@ const Cover = () => {
 									>
 										<img
 											src="https://upload.wikimedia.org/wikipedia/commons/0/09/YouTube_full-color_icon_%282017%29.svg"
-											alt="LinkedIn"
+											alt="YouTube"
 											className="w-4 sm:w-6"
 										/>
 										<div className="flex flex-row justify-center items-center space-x-1">
 											<span className="text-black text-xl xs:text-2xl sm:text-3xl font-medium">/</span>
-											<span className="text-black text-sm xs:text-base sm:text-lg font-medium">@GameZonedYT</span>
+											<span className="text-black text-sm xs:text-base sm:text-lg font-medium">@GameZoned</span>
 										</div>
 									</Link>
 								</div>
@@ -108,7 +108,8 @@ const Cover = () => {
 				{/* My Photo */}
 				<div className="absolute -bottom-12 xs:-bottom-16 md:-bottom-20 lg:-bottom-25 left-4 sm:left-8 rounded-full hover:scale-105 duration-300">
 					<img
-						src="/cover/dp.webp"
+						// src="/cover/dp.webp"
+						src="/cover/dp.avif"
 						alt="Aditya Pandey"
 						className="w-24 xs:w-32 md:w-40 lg:w-50 rounded-full border-3 md:border-4 border-neutral-200 dark:border-neutral-900 transition-colors duration-300 bg-radial from-[#9ECBFF] to-[#034DA2] dark:from-[#FFEEB2] dark:to-[#FFC700] dark:to-75%"
 					/>
