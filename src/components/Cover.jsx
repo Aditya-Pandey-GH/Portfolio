@@ -111,7 +111,8 @@ const Cover = () => {
 						// src="/cover/dp.webp"
 						src="/cover/dp.avif"
 						alt="Aditya Pandey"
-						className="w-24 xs:w-32 md:w-40 lg:w-50 rounded-full border-3 md:border-4 border-neutral-200 dark:border-neutral-900 transition-colors duration-300 bg-radial from-[#9ECBFF] to-[#034DA2] dark:from-[#FFEEB2] dark:to-[#FFC700] dark:to-75%"
+						// className="w-24 xs:w-32 md:w-40 lg:w-50 rounded-full border-3 md:border-4 border-neutral-200 dark:border-neutral-900 transition-colors duration-300 bg-radial from-[#9ECBFF] to-[#034DA2] dark:from-[#FFEEB2] dark:to-[#FFC700] dark:to-75%"
+						className="w-24 xs:w-32 md:w-40 lg:w-50 h-50 rounded-full flex border-3 md:border-4 border-neutral-200 dark:border-neutral-900 transition-colors duration-300 bg-linear-[135deg,#E88574_16%,#B14E92_32%,#61427C_64%,#0C0E28_100%]"
 					/>
 				</div>
 			</section>
